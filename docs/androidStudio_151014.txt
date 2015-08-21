@@ -1,0 +1,149 @@
+
+*** Take 2 ***
+
+Did a
+`find . -type f -exec     sed -i 's/AnkiDroid/KanjiDroid/g' {} +`
+and then a 
+`find . -type f -name "AnkiDroid*" -print0 | while read -r -d '' file; do
+    mv "$file" "${file//AnkiDroid/KanjiDroid}"
+done`
+
+It gave me back 
+"mv: cannot move `./AnkiDroid/src/main/java/com/ichi2/anki/AnkiDroidApp.java' to `./KanjiDroid/src/main/java/com/ichi2/anki/KanjiDroidApp.java': No such file or directory
+mv: cannot move `./AnkiDroid/src/main/java/com/ichi2/anki/dialogs/AnkiDroidCrashReportDialog.java' to `./KanjiDroid/src/main/java/com/ichi2/anki/dialogs/KanjiDroidCrashReportDialog.java': No such file or directory
+mv: cannot move `./AnkiDroid/src/main/java/com/ichi2/widget/AnkiDroidWidgetBig.java' to `./KanjiDroid/src/main/java/com/ichi2/widget/KanjiDroidWidgetBig.java': No such file or directory
+mv: cannot move `./AnkiDroid/src/main/java/com/ichi2/widget/AnkiDroidWidgetMedium.java' to `./KanjiDroid/src/main/java/com/ichi2/widget/KanjiDroidWidgetMedium.java': No such file or directory
+mv: cannot move `./AnkiDroid/src/main/java/com/ichi2/widget/AnkiDroidWidgetSmall.java' to `./KanjiDroid/src/main/java/com/ichi2/widget/KanjiDroidWidgetSmall.java': No such file or directory
+mike@silver-hd:~/Android/Projects/Kanjidroid$ "
+
+Another version: 
+`for file in $(find . -name 'AnkiDroid*')
+do
+  mv $file $(echo "$file" | sed -r 's|AnkiDroid|KanjiDroid|g')
+done`
+
+OK! 
+I think it was using sudo that did the trick, not the second version of the code. 
+
+Replaced A with B: A -> B
+AnkiDroid -> KanjiDroid : affects both AnkiDroid and AnkiDroidApp; still a naming conflict on And Studio.
+com.ichi2 -> website.openeng : NOTE : without move directory tree com/ici2, android studio gave no gradle errors but hung hard on Run. I copied the directories at first, but I got duplication errors. Synced w/ gradle on restart. It complains "default activity not found." Yet another restart seems to help. But I also notice that the files inside website reference "com." So 
+	within ~/Android/Projects/Kanjidroid/KanjiDroid/src/main/java/website
+		com. -> website.
+
+This didn't work: it's looking for google components at website.google...
+
+inside 
+/home/mike/Android/Projects/Kanjidroid/KanjiDroid/src/main/java/com/ichi2/libanki/importer/Anki2Importer.java
+we have com.openeng
+try 
+com.openeng -> com.ichi2
+
+find . -type f -exec \
+    sed -i 's/com\.openeng/com\.ichi2/g' {} +
+
+Try again: name was 
+android:name="com.ichi2.anki.AnkiDroidApp"
+
+We have a directory ...com/ichi2/anki, but no subfolder AnkiDroidApp. We have folders like anki/runtimetools, and a bunch of activities here and in subfolders. I wonder if I need to extract the Anki engine def'n from the AnkiDroid client. I remember some of my errors referred to default activities being undefined. 
+
+So when I do the renaming, I have to rebuild the com and website directories, defining 
+Anki as com.ichi2 and
+KanjiDroid as website.openeng.
+
+I'm seeing this in my find command
+com.ichi2.anki.AnkiDroidApp
+
+Hey, I just realized that one of the java files in the com.ichi2.anki package is 
+AnkiDroidApp.java
+and it's a text file. Makes me wonder:
+
+Should I have a name between my Module and my App (which is the package name?) I dunno.
+
+*** Take 3 ***
+
+Downloaded AnkiDroid repo into Anki-Android. Had to update a package in Sdk, but then the 
+Gradle sync worked, and the app compiled!
+
+Replace AnkiDroid -> KanjiDroid
+
+It seems the old AnkiDroid name is still in memory/reference. 
+
+Backtrack: let's separately deal with AnkiDroidApp and AnkiDroid
+
+Install broke: recreated from Anki-AnkiDroid folder
+
+*** Take 4 ***
+
+1) ran to make sure starting point works; close astudio.
+2) Replace AnkiDroidApp -> KanjiDroidApp
+3) start astudio and rebuild gradle, then Build app. Close astudio.
+
+Initialized git repo in projects/KanDroid folder
+
+4) Replaced com.ichi2 -> website.openeng
+5) Moved ...java/com/ichi2 to java/website/openeng
+6) start astudio and recompiled. Gradle build ok, but compile errors.
+
+Error:Execution failed for task ':AnkiDroid:dexDebug'.
+(Error details in file error1.txt)
+Gist: it's still looking for files in com/ichi2, as shown below:
+...while parsing com/ichi2/ui/SeekBarPreference.class
+
+found reference to com in
+./AnkiDroid/build/generated/source/r/debug/com
+./AnkiDroid/build/intermediates/classes/debug/com
+
+7) deleted everything under ./AnkiDroid/build/intermediates/classes/debug/com/ichi2.
+8) Success!! It compiled and ran under the App name website.openeng.anki!!
+
+9) Replaced website.openeng.anki -> website.openeng.kandroid and moved files as above.
+
+10) I used Android Studio to refactor & rename the module "AnkiDroid"
+		Totally FUCKED UP my install.  Close astudio.
+11) Created new folder KanClone and cloned my KanDroid into it.
+12) Does NOT WORK! Contains folders for both old and new names, neither of which can be loaded as a module.
+
+*** Take 5 ***
+
+Repeated steps 1)-8) above.
+
+9a) Rebuilt git repos in KanDroid and kanclone. Made initial commit to KanDroid and cloned into kanclone.
+10a) Opened clone in astudio.  Set astudio to automatically add changes to git.
+
+SUCCESS!!
+
+Cloned kanclone to kanclone2, deleted .git
+11a) Replace AnkiDroid -> KanjiDroid everywhere
+12a) start astudio and compile.
+
+Error:Execution failed for task ':KanjiDroid:dexDebug'.
+(Error details in file error2.txt)
+Gist: it's still looking for files in AnkiDroid module, as shown below:
+...while parsing website/openeng/anki/AbstractFlashcardViewer$AnkiDroidWebChromeClient.class
+
+References to WebChromeClient in KanjiDroid/src/main/java/website/openeng include 
+
+./anki/AbstractFlashcardViewer.java:import android.webkit.WebChromeClient;
+./anki/AbstractFlashcardViewer.java:        webView.setWebChromeClient(new KanjiDroidWebChromeClient());
+./anki/AbstractFlashcardViewer.java:    public final class KanjiDroidWebChromeClient extends WebChromeClient {
+./anki/Info.java:import android.webkit.WebChromeClient;
+./anki/Info.java:        webView.setWebChromeClient(new WebChromeClient() {
+
+13a) Deleted file ...kanclone2/KanjiDroid/build/intermediates/classes/debug/website/openeng/anki/AbstractFlashcardViewer$AnkiDroidWebChromeClient.class
+(First attempt didn't work; apparently I don't know how to delete these files from command line. Errors 2 and 3 are identical.)
+
+SUCCESS! My app is now called KanjiDroid in the menu and website.openeng.anki in the android studio chooser. 
+
+*******************
+
+find . -type f -exec \
+    sed -i 's/AnkiDroid/KanjiDroid/g' {} +
+
+
+for file in $(find . -name 'AnkiDroid*')
+do
+  mv $file $(echo "$file" | sed -r 's|AnkiDroid|KanjiDroid|g')
+done
+
+

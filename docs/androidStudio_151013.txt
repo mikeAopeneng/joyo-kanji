@@ -1,0 +1,98 @@
+Android Studio Updated yesterday. 
+
+Began learning basics with JoyoKanji project.
+
+AnkiDroid works but I can't upload to my tablet because the app's already installed. Tried to change name of app.
+
+0) AnkiDroid was installed from gz file, it appears (gz file still exists)
+
+1) Experimented with Refactor: tried renaming project, name in manifest.xml, etc. 
+
+2) Changing name of app in manifest.xml required that I change the name "AnkiDroidApp" throughout subfolders (both text in files and name of files). 
+
+At this point I believe I lost the ability to compile. My manifest.xml is full of errors and I don't know where to begin to repair the damage.
+
+NOTE: I think part of the problem was not closing down Android-studio before making changes. I particular, I got to a point where my project was named KanjiDroid but located in a folder called AnkiDroid. I tried to Refactor the folder to KanjiDroid, but it refused, saying the folder already exists. 
+
+To search for a word in all files recursively:
+
+grep -r "AnkiDroidApp" .
+
+To replace a word in all files recursively:
+
+find . -type f -exec \
+    sed -i 's/subdomainA\.example\.com/subdomainB.example.com/g' {} +
+
+To replace a filename in all files recursively:
+
+find . -type f -name "AnkiDroidApp*" -print0 | while read -r -d '' file; do
+    mv "$file" "${file//AnkiDroidApp/KanjiDroidApp}"
+done
+
+These seem to be doing their job well. However, the name of the app persists. 
+
+Changed name in values/01-core.xml to KanjiDroid, but to no avail.
+
+When I try to Refactor a name change of the root to KanjiDroid, it apppears successful, but the change reverts back after a while and my name "KanjiDroidApp" becomes red, indicating a problem with its reference. 
+
+*** Take 2 ***
+
+Did a
+`find . -type f -exec     sed -i 's/AnkiDroid/KanjiDroid/g' {} +`
+and then a 
+`find . -type f -name "AnkiDroid*" -print0 | while read -r -d '' file; do
+    mv "$file" "${file//AnkiDroid/KanjiDroid}"
+done`
+
+It gave me back 
+"mv: cannot move `./AnkiDroid/src/main/java/com/ichi2/anki/AnkiDroidApp.java' to `./KanjiDroid/src/main/java/com/ichi2/anki/KanjiDroidApp.java': No such file or directory
+mv: cannot move `./AnkiDroid/src/main/java/com/ichi2/anki/dialogs/AnkiDroidCrashReportDialog.java' to `./KanjiDroid/src/main/java/com/ichi2/anki/dialogs/KanjiDroidCrashReportDialog.java': No such file or directory
+mv: cannot move `./AnkiDroid/src/main/java/com/ichi2/widget/AnkiDroidWidgetBig.java' to `./KanjiDroid/src/main/java/com/ichi2/widget/KanjiDroidWidgetBig.java': No such file or directory
+mv: cannot move `./AnkiDroid/src/main/java/com/ichi2/widget/AnkiDroidWidgetMedium.java' to `./KanjiDroid/src/main/java/com/ichi2/widget/KanjiDroidWidgetMedium.java': No such file or directory
+mv: cannot move `./AnkiDroid/src/main/java/com/ichi2/widget/AnkiDroidWidgetSmall.java' to `./KanjiDroid/src/main/java/com/ichi2/widget/KanjiDroidWidgetSmall.java': No such file or directory
+mike@silver-hd:~/Android/Projects/Kanjidroid$ "
+
+Another version: 
+`for file in $(find . -name 'AnkiDroid*')
+do
+  mv $file $(echo "$file" | sed -r 's|AnkiDroid|KanjiDroid|g')
+done`
+
+OK! 
+I think it was using sudo that did the trick, not the second version of the code. 
+
+Replaced A with B: A -> B
+AnkiDroid -> KanjiDroid : affects both AnkiDroid and AnkiDroidApp; still a naming conflict on And Studio.
+com.ichi2 -> website.openeng : NOTE : without move directory tree com/ici2, android studio gave no gradle errors but hung hard on Run. I copied the directories at first, but I got duplication errors. Synced w/ gradle on restart. It complains "default activity not found." Yet another restart seems to help. But I also notice that the files inside website reference "com." So 
+	within ~/Android/Projects/Kanjidroid/KanjiDroid/src/main/java/website
+		com. -> website.
+
+This didn't work: it's looking for google components at website.google...
+
+inside 
+/home/mike/Android/Projects/Kanjidroid/KanjiDroid/src/main/java/com/ichi2/libanki/importer/Anki2Importer.java
+we have com.openeng
+try 
+com.openeng -> com.ichi2
+
+find . -type f -exec \
+    sed -i 's/com\.openeng/com\.ichi2/g' {} +
+
+Try again: name was 
+android:name="com.ichi2.anki.AnkiDroidApp"
+
+We have a directory ...com/ichi2/anki, but no subfolder AnkiDroidApp. We have folders like anki/runtimetools, and a bunch of activities here and in subfolders. I wonder if I need to extract the Anki engine def'n from the AnkiDroid client. I remember some of my errors referred to default activities being undefined. 
+
+So when I do the renaming, I have to rebuild the com and website directories, defining 
+Anki as com.ichi2 and
+KanjiDroid as website.openeng.
+
+I'm seeing this in my find command
+com.ichi2.anki.AnkiDroidApp
+
+Hey, I just realized that one of the java files in the com.ichi2.anki package is 
+AnkiDroidApp.java
+and it's a text file. Makes me wonder:
+
+Should I have a name between my Module and my App (which is the package name?) I dunno.
+
