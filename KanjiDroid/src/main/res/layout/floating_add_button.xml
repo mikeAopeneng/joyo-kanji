@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         fab:fab_colorNormal="@color/fab_normal"
         fab:fab_icon="@drawable/ic_folder_white_24dp"
-        fab:fab_title="@string/new_deck"
+        fab:fab_title="@string/menu_deck_review"
         fab:fab_size="mini"
         fab:fab_colorPressed="@color/fab_pressed"/>
     <net.i2p.android.ext.floatingactionbutton.FloatingActionButton
@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         fab:fab_colorNormal="@color/fab_normal"
         fab:fab_icon="@drawable/ic_file_download_white_24dp"
-        fab:fab_title="@string/menu_get_shared_decks"
+        fab:fab_title="@string/menu_deck_extend"
         fab:fab_size="mini"
         fab:fab_colorPressed="@color/fab_pressed"/>
     <net.i2p.android.ext.floatingactionbutton.FloatingActionButton
@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         fab:fab_colorNormal="@color/fab_normal"
         fab:fab_icon="@drawable/ic_add_white_24dp"
-        fab:fab_title="@string/menu_add_note"
+        fab:fab_title="@string/menu_deck_settings"
         fab:fab_size="mini"
         fab:fab_colorPressed="@color/fab_pressed"/>
 </net.i2p.android.ext.floatingactionbutton.FloatingActionsMenu>

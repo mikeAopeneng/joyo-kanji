@@ -84,6 +84,9 @@
     <string name="menu_mark_note">Mark note</string>
     <string name="menu_unmark_note">Unmark note</string>
     <string name="new_deck">Create deck</string>
+    <string name="menu_deck_review">Review Vocab</string>
+    <string name="menu_deck_extend">Get more Vocab</string>
+    <string name="menu_deck_settings">Vocab Settings</string>
     <string name="create">Create</string>
     <string name="new_dynamic_deck">Create filtered deck</string>
     <string name="night_mode">Night mode</string>

@@ -1,0 +1,8 @@
+kanji 1439756107750
+D/Collection﹕ [1440273964] Sched.java:getCard(): 'mData': ,  'mDid': 1439756107750,  'mDue': 1440228650,  'mId': 1428212973038,  'mMod': 1440228050,  'mNid': 1428212970664,  'mODid': 0,  'mODue': 880,  'mFactor': 2300,  'mFlags': 0,  'mIvl': 1,  'mLapses': 1,  'mLastIvl': 0,  'mLeft': 1001,  'mOrd': 0,  'mQueue': 1,  'mReps': 5,  'mType': 2,  'mUsn': -1,  'mWasNew': false
+
+nihonjin
+D/Collection﹕ [1440274027] Sched.java:getCard(): 'mData': ,  'mDid': 1364362320688,  'mDue': 879,  'mId': 1347698603594,  'mMod': 1437875530,  'mNid': 1347698603594,  'mODid': 0,  'mODue': 0,  'mFactor': 1300,  'mFlags': 0,  'mIvl': 27,  'mLapses': 5,  'mLastIvl': 0,  'mLeft': 1001,  'mOrd': 0,  'mQueue': 2,  'mReps': 50,  'mType': 2,  'mUsn': 688,  'mWasNew': false
+
+nihongo
+D/Collection﹕ [1440273861] Sched.java:getCard(): 'mData': ,  'mDid': 1378703817361,  'mDue': 1440233001,  'mId': 1424865289737,  'mMod': 1440232401,  'mNid': 1424865217855,  'mODid': 0,  'mODue': 877,  'mFactor': 1300,  'mFlags': 0,  'mIvl': 1,  'mLapses': 6,  'mLastIvl': 0,  'mLeft': 1001,  'mOrd': 1,  'mQueue': 1,  'mReps': 21,  'mType': 2,  'mUsn': -1,  'mWasNew': false

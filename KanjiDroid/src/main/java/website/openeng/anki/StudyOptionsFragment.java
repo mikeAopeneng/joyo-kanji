@@ -260,6 +260,10 @@ public class StudyOptionsFragment extends Fragment implements LoaderManager.Load
         refreshInterface(true);
         setHasOptionsMenu(true);
         ((AnkiActivity) getActivity()).hideProgressBar();
+
+        // Added by Mike Aug 15: redirect to cards
+        openReviewer();
+        return;
     }
 
 
@@ -874,13 +878,13 @@ public class StudyOptionsFragment extends Fragment implements LoaderManager.Load
         return getCol() != null && getCol().getDb() != null;
     }
 
-    // Method for loading the collection which is inherited by all AnkiActivitys
+    // Method for loading the collection which is inherited by all AnkiActivities
     protected void startLoadingCollection() {
         // Initialize the open collection loader
         Timber.d("startLoadingCollection()");
         AnkiActivity activity = (AnkiActivity) getActivity();
         activity.showProgressBar();
-        getLoaderManager().initLoader(0, null, this);  
+        getLoaderManager().initLoader(0, null, this);
     }
 
 

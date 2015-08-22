@@ -153,6 +153,7 @@ public class DeckPicker extends NavigationDrawerActivity implements
     private BroadcastReceiver mUnmountReceiver = null;
 
     private long mContextMenuDid;
+    private long mVocabDid;
 
     private EditText mDialogEditText;
 
@@ -409,39 +410,26 @@ public class DeckPicker extends NavigationDrawerActivity implements
             @Override
             public void onClick(View view) {
                 actionsMenu.collapse();
-                mDialogEditText = new EditText(DeckPicker.this);
-                mDialogEditText.setSingleLine(true);
-                // mDialogEditText.setFilters(new InputFilter[] { mDeckNameFilter });
-                        new MaterialDialog.Builder(DeckPicker.this)
-                                .title(R.string.new_deck)
-                                .positiveText(R.string.dialog_ok)
-                                .customView(mDialogEditText, true)
-                                .callback(new MaterialDialog.ButtonCallback() {
-                                    @Override
-                                    public void onPositive(MaterialDialog dialog) {
-                                        String deckName = mDialogEditText.getText().toString()
-                                                .replaceAll("[\'\"\\n\\r\\[\\]\\(\\)]", "");
-                                        Timber.i("DeckPicker:: Creating new deck...");
-                                        getCol().getDecks().id(deckName, true);
-                                        updateDeckList();
-                                    }
-                                })
-                                .negativeText(R.string.dialog_cancel)
-                                .show();
+
+                deckReview();
             }
         });
         addSharedButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
                 actionsMenu.collapse();
-                addSharedDeck();
+                // addSharedDeck();
+
+                // deckExtend();
             }
         });
         addNoteButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
                 actionsMenu.collapse();
-                addNote();
+                // addNote();
+
+                // deckSettings();
             }
         });
 
@@ -483,6 +471,7 @@ public class DeckPicker extends NavigationDrawerActivity implements
             return true;
         }
 
+        // Stanza below part of animation
         Resources res = getResources();
         switch (item.getItemId()) {
 
@@ -1595,6 +1584,16 @@ public class DeckPicker extends NavigationDrawerActivity implements
     private void handleDeckSelection(long did) {
         getCol().getDecks().select(did);
         mFocusedDeck = did;
+        openStudyOptions(false);
+        // Make sure the adapter knows about the new current deck so it will be correctly highlighted.
+        mDeckListAdapter.notifyDataSetChanged();
+    }
+
+
+    private void deckReview() {
+        long mVocabDid = 1439756107750L;
+        getCol().getDecks().select(mVocabDid);
+        mFocusedDeck = mVocabDid;
         openStudyOptions(false);
         // Make sure the adapter knows about the new current deck so it will be correctly highlighted.
         mDeckListAdapter.notifyDataSetChanged();
