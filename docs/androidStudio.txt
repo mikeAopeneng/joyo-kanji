@@ -1,0 +1,20 @@
+Android Studio Install
+Downloaded AS: requires JDK 7 or greater
+Downloaded Oracle JDK 1.8.0_45 and installed to /usr/share/
+I had to uninstall the OpenJDK and accessories to get AS to install. 
+Can load app with .~/Desktop/android-studio/bin/studio.sh
+
+Running program -> tablet not available via USB -- use emulator
+
+Emulator must be run in (depricated 32-bit mode) -> forced by adding command line options in Run -> Configuration
+
+emulator: ERROR: x86 emulation currently requires hardware acceleration!
+Please ensure KVM is properly installed and usable.
+CPU acceleration status: KVM is not installed on this machine (/dev/kvm is missing).
+
+The problem was the BIOS. VM services were disabled, and I think it was F2 that allowed me to boot into the setup and enable it. Once I did, I verified that emulation was available by seeing that /dev/kvm was running.
+
+Tested per http://developer.android.com/training/basics/firstapp/creating-project.html
+and have my Hello, World app running successfully on a Nexus 7 tablet.
+
+

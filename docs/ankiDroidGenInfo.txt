@@ -1,0 +1,15 @@
+Locations of stuff:
+
+Open Sans TTF located in AnkiDroid->assets->fonts
+
+Preferences in in AnkiDroid->res->xml->preferences.xml
+
+Text in in AnkiDroid->res->values
+
+colors.xml defines color for many elements 
+themes.xml defines color themes
+constants.xml contains many web links including anki, ankiweb
+
+APK's in Ankidroid/build/outputs/apk
+
+Made folder Ankidroid/build/res/drawables

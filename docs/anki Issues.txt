@@ -1,0 +1,6 @@
+State of Anki 日本語 flashcards as of April 2015
+
+In general, my cards are problematic wrt transitioning. I begin by connecting one reading to a meaning, then a meaning to kanji, then the other readings to the kanji. My current strategy is to have different card types and convert between types as the learning focus shifts. But it would be more convenient to have a single type and flag the learning focus (scope narrow or wide), with (ideally) a scheduling reset when the scope broadens (changes).
+
+A related wish-list item would be to be able to place compound kanji as examples within one or more joyo (for elementary student exposure), and also give an option to break them out as separate cards. These examples should have a visibility toggle. 
+

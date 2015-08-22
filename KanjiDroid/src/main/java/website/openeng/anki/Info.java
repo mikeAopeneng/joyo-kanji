@@ -121,21 +121,25 @@ public class Info extends AnkiActivity {
                 String[] content = res.getStringArray(R.array.about_content);
                 sb.append("<html><body text=\"#000000\" link=\"#E37068\" alink=\"#E37068\" vlink=\"#E37068\">");
                 sb.append(
-                        String.format(content[0], res.getString(R.string.app_name), res.getString(R.string.link_anki)))
+                        String.format(content[0], res.getString(R.string.app_name),
+                                res.getString(R.string.link_facebook) ))
                         .append("<br/><br/>");
                 sb.append(
-                        String.format(content[1], res.getString(R.string.link_issue_tracker),
-                                res.getString(R.string.link_wiki), res.getString(R.string.link_forum))).append(
+                        String.format(content[1], res.getString(R.string.app_name),
+                                res.getString(R.string.link_issue_tracker) )).append(
                         "<br/><br/>");
                 sb.append(
-                        String.format(content[2], res.getString(R.string.link_wikipedia_open_source),
-                                res.getString(R.string.link_contribution),
-                                res.getString(R.string.link_contribution_contributors))).append(" ");
+                        String.format(content[2], res.getString(R.string.app_name),
+                                res.getString(R.string.link_wikipedia_open_source),
+                                res.getString(R.string.link_contribution))).append(" ");
                 sb.append(
-                        String.format(content[3], res.getString(R.string.link_translation),
-                                res.getString(R.string.link_donation))).append("<br/><br/>");
+                        String.format(content[3], res.getString(R.string.app_name),
+                                res.getString(R.string.link_translation),
+                                res.getString(R.string.link_donation))).append(
+                        "<br/><br/>");
                 sb.append(
-                        String.format(content[4], res.getString(R.string.licence_wiki),
+                        String.format(content[4], res.getString(R.string.app_name),
+                                res.getString(R.string.licence_wiki),
                                 res.getString(R.string.link_source))).append("<br/><br/>");
                 sb.append("</body></html>");
                 webView.loadDataWithBaseURL("", sb.toString(), "text/html", "utf-8", null);

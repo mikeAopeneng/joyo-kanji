@@ -23,11 +23,6 @@
         android:id="@+id/action_mark_card"
         android:icon="@drawable/ic_star_outline_white_24dp"
         android:title="@string/menu_mark_note"
-        ankidroid:showAsAction="always"/>
-    <item
-        android:id="@+id/action_edit"
-        android:icon="@drawable/ic_mode_edit_white_24dp"
-        android:title="@string/cardeditor_title_edit_card"
         ankidroid:showAsAction="ifRoom"/>
     <item
         android:id="@+id/action_replay"
@@ -35,25 +30,8 @@
         android:icon="@drawable/ic_replay_white_24dp"
         ankidroid:showAsAction="ifRoom"/>
     <item
-        android:id="@+id/action_dismiss"
-        android:title="@string/menu_dismiss_note">
-        <menu>
-            <item
-                android:id="@+id/action_bury_card"
-                android:title="@string/menu_bury_card"/>
-            <item
-                android:id="@+id/action_bury_note"
-                android:title="@string/menu_bury_note"/>
-            <item
-                android:id="@+id/action_suspend_card"
-                android:title="@string/menu_suspend_card"/>
-            <item
-                android:id="@+id/action_suspend_note"
-                android:title="@string/menu_suspend_note"/>
-            <item
-                android:id="@+id/action_delete"
-                android:title="@string/menu_delete_note"/>
-        </menu>
+        android:id="@+id/action_suspend_card"
+        android:title="@string/menu_suspend_card">
     </item>
     <item
         android:id="@+id/action_search_dictionary"

@@ -35,11 +35,11 @@
     <string name="tts_no_tts">Don’t speak</string>
 
     <string-array name="about_content">
-        <item><![CDATA[<h2>%1$s:<br/>Flashcards for Android</h2>KanjiDroid is a flashcard application which is fully compatible with the desktop software <a href=\"%2$s\">Anki</a>. You can create, download and learn contents on both, KanjiDroid or Anki Desktop, and synchronize them very easily.]]></item>
-        <item><![CDATA[To help us make KanjiDroid better, please report any bug <a href=\"%1$s\">here</a>; new feature ideas are very welcome too. Use the <a href=\"%2$s\">wiki</a> and say Hi on the <a href=\"%3$s\">forum</a>.]]></item>
-        <item><![CDATA[KanjiDroid is <a href=\"%1$s\">open source software<a/>, so everyone is encouraged to <a href=\"%2$s\">join</a> the <a href=\"%3$s\">contributors</a> :-)]]></item>
-        <item><![CDATA[Non-developers can also help, for instance by <a href=\"%1$s\">translating</a> KanjiDroid, updating the wiki and screenshots, <a href=\"%2$s\">donating</a> to Anki Desktop, or blogging about KanjiDroid.]]></item>
-        <item><![CDATA[KanjiDroid is released under the <a href=\"%1$s\">GNU-GPL v3 license</a> and the source code is available <a href=\"%2$s\">here</a>.]]></item>
+        <item><![CDATA[<h2>%1$s:<br/>Learning Japanese with Android</h2>%1$s is a learning aid made with free software. %1$s makes learning Kanji easy and fun.  If you agree please <a href=\"%2$s\">like</a> us on facebook or rate us using the button below.]]></item>
+        <item><![CDATA[To help us make %1$s better, please report any bug <a href=\"%2$s\">here</a>; new feature ideas are very welcome too. ]]></item>
+        <item><![CDATA[%1$s is <a href=\"%2$s\">open source software<a/>, so everyone is encouraged to <a href=\"%3$s\">join</a> the contributors :-)]]></item>
+        <item><![CDATA[Non-developers can also help, for instance by <a href=\"%2$s\">translating</a> %1$s, updating the wiki and screenshots, and <a href=\"%3$s\">donating</a> to make %1$s even better.]]></item>
+        <item><![CDATA[%1$s is released under the <a href=\"%2$s\">GNU-GPL v3 license</a> and the source code is available <a href=\"%3$s\">here</a>.]]></item>
     </string-array>
 
     <string name="preview_title">Preview</string>
