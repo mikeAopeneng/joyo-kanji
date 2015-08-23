@@ -103,26 +103,24 @@
         <item>18</item>
         <item>19</item>
     </string-array>
-    <string name="link_anki">http://www.openeng.website</string>
-    <string name="link_forum">http://www.openeng.website</string>
-    <string name="link_issue_tracker">http://www.openeng.website</string>
+    <string name="link_issue_tracker">http://www.openeng.website/tracker</string>
     <string name="licence_wiki">http://www.gnu.org/licenses/gpl.html</string>
     <string name="link_source">https://github.com/mikeAopeneng/joyo-kanji.git</string>
-    <string name="link_donation">http://www.openeng.website</string>
-    <string name="link_facebook">http://www.openeng.website</string>
-    <string name="link_translation">http://www.openeng.website</string>
+    <string name="link_donation">http://www.openeng.website/contribute</string>
+    <string name="link_facebook">http://www.openeng.website/facebook</string>
+    <string name="link_translation">http://www.openeng.website/translate</string>
     <string name="link_wikipedia_open_source">http://en.wikipedia.org/wiki/Open_source_software</string>
-    <string name="link_contribution">http://www.openeng.website</string>
-    <string name="link_help">http://www.openeng.website</string>
-    <string name="link_manual">http://www.openeng.website</string>
+    <string name="link_contribution">http://www.openeng.website/contribute</string>
+    <string name="link_help">http://www.openeng.website/help</string>
+    <string name="link_manual">http://www.openeng.website/manual</string>
     <string name="link_help_ja">https://ankidroid.org/docs/help-ja.html</string>
     <string name="link_manual_ja">https://ankidroid.org/docs/manual-ja.html</string>
-    <string name="link_manual_getting_started">http://www.openeng.website</string>
+    <string name="link_manual_getting_started">http://www.openeng.website/qstart</string>
     <string name="link_hebrew_font">http://www.openeng.website</string>
     <string name="shared_decks_url">http://www.openeng.website</string>
-    <string name="repair_deck">http://www.openeng.website</string>
+    <string name="repair_deck">http://www.openeng.website/repairdeck</string>
     <string name="resetpw_url">http://www.openeng.website</string>
-    <string name="changelog_url">http://www.openeng.website</string>
+    <string name="changelog_url">http://www.openeng.website/changelog</string>
 
     <string-array name="leech_action_values">
         <item>0</item>

@@ -1561,7 +1561,7 @@ public class DeckPicker extends NavigationDrawerActivity implements
         return loadDeckIntent;
     }
 
-
+    // Possibly reuse for In-app purchases data transmission?
     private void addSharedDeck() {
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.shared_decks_url)));
         startActivityWithoutAnimation(intent);
