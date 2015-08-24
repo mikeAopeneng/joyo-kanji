@@ -2,8 +2,8 @@
 //package website.openeng.widget;
 //
 //import website.openeng.anki.KanjiDroidApp;
-//import website.openeng.libanki.Card;
-//import website.openeng.libanki.Collection;
+//import website.openeng.libkanji.Card;
+//import website.openeng.libkanji.Collection;
 //
 //import android.app.Service;
 //import android.content.Intent;

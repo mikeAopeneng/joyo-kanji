@@ -6,7 +6,7 @@ import android.support.v4.content.AsyncTaskLoader;
 import website.openeng.anki.AnkiActivity;
 import website.openeng.anki.KanjiDroidApp;
 import website.openeng.anki.CollectionHelper;
-import website.openeng.libanki.Collection;
+import website.openeng.libkanji.Collection;
 
 import timber.log.Timber;
 

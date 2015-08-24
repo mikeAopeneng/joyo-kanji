@@ -40,8 +40,8 @@ import website.openeng.ui.SlidingTabLayout;
 import website.openeng.anki.dialogs.ConfirmationDialog;
 import website.openeng.anki.exception.ConfirmModSchemaException;
 import website.openeng.async.DeckTask;
-import website.openeng.libanki.Collection;
-import website.openeng.libanki.Models;
+import website.openeng.libkanji.Collection;
+import website.openeng.libkanji.Models;
 import website.openeng.themes.StyledProgressDialog;
 import website.openeng.themes.Themes;
 

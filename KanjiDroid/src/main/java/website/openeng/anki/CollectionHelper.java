@@ -22,9 +22,9 @@ import android.os.Environment;
 import android.preference.PreferenceManager;
 
 import website.openeng.anki.exception.StorageAccessException;
-import website.openeng.libanki.Collection;
-import website.openeng.libanki.Storage;
-import website.openeng.libanki.hooks.Hooks;
+import website.openeng.libkanji.Collection;
+import website.openeng.libkanji.Storage;
+import website.openeng.libkanji.hooks.Hooks;
 
 import java.io.File;
 import java.io.IOException;

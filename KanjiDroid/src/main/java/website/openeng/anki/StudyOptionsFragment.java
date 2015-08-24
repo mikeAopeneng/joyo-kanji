@@ -52,9 +52,9 @@ import website.openeng.anki.stats.AnkiStatsTaskHandler;
 import website.openeng.anki.stats.ChartView;
 import website.openeng.async.CollectionLoader;
 import website.openeng.async.DeckTask;
-import website.openeng.libanki.Collection;
-import website.openeng.libanki.Consts;
-import website.openeng.libanki.Utils;
+import website.openeng.libkanji.Collection;
+import website.openeng.libkanji.Consts;
+import website.openeng.libkanji.Utils;
 import website.openeng.themes.StyledProgressDialog;
 import website.openeng.themes.Themes;
 
@@ -87,7 +87,7 @@ public class StudyOptionsFragment extends Fragment implements LoaderManager.Load
     public static final int CONTENT_STUDY_OPTIONS = 0;
     public static final int CONTENT_CONGRATS = 1;
 
-    // Threshold at which the total number of new cards is truncated by libanki
+    // Threshold at which the total number of new cards is truncated by libkanji
     private static final int NEW_CARD_COUNT_TRUNCATE_THRESHOLD = 1000;
 
     /**
@@ -797,7 +797,7 @@ public class StudyOptionsFragment extends Fragment implements LoaderManager.Load
 
                     // Set the total number of new cards in deck
                     if (totalNew < NEW_CARD_COUNT_TRUNCATE_THRESHOLD) {
-                        // if it hasn't been truncated by libanki then just set it usually
+                        // if it hasn't been truncated by libkanji then just set it usually
                         mTextNewTotal.setText(String.valueOf(totalNew));
                     } else {
                         // if truncated then make a thread to allow full count to load

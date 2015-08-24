@@ -30,11 +30,11 @@ import website.openeng.anki.KanjiDroidApp;
 import website.openeng.anki.CollectionHelper;
 import website.openeng.anki.provider.FlashCardsContract.Data.Field;
 import website.openeng.anki.provider.FlashCardsContract.DataColumns;
-import website.openeng.libanki.Card;
-import website.openeng.libanki.Collection;
-import website.openeng.libanki.Note;
-import website.openeng.libanki.Sched;
-import website.openeng.libanki.Utils;
+import website.openeng.libkanji.Card;
+import website.openeng.libkanji.Collection;
+import website.openeng.libkanji.Note;
+import website.openeng.libkanji.Sched;
+import website.openeng.libkanji.Utils;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -599,7 +599,7 @@ public class CardContentProvider extends ContentProvider {
                 /* Insert new note
                  */
                 Long modelId = values.getAsLong(FlashCardsContract.Note.MID);
-                website.openeng.libanki.Note newNote = new website.openeng.libanki.Note(col, col.getModels().get(modelId));
+                website.openeng.libkanji.Note newNote = new website.openeng.libkanji.Note(col, col.getModels().get(modelId));
                 String[] fields = newNote.getFields();
                 //Setting the first field is a mandatory action. Users should overwrite this with a meaningful value.
                 newNote.setField(0, "temp");

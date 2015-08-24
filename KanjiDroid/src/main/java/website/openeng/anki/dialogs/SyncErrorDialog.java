@@ -7,7 +7,7 @@ import android.os.Message;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import website.openeng.anki.R;
-import website.openeng.libanki.Collection;
+import website.openeng.libkanji.Collection;
 import website.openeng.themes.Themes;
 
 public class SyncErrorDialog extends AsyncDialogFragment {

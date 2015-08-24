@@ -24,7 +24,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import website.openeng.anim.ActivityTransitionAnimation;
-import website.openeng.libanki.Collection;
+import website.openeng.libkanji.Collection;
 
 import timber.log.Timber;
 

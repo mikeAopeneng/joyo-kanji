@@ -42,7 +42,7 @@ import website.openeng.anim.ActivityTransitionAnimation;
 import website.openeng.anki.exception.ConfirmModSchemaException;
 import website.openeng.anki.receiver.SdCardReceiver;
 import website.openeng.async.DeckTask;
-import website.openeng.libanki.Collection;
+import website.openeng.libkanji.Collection;
 import website.openeng.preferences.StepsPreference;
 import website.openeng.themes.StyledProgressDialog;
 import website.openeng.themes.Themes;

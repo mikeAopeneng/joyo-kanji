@@ -1,5 +1,5 @@
 package website.openeng.anki;
-import website.openeng.libanki.Sound;
+import website.openeng.libkanji.Sound;
 
 import android.app.Activity;
 import android.content.res.Configuration;

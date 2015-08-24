@@ -26,8 +26,8 @@ import website.openeng.anki.multimediacard.fields.IField;
 import website.openeng.anki.multimediacard.fields.ImageField;
 import website.openeng.anki.multimediacard.fields.TextField;
 import website.openeng.anki.multimediacard.impl.MultimediaEditableNote;
-import website.openeng.libanki.Collection;
-import website.openeng.libanki.Note;
+import website.openeng.libkanji.Collection;
+import website.openeng.libkanji.Note;
 
 import org.json.JSONArray;
 import org.json.JSONException;

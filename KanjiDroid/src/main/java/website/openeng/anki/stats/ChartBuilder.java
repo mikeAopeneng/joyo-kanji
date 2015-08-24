@@ -19,8 +19,8 @@ import android.graphics.Paint;
 
 import android.widget.TextView;
 import website.openeng.anki.R;
-import website.openeng.libanki.Collection;
-import website.openeng.libanki.Stats;
+import website.openeng.libkanji.Collection;
+import website.openeng.libkanji.Stats;
 import com.wildplot.android.rendering.*;
 import com.wildplot.android.rendering.graphics.wrapper.ColorWrap;
 import com.wildplot.android.rendering.graphics.wrapper.RectangleWrap;

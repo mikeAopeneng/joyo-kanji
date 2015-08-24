@@ -10,7 +10,7 @@ import android.view.View;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 
-import website.openeng.libanki.Utils;
+import website.openeng.libkanji.Utils;
 
 import timber.log.Timber;
 

@@ -19,7 +19,7 @@
 
 package website.openeng.anki.multimediacard.fields;
 
-import website.openeng.libanki.Collection;
+import website.openeng.libkanji.Collection;
 
 import java.io.Serializable;
 

@@ -20,9 +20,9 @@ import android.content.res.Resources;
 import android.webkit.WebView;
 
 import website.openeng.anki.R;
-import website.openeng.libanki.Collection;
-import website.openeng.libanki.Stats;
-import website.openeng.libanki.Utils;
+import website.openeng.libkanji.Collection;
+import website.openeng.libkanji.Stats;
+import website.openeng.libkanji.Utils;
 
 public class InfoStatsBuilder {
     private final int CARDS_INDEX = 0;

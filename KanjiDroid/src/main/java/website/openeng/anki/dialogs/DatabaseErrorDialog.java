@@ -394,7 +394,7 @@ public class DatabaseErrorDialog extends AsyncDialogFragment {
                     return res().getString(R.string.corrupt_db_message, res().getString(R.string.repair_deck));
 
                 } else {
-                    // Generic message shown when a libanki task failed
+                    // Generic message shown when a libkanji task failed
                     return res().getString(R.string.access_collection_failed_message, res().getString(R.string.link_help));
                 }
 

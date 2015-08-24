@@ -28,7 +28,7 @@ import android.widget.LinearLayout;
 import website.openeng.anki.CollectionHelper;
 import website.openeng.anki.R;
 import website.openeng.anki.multimediacard.AudioView;
-import website.openeng.libanki.Collection;
+import website.openeng.libkanji.Collection;
 
 import java.io.File;
 import java.io.IOException;

@@ -33,7 +33,7 @@ import website.openeng.anki.dialogs.AsyncDialogFragment;
 import website.openeng.anki.dialogs.DialogHandler;
 import website.openeng.anki.dialogs.SimpleMessageDialog;
 import website.openeng.async.CollectionLoader;
-import website.openeng.libanki.Collection;
+import website.openeng.libkanji.Collection;
 import website.openeng.themes.Themes;
 
 import timber.log.Timber;

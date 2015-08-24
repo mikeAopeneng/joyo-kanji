@@ -20,9 +20,9 @@ import android.test.suitebuilder.annotation.Suppress;
 
 import website.openeng.anki.BackupManager;
 import website.openeng.anki.exception.APIVersionException;
-import website.openeng.libanki.Collection;
-import website.openeng.libanki.Note;
-import website.openeng.libanki.Media;
+import website.openeng.libkanji.Collection;
+import website.openeng.libkanji.Note;
+import website.openeng.libkanji.Media;
 import website.openeng.anki.tests.Shared;
 import java.io.File;
 import java.io.FileOutputStream;

@@ -35,7 +35,7 @@ import android.view.MenuItem;
 
 import website.openeng.anim.ActivityTransitionAnimation;
 import website.openeng.anki.receiver.SdCardReceiver;
-import website.openeng.libanki.Collection;
+import website.openeng.libkanji.Collection;
 import website.openeng.preferences.StepsPreference;
 import website.openeng.themes.Themes;
 import website.openeng.ui.AppCompatPreferenceActivity;
@@ -64,7 +64,7 @@ public class FilteredDeckOptions extends AppCompatPreferenceActivity implements 
 
     private BroadcastReceiver mUnmountReceiver = null;
 
-    // TODO: not anymore used in libanki?
+    // TODO: not anymore used in libkanji?
     private String[] dynExamples = new String[] { null,
             "{'search'=\"is:new\", 'resched'=False, 'steps'=\"1\", 'order'=5}",
             "{'search'=\"added:1\", 'resched'=False, 'steps'=\"1\", 'order'=5}",

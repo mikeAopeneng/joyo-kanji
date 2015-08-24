@@ -37,7 +37,7 @@ import android.widget.FrameLayout;
 
 import website.openeng.async.DeckTask;
 import website.openeng.compat.CompatHelper;
-import website.openeng.libanki.Collection;
+import website.openeng.libkanji.Collection;
 import website.openeng.themes.Themes;
 import website.openeng.widget.WidgetStatus;
 

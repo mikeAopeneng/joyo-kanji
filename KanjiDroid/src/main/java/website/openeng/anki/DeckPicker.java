@@ -75,9 +75,9 @@ import website.openeng.async.Connection.Payload;
 import website.openeng.async.DeckTask;
 import website.openeng.async.DeckTask.TaskData;
 import website.openeng.compat.CompatHelper;
-import website.openeng.libanki.Collection;
-import website.openeng.libanki.Sched;
-import website.openeng.libanki.Utils;
+import website.openeng.libkanji.Collection;
+import website.openeng.libkanji.Sched;
+import website.openeng.libkanji.Utils;
 import website.openeng.themes.StyledProgressDialog;
 import website.openeng.themes.Themes;
 import website.openeng.ui.DividerItemDecoration;
@@ -730,7 +730,7 @@ public class DeckPicker extends NavigationDrawerActivity implements
             try {
                 col.modSchema();
             } catch (ConfirmModSchemaException e) {
-                // If libanki determines it's necessary to confirm the full sync then show a confirmation dialog
+                // If libkanji determines it's necessary to confirm the full sync then show a confirmation dialog
                 // We have to show the dialog via the DialogHandler since this method is called via a Loader
                 Resources res = getResources();
                 Message handlerMessage = Message.obtain();
@@ -1138,7 +1138,7 @@ public class DeckPicker extends NavigationDrawerActivity implements
 
     @Override
     public void deleteUnused(List<String> unused) {
-        website.openeng.libanki.Media m = getCol().getMedia();
+        website.openeng.libkanji.Media m = getCol().getMedia();
         for (String fname : unused) {
             m.removeFile(fname);
         }

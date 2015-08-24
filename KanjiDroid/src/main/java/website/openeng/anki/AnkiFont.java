@@ -8,7 +8,7 @@ import android.graphics.Typeface;
 
 import android.widget.Toast;
 
-import website.openeng.libanki.Utils;
+import website.openeng.libkanji.Utils;
 
 import java.io.File;
 import java.util.ArrayList;

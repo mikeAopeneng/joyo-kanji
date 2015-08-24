@@ -20,7 +20,7 @@
 package website.openeng.anki.multimediacard.fields;
 
 import website.openeng.anki.KanjiDroidApp;
-import website.openeng.libanki.Collection;
+import website.openeng.libkanji.Collection;
 
 import java.io.File;
 import java.util.regex.Matcher;

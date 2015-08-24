@@ -20,8 +20,8 @@ import android.content.SharedPreferences;
 import android.os.StatFs;
 
 
-import website.openeng.libanki.Collection;
-import website.openeng.libanki.Utils;
+import website.openeng.libkanji.Collection;
+import website.openeng.libkanji.Utils;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.File;

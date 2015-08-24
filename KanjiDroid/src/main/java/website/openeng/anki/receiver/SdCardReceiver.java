@@ -22,7 +22,7 @@ import android.content.Intent;
 
 
 import website.openeng.anki.CollectionHelper;
-import website.openeng.libanki.Collection;
+import website.openeng.libkanji.Collection;
 
 import timber.log.Timber;
 

@@ -18,8 +18,8 @@ import website.openeng.anki.CollectionHelper;
 import website.openeng.anki.R;
 import website.openeng.anki.StudyOptionsFragment;
 import website.openeng.anki.StudyOptionsFragment.StudyOptionsListener;
-import website.openeng.libanki.Collection;
-import website.openeng.libanki.Consts;
+import website.openeng.libkanji.Collection;
+import website.openeng.libkanji.Consts;
 import website.openeng.themes.Themes;
 
 import org.json.JSONArray;

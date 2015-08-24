@@ -32,8 +32,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import website.openeng.anki.R;
-import website.openeng.libanki.Collection;
-import website.openeng.libanki.Sched;
+import website.openeng.libkanji.Collection;
+import website.openeng.libkanji.Sched;
 
 import org.json.JSONObject;
 

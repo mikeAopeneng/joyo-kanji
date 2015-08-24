@@ -10,7 +10,7 @@ import android.view.View;
 import com.afollestad.materialdialogs.MaterialDialog;
 import website.openeng.anki.CollectionHelper;
 import website.openeng.anki.R;
-import website.openeng.libanki.Utils;
+import website.openeng.libkanji.Utils;
 import website.openeng.themes.Themes;
 
 import java.io.File;

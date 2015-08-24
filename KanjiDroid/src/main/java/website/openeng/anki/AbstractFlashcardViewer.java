@@ -76,12 +76,12 @@ import website.openeng.anki.receiver.SdCardReceiver;
 import website.openeng.anki.reviewer.ReviewerExtRegistry;
 import website.openeng.async.DeckTask;
 import website.openeng.compat.CompatHelper;
-import website.openeng.libanki.Card;
-import website.openeng.libanki.Collection;
-import website.openeng.libanki.Consts;
-import website.openeng.libanki.Sched;
-import website.openeng.libanki.Sound;
-import website.openeng.libanki.Utils;
+import website.openeng.libkanji.Card;
+import website.openeng.libkanji.Collection;
+import website.openeng.libkanji.Consts;
+import website.openeng.libkanji.Sched;
+import website.openeng.libkanji.Sound;
+import website.openeng.libkanji.Utils;
 import website.openeng.themes.HtmlColors;
 import website.openeng.themes.StyledProgressDialog;
 import website.openeng.themes.Themes;
@@ -1530,7 +1530,7 @@ public abstract class AbstractFlashcardViewer extends NavigationDrawerActivity {
 
         // Set correct label and background resource for each button
         // Note that it's necessary to set the resource dynamically as the ease2 / ease3 buttons
-        // (which libanki expects ease to be 2 and 3) can either be hard, good, or easy -- depending on how many buttons are shown
+        // (which libkanji expects ease to be 2 and 3) can either be hard, good, or easy -- depending on how many buttons are shown
         final int[] ANSWER_BUTTON_DRAWABLES = {R.attr.againButtonRef, R.attr.hardButtonRef, R.attr.goodButtonRef, R.attr.easyButtonRef};
         TypedArray ta = obtainStyledAttributes(ANSWER_BUTTON_DRAWABLES);
         mEase1Layout.setVisibility(View.VISIBLE);

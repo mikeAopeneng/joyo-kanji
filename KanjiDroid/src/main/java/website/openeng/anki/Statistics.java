@@ -42,8 +42,8 @@ import website.openeng.anim.ActivityTransitionAnimation;
 import website.openeng.anki.stats.AnkiStatsTaskHandler;
 import website.openeng.anki.stats.ChartView;
 import website.openeng.anki.widgets.DeckDropDownAdapter;
-import website.openeng.libanki.Collection;
-import website.openeng.libanki.Stats;
+import website.openeng.libkanji.Collection;
+import website.openeng.libkanji.Stats;
 
 import org.json.JSONException;
 import org.json.JSONObject;

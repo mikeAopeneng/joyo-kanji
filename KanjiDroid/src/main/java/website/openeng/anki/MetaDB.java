@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 
 
-import website.openeng.libanki.Utils;
+import website.openeng.libkanji.Utils;
 import website.openeng.widget.DeckStatus;
 
 import java.util.ArrayList;

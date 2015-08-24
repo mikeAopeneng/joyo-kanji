@@ -28,10 +28,10 @@ import website.openeng.anki.AbstractFlashcardViewer;
 import website.openeng.anki.KanjiDroidApp;
 import website.openeng.anki.CollectionHelper;
 import website.openeng.anki.provider.FlashCardsContract;
-import website.openeng.libanki.Card;
-import website.openeng.libanki.Collection;
-import website.openeng.libanki.Decks;
-import website.openeng.libanki.Sched;
+import website.openeng.libkanji.Card;
+import website.openeng.libkanji.Collection;
+import website.openeng.libkanji.Decks;
+import website.openeng.libkanji.Sched;
 
 import org.json.JSONException;
 import org.json.JSONObject;

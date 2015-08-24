@@ -1,7 +1,7 @@
 
 package website.openeng.upgrade;
 
-import website.openeng.libanki.Collection;
+import website.openeng.libkanji.Collection;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -13,7 +13,7 @@ public class Upgrade {
         try {
             val = conf.getBoolean(name);
         } catch (JSONException e) {
-            // workaround to repair wrong values from older libanki versions
+            // workaround to repair wrong values from older libkanji versions
             try {
                 conf.put(name, val);
             } catch (JSONException e1) {

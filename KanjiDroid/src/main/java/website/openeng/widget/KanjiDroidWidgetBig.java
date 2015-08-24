@@ -20,8 +20,8 @@
 //import website.openeng.anki.DeckPicker;
 //import website.openeng.anki2.R;
 //import website.openeng.async.DeckTask;
-//import website.openeng.libanki.Card;
-//import website.openeng.libanki.Utils;
+//import website.openeng.libkanji.Card;
+//import website.openeng.libkanji.Utils;
 //
 //import android.app.PendingIntent;
 //import android.app.Service;

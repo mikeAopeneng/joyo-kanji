@@ -22,7 +22,7 @@ import android.text.TextUtils;
 
 import website.openeng.anki.KanjiDroidApp;
 import website.openeng.anki.AnkiFont;
-import website.openeng.libanki.Utils;
+import website.openeng.libkanji.Utils;
 import website.openeng.themes.Themes;
 
 import java.util.HashMap;

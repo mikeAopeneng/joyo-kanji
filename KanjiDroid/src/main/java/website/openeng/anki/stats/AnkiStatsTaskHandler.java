@@ -27,9 +27,9 @@ import android.widget.TextView;
 import website.openeng.anki.NavigationDrawerActivity;
 import website.openeng.anki.Statistics;
 import website.openeng.anki.R;
-import website.openeng.libanki.Collection;
-import website.openeng.libanki.Stats;
-import website.openeng.libanki.Utils;
+import website.openeng.libkanji.Collection;
+import website.openeng.libkanji.Stats;
+import website.openeng.libkanji.Utils;
 import com.wildplot.android.rendering.PlotSheet;
 
 import java.io.UnsupportedEncodingException;

@@ -25,9 +25,9 @@ import website.openeng.anki.CollectionHelper;
 import website.openeng.anki.MetaDB;
 import website.openeng.anki.services.NotificationService;
 import website.openeng.async.BaseAsyncTask;
-import website.openeng.libanki.Collection;
-import website.openeng.libanki.Decks;
-import website.openeng.libanki.Sched;
+import website.openeng.libkanji.Collection;
+import website.openeng.libkanji.Decks;
+import website.openeng.libkanji.Sched;
 
 import java.util.List;
 
