@@ -1,7 +1,0 @@
-AnkiDroid->java->ichi2->anki->Whiteboard
-is a single file that defines the whiteboard functionality. 
-
-I'd like to add a whiteboard undo, but the menu already has an undo, and another one will be confusing. 
-
-
-
