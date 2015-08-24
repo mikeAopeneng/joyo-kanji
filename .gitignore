@@ -8,9 +8,15 @@
 # Java class files
 *.class
 
+# this file
+.gitignore
+
 # built native files
 *.o
 *.so
+
+# local documents
+docs/
 
 # generated files
 bin/
@@ -34,6 +40,15 @@ proguard/
 
 # Windows clutter
 Thumbs.db
+
+# Log Files
+*.log
+
+# Android Studio Navigation editor temp files
+.navigation/
+
+# Android Studio captures folder
+captures/
 
 # Ubuntu gedit clutter
 *~

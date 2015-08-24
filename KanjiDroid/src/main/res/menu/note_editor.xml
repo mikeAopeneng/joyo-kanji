@@ -1,17 +1,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:ankidroid="http://schemas.android.com/apk/res-auto" >
+    xmlns:kanjidroid="http://schemas.android.com/apk/res-auto" >
 
     <item
         android:id="@+id/action_preview"
         android:icon="@drawable/ic_menu_view"
         android:title="@string/card_editor_preview_card"
         android:visible="false"
-        ankidroid:showAsAction="ifRoom"/>
+        kanjidroid:showAsAction="ifRoom"/>
     <item
         android:id="@+id/action_save"
         android:icon="@drawable/ic_done_white_24dp"
         android:title="@string/add"
-        ankidroid:showAsAction="always"/>
+        kanjidroid:showAsAction="always"/>
     <item
         android:id="@+id/action_add_card_from_card_editor"
         android:title="@string/card_editor_add_card"

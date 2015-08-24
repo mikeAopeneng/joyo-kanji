@@ -158,7 +158,7 @@ public class Info extends AnkiActivity {
             case TYPE_NEW_VERSION:
                 getSupportActionBar().setDisplayHomeAsUpEnabled(false);
                 webView.loadUrl("file:///android_asset/changelog.html");
-                //webView.loadUrl("https://ankidroid.org/docs/changelog.html");
+                //webView.loadUrl("https://kanjidroid.org/docs/changelog.html");
                 break;
 
             default:

@@ -69,7 +69,7 @@ public class CompatV16 extends CompatV15 implements Compat {
 
             updateViews.setTextViewTextSize(R.id.widget_due, TypedValue.COMPLEX_UNIT_SP, text);
             updateViews.setTextViewTextSize(R.id.widget_eta, TypedValue.COMPLEX_UNIT_SP, text);
-            updateViews.setViewPadding(R.id.ankidroid_widget_text_layout, horizontal, vertical, horizontal, vertical);
+            updateViews.setViewPadding(R.id.kanjidroid_widget_text_layout, horizontal, vertical, horizontal, vertical);
             }
 
         }

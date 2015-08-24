@@ -85,7 +85,7 @@ public class CardContentProvider extends ContentProvider {
     private static final UriMatcher sUriMatcher =
             new UriMatcher(UriMatcher.NO_MATCH);
 
-    /* Based on proposal from Tim's comment on https://github.com/ankidroid/Anki-Android/pull/725
+    /* Based on proposal from Tim's comment on https://github.com/kanjidroid/Anki-Android/pull/725
      */
     static {
         // Here you can see all the URIs at a glance

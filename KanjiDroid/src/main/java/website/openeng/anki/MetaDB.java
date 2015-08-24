@@ -29,7 +29,7 @@ import timber.log.Timber;
  */
 public class MetaDB {
     /** The name of the file storing the meta-db. */
-    private static final String DATABASE_NAME = "ankidroid.db";
+    private static final String DATABASE_NAME = "kanjidroid.db";
 
     /** The Database Version, increase if you want updates to happen on next upgrade. */
     private static final int DATABASE_VERSION = 4;

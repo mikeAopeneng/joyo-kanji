@@ -1,11 +1,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:ankidroid="http://schemas.android.com/apk/res-auto" >
+    xmlns:kanjidroid="http://schemas.android.com/apk/res-auto" >
 
     <item
         android:id="@+id/action_add_decks"
         android:icon="@drawable/ic_add_white_24dp"
         android:title="@string/menu_add"
-        ankidroid:showAsAction="always"
+        kanjidroid:showAsAction="always"
             android:visible="false">
         <menu>
             <item
@@ -24,7 +24,7 @@
         android:enabled="false"
         android:icon="@drawable/ic_sync_white_24dp"
         android:title="@string/sync_title"
-        ankidroid:showAsAction="always"/>
+        kanjidroid:showAsAction="always"/>
     <item
         android:id="@+id/action_new_filtered_deck"
         android:enabled="false"

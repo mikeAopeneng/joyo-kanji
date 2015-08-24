@@ -68,8 +68,8 @@ public class BackupManager {
     }
 
 
-    private static File getBackupDirectory(File ankidroidDir) {
-        File directory = new File(ankidroidDir, BACKUP_SUFFIX);
+    private static File getBackupDirectory(File kanjidroidDir) {
+        File directory = new File(kanjidroidDir, BACKUP_SUFFIX);
         if (!directory.isDirectory()) {
             directory.mkdirs();
         }
@@ -77,8 +77,8 @@ public class BackupManager {
     }
 
 
-    private static File getBrokenDirectory(File ankidroidDir) {
-        File directory = new File(ankidroidDir, BROKEN_DECKS_SUFFIX);
+    private static File getBrokenDirectory(File kanjidroidDir) {
+        File directory = new File(kanjidroidDir, BROKEN_DECKS_SUFFIX);
         if (!directory.isDirectory()) {
             directory.mkdirs();
         }

@@ -1067,7 +1067,7 @@ public class Utils {
         try {
             ankiDroidFonts = context.getAssets().list("fonts");
         } catch (IOException e) {
-            Timber.e(e, "Error on retrieving ankidroid fonts");
+            Timber.e(e, "Error on retrieving kanjidroid fonts");
         }
         List<AnkiFont> fonts = new ArrayList<AnkiFont>();
         for (int i = 0; i < fontsCount; i++) {

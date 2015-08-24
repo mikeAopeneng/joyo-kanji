@@ -55,7 +55,7 @@ import timber.log.Timber;
         reportDialogClass = KanjiDroidCrashReportDialog.class,
         httpMethod = HttpSender.Method.PUT,
         reportType = HttpSender.Type.JSON,
-        formUri = "https://ankidroid.org/acra/report",
+        formUri = "https://kanjidroid.org/acra/report",
         mode = ReportingInteractionMode.DIALOG,
         resDialogCommentPrompt =  R.string.empty_string,
         resDialogTitle =  R.string.feedback_title,

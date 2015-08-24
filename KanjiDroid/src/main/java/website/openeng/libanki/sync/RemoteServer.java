@@ -81,7 +81,7 @@ public class RemoteServer extends HttpSyncer {
             JSONObject jo = new JSONObject();
             jo.put("v", Consts.SYNC_VER);
             jo.put("cv",
-                    String.format(Locale.US, "ankidroid,%s,%s", VersionUtils.getPkgVersionName(), Utils.platDesc()));
+                    String.format(Locale.US, "kanjidroid,%s,%s", VersionUtils.getPkgVersionName(), Utils.platDesc()));
             return super.req("meta", super.getInputStream(Utils.jsonToString(jo)));
         } catch (JSONException e) {
             throw new RuntimeException(e);

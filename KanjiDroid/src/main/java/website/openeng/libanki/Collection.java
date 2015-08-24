@@ -263,7 +263,7 @@ public class Collection {
             lock();
             mDb.setMod(false);
         }
-        // undoing non review operation is handled differently in ankidroid
+        // undoing non review operation is handled differently in kanjidroid
 //        _markOp(name);
         mLastSave = Utils.now();
     }

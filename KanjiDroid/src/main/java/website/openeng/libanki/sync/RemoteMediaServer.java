@@ -65,7 +65,7 @@ public class RemoteMediaServer extends HttpSyncer {
             mPostVars = new HashMap<String, Object>();
             mPostVars.put("k", mHKey);
             mPostVars.put("v",
-                    String.format(Locale.US, "ankidroid,%s,%s", VersionUtils.getPkgVersionName(), Utils.platDesc()));
+                    String.format(Locale.US, "kanjidroid,%s,%s", VersionUtils.getPkgVersionName(), Utils.platDesc()));
 
             HttpResponse resp = super.req("begin", super.getInputStream(Utils.jsonToString(new JSONObject())));
             JSONObject jresp = new JSONObject(super.stream2String(resp.getEntity().getContent()));

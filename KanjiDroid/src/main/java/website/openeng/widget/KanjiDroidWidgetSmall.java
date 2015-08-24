@@ -112,7 +112,7 @@ public class KanjiDroidWidgetSmall extends AppWidgetProvider {
                 updateViews.setViewVisibility(R.id.widget_due, View.INVISIBLE);
                 updateViews.setViewVisibility(R.id.widget_eta, View.INVISIBLE);
                 updateViews.setViewVisibility(R.id.widget_progress_frame, View.INVISIBLE);
-                updateViews.setViewVisibility(R.id.ankidroid_widget_small_finish_layout, View.GONE);
+                updateViews.setViewVisibility(R.id.kanjidroid_widget_small_finish_layout, View.GONE);
 
                 if (mMountReceiver == null) {
                     mMountReceiver = new BroadcastReceiver() {
@@ -150,14 +150,14 @@ public class KanjiDroidWidgetSmall extends AppWidgetProvider {
                     eta = counts[2];
                     if (dueCardsCount <= 0) {
                         if (dueCardsCount == 0) {
-                            updateViews.setViewVisibility(R.id.ankidroid_widget_small_finish_layout, View.VISIBLE);
+                            updateViews.setViewVisibility(R.id.kanjidroid_widget_small_finish_layout, View.VISIBLE);
                         } else {
-                            updateViews.setViewVisibility(R.id.ankidroid_widget_small_finish_layout, View.INVISIBLE);
+                            updateViews.setViewVisibility(R.id.kanjidroid_widget_small_finish_layout, View.INVISIBLE);
                         }
                         updateViews.setViewVisibility(R.id.widget_due, View.INVISIBLE);
                         updateViews.setViewVisibility(R.id.widget_progress_frame, View.INVISIBLE);
                     } else {
-                        updateViews.setViewVisibility(R.id.ankidroid_widget_small_finish_layout, View.INVISIBLE);
+                        updateViews.setViewVisibility(R.id.kanjidroid_widget_small_finish_layout, View.INVISIBLE);
                         updateViews.setViewVisibility(R.id.widget_due, View.VISIBLE);
                         updateViews.setViewVisibility(R.id.widget_progress_frame, View.VISIBLE);
                         updateViews.setTextViewText(R.id.widget_due, Integer.toString(dueCardsCount));
@@ -179,7 +179,7 @@ public class KanjiDroidWidgetSmall extends AppWidgetProvider {
             ankiDroidIntent.addCategory(Intent.CATEGORY_LAUNCHER);
             PendingIntent pendingKanjiDroidIntent = PendingIntent.getActivity(context, 0, ankiDroidIntent,
                     PendingIntent.FLAG_UPDATE_CURRENT);
-            updateViews.setOnClickPendingIntent(R.id.ankidroid_widget_small_button, pendingKanjiDroidIntent);
+            updateViews.setOnClickPendingIntent(R.id.kanjidroid_widget_small_button, pendingKanjiDroidIntent);
 
             CompatHelper.getCompat().updateWidgetDimensions(context, updateViews, KanjiDroidWidgetSmall.class);
 

@@ -1,5 +1,5 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/ankidroid_widget_small_layout"
+    android:id="@+id/kanjidroid_widget_small_layout"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:clickable="true"
@@ -7,7 +7,7 @@
     android:background="#00FFFFFF">
 
     <ImageButton
-        android:id="@+id/ankidroid_widget_small_button"
+        android:id="@+id/kanjidroid_widget_small_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -18,7 +18,7 @@
         android:src="@drawable/widget_bg_small"/>
 
     <RelativeLayout
-        android:id="@+id/ankidroid_widget_text_layout"
+        android:id="@+id/kanjidroid_widget_text_layout"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:clickable="false"
@@ -77,7 +77,7 @@
     </RelativeLayout>
 
     <ImageButton
-        android:id="@+id/ankidroid_widget_small_finish_layout"
+        android:id="@+id/kanjidroid_widget_small_finish_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
