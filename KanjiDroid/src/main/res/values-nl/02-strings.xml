@@ -99,7 +99,7 @@
     <item quantity="other">%1$d minuten</item>
   </plurals>
   <string name="studyoptions_welcome_title">Welkom bij KanjiDroid</string>
-  <string name="fact_adder_intent_title">Ankidroid kaart</string>
+  <string name="fact_adder_intent_title">Kanjidroid kaart</string>
   <string name="card_editor_add_card">Kaart toevoegen</string>
   <string name="card_editor_copy_card">Kopieer kaart</string>
   <string name="card_editor_reset_card">Vooruitgang resetten</string>
