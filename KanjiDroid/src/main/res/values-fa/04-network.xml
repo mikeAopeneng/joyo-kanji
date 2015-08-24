@@ -49,8 +49,8 @@
   <string name="terms_and_conditions"><a href="https://openeng.website/account/terms">Terms and Conditions</a></string>
   <string name="menu_get_shared_decks">دريافت كارتهاي اشتراكي</string>
   <string name="connection_error_message">خطاي شبكه رخ داده است.</string>
-  <string name="not_logged_in_title">Log in to AnkiWeb</string>
-  <string name="login_create_account_message">You must log in to an AnkiWeb account. You can create one in the next step.</string>
+  <string name="not_logged_in_title">Log in to KanjiWeb</string>
+  <string name="login_create_account_message">You must log in to an KanjiWeb account. You can create one in the next step.</string>
   <string name="no_email_client">No email client available</string>
   <string name="username">نشانی پست الکترونیک</string>
   <string name="username_repeat">تکرار نشانی پست الکترونیک</string>
@@ -93,7 +93,7 @@
   <string name="sync_remote_db_error">بانک اطلاعات دریافت شده خراب شده بود. لطفا مجددا امتحان نمایید.</string>
   <string name="sync_overwrite_error">مجموعه فعلی شما با فایل دانلود شده نمی تواند رونویسی شود.</string>
   <string name="sync_connection_error">Connection timed out. Either your internet connection is experiencing problems, or you have a very large file in your media folder.</string>
-  <string name="sync_error_409">Only one client can access AnkiWeb at a time. If a previous sync failed, please try again in a few minutes.</string>
+  <string name="sync_error_409">Only one client can access KanjiWeb at a time. If a previous sync failed, please try again in a few minutes.</string>
   <string name="sync_write_access_error">فایل دانلود شده نمی تواند بر روی کارت حافظه ذخیره شود. یا کارت حافظه شما بصورت فقط خواندنی نصب شده و یا فضای کافی وجود ندارد.</string>
   <string name="sync_deletions_message">حذف همگام سازی...</string>
   <string name="sync_small_objects_message">همگام سازی اشیاء کوچک...</string>

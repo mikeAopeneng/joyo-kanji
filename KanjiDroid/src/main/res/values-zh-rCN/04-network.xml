@@ -50,15 +50,15 @@
 </string>
   <string name="menu_get_shared_decks">获取共享牌组</string>
   <string name="connection_error_message">出现网络错误。</string>
-  <string name="not_logged_in_title">登录到 AnkiWeb</string>
-  <string name="login_create_account_message">您必须使用 AnkiWeb 帐户登录。您可以通过下一步创建一个新帐户。</string>
+  <string name="not_logged_in_title">登录到 KanjiWeb</string>
+  <string name="login_create_account_message">您必须使用 KanjiWeb 帐户登录。您可以通过下一步创建一个新帐户。</string>
   <string name="no_email_client">没有可用的电子邮件客户端</string>
   <string name="username">电子邮件地址</string>
   <string name="username_repeat">重复电子邮件地址</string>
   <string name="password">密码</string>
   <string name="password_repeat">重复密码</string>
   <string name="log_in">登录</string>
-  <string name="sign_up_description">没有AnkiWeb账户？它是免费的！</string>
+  <string name="sign_up_description">没有KanjiWeb账户？它是免费的！</string>
   <string name="sign_up">注册</string>
   <string name="sign_up_terms">点击 <i>注册</i>按钮, 表示您确认已经阅读并同意我们的 <a href="https://openeng.website/account/terms">使用条款</a>。</string>
   <string name="logged_as">登录为</string>
@@ -69,7 +69,7 @@
   <string name="downloaddeck_search">搜索</string>
   <string name="preferences_title">偏好设置</string>
   <string name="deckpreferences_title">XXX 选项</string>
-  <string name="sync_conflict_message">您本地的牌组和AnkiWeb上的牌组存在冲突，需要以其中一侧覆盖另一侧。\n\n你想上传本地牌组，还是下载AnkiWeb上的牌组？</string>
+  <string name="sync_conflict_message">您本地的牌组和KanjiWeb上的牌组存在冲突，需要以其中一侧覆盖另一侧。\n\n你想上传本地牌组，还是下载KanjiWeb上的牌组？</string>
   <string name="sync_conflict_local">上传</string>
   <string name="sync_conflict_remote">下载</string>
   <string name="sync_conflict_remote_confirm">确认要下载服务器的牌组集合吗？注意这会覆盖掉本地的牌组集合。</string>
@@ -94,7 +94,7 @@
   <string name="sync_remote_db_error">已下载的数据库损坏。请重试。</string>
   <string name="sync_overwrite_error">您当前的集合不能被下载文件覆盖。</string>
   <string name="sync_connection_error">连接超时。您的Internet连接出了问题，或者您的媒体文件夹中有非常大的文件。</string>
-  <string name="sync_error_409">一次只能用一个用户登录AnkiWeb，如果之前的同步失败，请在几分钟后重试。</string>
+  <string name="sync_error_409">一次只能用一个用户登录KanjiWeb，如果之前的同步失败，请在几分钟后重试。</string>
   <string name="sync_write_access_error">无法将已下载的文件保存到sd卡。你的sd卡装载为只读，或者空间不足。</string>
   <string name="sync_deletions_message">同步删除...</string>
   <string name="sync_small_objects_message">同步小对象...</string>

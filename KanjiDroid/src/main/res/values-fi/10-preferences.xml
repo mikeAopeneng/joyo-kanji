@@ -100,7 +100,7 @@
   <string name="tts_summ">Lue kysymys ja vausta, jos äänitiedosto ei tule mukana</string>
   <string name="sync_fetch_missing_media">Hae media synkronointi</string>
   <string name="sync_fetch_missing_media_summ">Hakee automaattisesti puuttuvat mediat kun synkronoidaan.</string>
-  <string name="sync_account">AnkiWeb tili</string>
+  <string name="sync_account">KanjiWeb tili</string>
   <string name="sync_account_summ_logged_out">Ei kirjautuneena</string>
   <string name="sync_account_summ_logged_in">%s</string>
   <string name="automatic_sync_choice">Automatic synchronization</string>

@@ -49,15 +49,15 @@
   <string name="terms_and_conditions"><a href="https://openeng.website/account/terms"> Obchodné podmienky</a></string>
   <string name="menu_get_shared_decks">Stiahnuť zdieľané balíčky</string>
   <string name="connection_error_message">Vyskytla sa chyba siete.</string>
-  <string name="not_logged_in_title">Prihlásiť sa do AnkiWeb</string>
-  <string name="login_create_account_message">Musíte sa prihlásiť na účet AnkiWeb. Účet môžete vytvoriť v ďalšom kroku.</string>
+  <string name="not_logged_in_title">Prihlásiť sa do KanjiWeb</string>
+  <string name="login_create_account_message">Musíte sa prihlásiť na účet KanjiWeb. Účet môžete vytvoriť v ďalšom kroku.</string>
   <string name="no_email_client">No email client available</string>
   <string name="username">E-mailová adresa</string>
   <string name="username_repeat">Zopakovať e-mailovú adresu</string>
   <string name="password">Heslo</string>
   <string name="password_repeat">Zopakovať heslo</string>
   <string name="log_in">Prihlásiť sa</string>
-  <string name="sign_up_description">Nemáte AnkiWeb účet? Je zadarmo!</string>
+  <string name="sign_up_description">Nemáte KanjiWeb účet? Je zadarmo!</string>
   <string name="sign_up">Zaregistrovať sa</string>
   <string name="sign_up_terms">Ťuknutím na <i>Zaregistrovať</i> potvrdzujete, že ste prečítali a súhlasíte s našimi <a href="https://openeng.website/account/terms"> podmienkami použitia</a>.</string>
   <string name="logged_as">Prihlásený ako</string>
@@ -68,7 +68,7 @@
   <string name="downloaddeck_search">Hľadať</string>
   <string name="preferences_title">Predvoľby</string>
   <string name="deckpreferences_title">Možnosti pre XXX</string>
-  <string name="sync_conflict_message">Vaše balíčky tu a na AnkiWeb sa odlišujú príliš na to, aby boli zlúčené. Je preto nutné prepísať balíčky na jednej strane balíčkami na druhej strane.\n\nChcete nahrať tieto balíčky, alebo stiahnuť balíčky z AnkiWeb?</string>
+  <string name="sync_conflict_message">Vaše balíčky tu a na KanjiWeb sa odlišujú príliš na to, aby boli zlúčené. Je preto nutné prepísať balíčky na jednej strane balíčkami na druhej strane.\n\nChcete nahrať tieto balíčky, alebo stiahnuť balíčky z KanjiWeb?</string>
   <string name="sync_conflict_local">Nahrať</string>
   <string name="sync_conflict_remote">Stiahnuť</string>
   <string name="sync_conflict_remote_confirm">Naozaj chcete stiahnuť zbierku zo serveru? Berte na vedomie, že táto prepíše vašu aktuálnu zbierku.</string>
@@ -93,7 +93,7 @@
   <string name="sync_remote_db_error">Stiahnutá databáza bola poškodená. Prosím skúste to znova.</string>
   <string name="sync_overwrite_error">Vašu aktuálnu zbierku sa nepodarilo prepísať stiahnutým súborom.</string>
   <string name="sync_connection_error">Connection timed out. Either your internet connection is experiencing problems, or you have a very large file in your media folder.</string>
-  <string name="sync_error_409">Only one client can access AnkiWeb at a time. If a previous sync failed, please try again in a few minutes.</string>
+  <string name="sync_error_409">Only one client can access KanjiWeb at a time. If a previous sync failed, please try again in a few minutes.</string>
   <string name="sync_write_access_error">Stiahnutý súbor sa nepodarilo uložiť na sd kartu. Buď je vaša sd karta pripojená iba na čítanie, alebo na nej nie je dostatok miesta.</string>
   <string name="sync_deletions_message">Synchronizujú sa odstránené položky...</string>
   <string name="sync_small_objects_message">Synchronizujú sa malé objekty...</string>

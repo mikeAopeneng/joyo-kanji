@@ -49,15 +49,15 @@
   <string name="terms_and_conditions"><a href="https://openeng.website/account/terms">Termini e condizioni</a></string>
   <string name="menu_get_shared_decks">Ottieni mazzi condivisi</string>
   <string name="connection_error_message">Si è verificato un errore di rete.</string>
-  <string name="not_logged_in_title">Accedi a AnkiWeb</string>
-  <string name="login_create_account_message">Devi accedere a un account AnkiWeb. Puoi crearne uno nel passaggio successivo.</string>
+  <string name="not_logged_in_title">Accedi a KanjiWeb</string>
+  <string name="login_create_account_message">Devi accedere a un account KanjiWeb. Puoi crearne uno nel passaggio successivo.</string>
   <string name="no_email_client">Nessun client di posta elettronica disponibile</string>
   <string name="username">Indirizzo e-mail</string>
   <string name="username_repeat">Ripeti indirizzo e-mail</string>
   <string name="password">Password</string>
   <string name="password_repeat">Ripeti la password</string>
   <string name="log_in">Accedi</string>
-  <string name="sign_up_description">Non hai un account AnkiWeb? È gratis!</string>
+  <string name="sign_up_description">Non hai un account KanjiWeb? È gratis!</string>
   <string name="sign_up">Registrati</string>
   <string name="sign_up_terms">Toccando <i>Registrati</i>, confermi di avere letto e di accettare le nostre <a href="https://openeng.website/account/terms">condizioni d\'utilizzo</a>.</string>
   <string name="logged_as">Connesso come</string>
@@ -68,7 +68,7 @@
   <string name="downloaddeck_search">Cerca</string>
   <string name="preferences_title">Preferenze</string>
   <string name="deckpreferences_title">Opzioni per XXX</string>
-  <string name="sync_conflict_message">I tuoi mazzi qui e su AnkiWeb differiscono in modo tale che non è possibile unirli. È necessario sovrascrivere i mazzi in un posto con quelli nell\'altro posto.\n\nVuoi caricare i mazzi da qui o scaricare i mazzi da AnkiWeb?</string>
+  <string name="sync_conflict_message">I tuoi mazzi qui e su KanjiWeb differiscono in modo tale che non è possibile unirli. È necessario sovrascrivere i mazzi in un posto con quelli nell\'altro posto.\n\nVuoi caricare i mazzi da qui o scaricare i mazzi da KanjiWeb?</string>
   <string name="sync_conflict_local">Carica</string>
   <string name="sync_conflict_remote">Scarica</string>
   <string name="sync_conflict_remote_confirm">Vuoi davvero scaricare la collezione del server? Fai attenzione che questo sovrascriverà la tua collezione locale.</string>
@@ -93,7 +93,7 @@
   <string name="sync_remote_db_error">Il database scaricato è corrotto. Riprova.</string>
   <string name="sync_overwrite_error">La tua collezione corrente non ha potuto essere sovrascritta con il file scaricato.</string>
   <string name="sync_connection_error">Connessione scaduta. Ci sono problemi con la connessione internet oppure hai un file molto grande nella tua cartella dei media.</string>
-  <string name="sync_error_409">Solo un client alla volta può accedere ad AnkiWeb. Se una precedente sincronizzazione è fallita, riprova nuovamente tra pochi minuti.</string>
+  <string name="sync_error_409">Solo un client alla volta può accedere ad KanjiWeb. Se una precedente sincronizzazione è fallita, riprova nuovamente tra pochi minuti.</string>
   <string name="sync_write_access_error">Il file scaricato non ha potuto essere salvato sulla scheda SD. O la tua scheda SD è montata in sola lettura, o non c\'è spazio sufficiente.</string>
   <string name="sync_deletions_message">Sincronizzazione eliminazioni...</string>
   <string name="sync_small_objects_message">Sincronizzazione piccoli oggetti...</string>

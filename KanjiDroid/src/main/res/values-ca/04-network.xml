@@ -49,15 +49,15 @@
   <string name="terms_and_conditions"><a href="https://openeng.website/account/terms">Terms and conditions</a></string>
   <string name="menu_get_shared_decks">Baixeu paquets compartits</string>
   <string name="connection_error_message">Hi ha hagut un error de la xarxa.</string>
-  <string name="not_logged_in_title">Log in to AnkiWeb</string>
-  <string name="login_create_account_message">You must log in to an AnkiWeb account. You can create one in the next step.</string>
+  <string name="not_logged_in_title">Log in to KanjiWeb</string>
+  <string name="login_create_account_message">You must log in to an KanjiWeb account. You can create one in the next step.</string>
   <string name="no_email_client">No email client available</string>
   <string name="username">Adreça de correu electrònic</string>
   <string name="username_repeat">Repeteix l\'adreça de correu electrònic</string>
   <string name="password">Contrasenya</string>
   <string name="password_repeat">Repeteixi la contrasenya</string>
   <string name="log_in">Inicia la sessió</string>
-  <string name="sign_up_description">No teniu un compte d\'AnkiWeb? És gratuït!</string>
+  <string name="sign_up_description">No teniu un compte d\'KanjiWeb? És gratuït!</string>
   <string name="sign_up">Registreu-vos</string>
   <string name="sign_up_terms">By touching <i>Sign up</i>, you confirm that you have read and agree to our <a href="https://openeng.website/account/terms">terms of use</a>.</string>
   <string name="logged_as">Heu entrat com a</string>
@@ -68,7 +68,7 @@
   <string name="downloaddeck_search">Cerca</string>
   <string name="preferences_title">Preferències</string>
   <string name="deckpreferences_title">Options for XXX</string>
-  <string name="sync_conflict_message">Els vostres paquets aquí i a AnkiWeb difereixen de tal manera que no es poden combinar junts, per això cal que trieu un dels dos paquets.\n\nVoleu carregar el paquets des d\'aquí, o descarregar el d\'AnkiWeb?</string>
+  <string name="sync_conflict_message">Els vostres paquets aquí i a KanjiWeb difereixen de tal manera que no es poden combinar junts, per això cal que trieu un dels dos paquets.\n\nVoleu carregar el paquets des d\'aquí, o descarregar el d\'KanjiWeb?</string>
   <string name="sync_conflict_local">Puja</string>
   <string name="sync_conflict_remote">Descarrega</string>
   <string name="sync_conflict_remote_confirm">Segur que voleu descarregar la col·lecció del servidor? Tingueu en compte que això sobreescriurà la vostra col·lecció local.</string>
@@ -93,7 +93,7 @@
   <string name="sync_remote_db_error">La base de dades descarregada era corrupta. Si us plau proveu-ho de nou.</string>
   <string name="sync_overwrite_error">No ha estat possible sobreescriure la vostra col·lecció actual amb l\'arxiu descarregat.</string>
   <string name="sync_connection_error">Connection timed out. Either your internet connection is experiencing problems, or you have a very large file in your media folder.</string>
-  <string name="sync_error_409">Only one client can access AnkiWeb at a time. If a previous sync failed, please try again in a few minutes.</string>
+  <string name="sync_error_409">Only one client can access KanjiWeb at a time. If a previous sync failed, please try again in a few minutes.</string>
   <string name="sync_write_access_error">No ha estat possible desar l\'arxiu descarregat a la targeta SD. O bé la vostra targeta SD està muntada com a només de lectura o bé no hi ha prou espai.</string>
   <string name="sync_deletions_message">S\'estan sincronitzant les supressions...</string>
   <string name="sync_small_objects_message">S\'estan sincronitzant els petits objectes...</string>

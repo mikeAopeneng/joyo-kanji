@@ -49,15 +49,15 @@
   <string name="terms_and_conditions"><a href="https://openeng.website/account/terms">Kayıtlar ve Koşullar</a></string>
   <string name="menu_get_shared_decks">Paylaşılan desteler edin</string>
   <string name="connection_error_message">Bir ağ hatası meydana geldi.</string>
-  <string name="not_logged_in_title">AnkiWeb\'e giriş yap</string>
-  <string name="login_create_account_message">Bir AnkiWeb hesabına giriş yapmanız gerekiyor. Sonraki adımda bir tane oluşturabilirsiniz.</string>
+  <string name="not_logged_in_title">KanjiWeb\'e giriş yap</string>
+  <string name="login_create_account_message">Bir KanjiWeb hesabına giriş yapmanız gerekiyor. Sonraki adımda bir tane oluşturabilirsiniz.</string>
   <string name="no_email_client">E-posta istemcisi yok</string>
   <string name="username">Eposta adresi</string>
   <string name="username_repeat">Tekrar eposta adresi</string>
   <string name="password">Şifre</string>
   <string name="password_repeat">Şifre (tekrar)</string>
   <string name="log_in">Giriş yap</string>
-  <string name="sign_up_description">AnkiWeb hesabınız yok mu? Ücretsiz edinin!</string>
+  <string name="sign_up_description">KanjiWeb hesabınız yok mu? Ücretsiz edinin!</string>
   <string name="sign_up">Kaydol</string>
   <string name="sign_up_terms"><i>Kaydol</i>a basarak, <a href="https://openeng.website/account/terms">kullanım koşulları</a>mızı okuyup kabul ettiğinizi onaylıyorsunuz.</string>
   <string name="logged_as">Şu adla giriş yapıldı:</string>
@@ -68,7 +68,7 @@
   <string name="downloaddeck_search">Arama</string>
   <string name="preferences_title">Tercihler</string>
   <string name="deckpreferences_title">XXX Seçenekleri</string>
-  <string name="sync_conflict_message">Buradaki ve AnkiWeb\'deki desteleriniz birbirleriyle birleştirilemeyecek şekilde farklıdır, bu yüzden bir taraftaki desteleri diğerleriyle değiştirmek gerekir.\n\nBuradaki desteleri yüklemek mi, yoksa AnkiWeb\'deki desteleri indirmek mi istiyorsunuz?</string>
+  <string name="sync_conflict_message">Buradaki ve KanjiWeb\'deki desteleriniz birbirleriyle birleştirilemeyecek şekilde farklıdır, bu yüzden bir taraftaki desteleri diğerleriyle değiştirmek gerekir.\n\nBuradaki desteleri yüklemek mi, yoksa KanjiWeb\'deki desteleri indirmek mi istiyorsunuz?</string>
   <string name="sync_conflict_local">Karşıya Yükle</string>
   <string name="sync_conflict_remote">İndir</string>
   <string name="sync_conflict_remote_confirm">Sunucunun koleksiyonu istediğinizden emin misiniz? Unutmayın, yerel koleksiyonunuzun üzerine yazılır.</string>
@@ -93,7 +93,7 @@
   <string name="sync_remote_db_error">İndirilen veritabanı bozuktu. Lütfen yeniden deneyin.</string>
   <string name="sync_overwrite_error">Geçerli koleksiyonunuz indirilen dosya tarafından üzerine yazılamadı.</string>
   <string name="sync_connection_error">Bağlantı zaman aşımına uğradı. Internet bağlantı sorunları yaşıyorsunuz ya da medya klasörünüzde çok büyük bir dosya var .</string>
-  <string name="sync_error_409">AnkiWeb\'e aynı anda sadece tek bir istemci erişebilir. Önceki senkronizasyon başarısız olursa, lütfen bir kaç dakika sonra tekrar deneyin.</string>
+  <string name="sync_error_409">KanjiWeb\'e aynı anda sadece tek bir istemci erişebilir. Önceki senkronizasyon başarısız olursa, lütfen bir kaç dakika sonra tekrar deneyin.</string>
   <string name="sync_write_access_error">İndirilen dosya sd karta kaydedilemedi. Ya sd kartınız salt okunur takılmış ya da yeterli boşluk yok.</string>
   <string name="sync_deletions_message">Silinenler eşitleniyor...</string>
   <string name="sync_small_objects_message">Küçük nesneler eşitleniyor...</string>

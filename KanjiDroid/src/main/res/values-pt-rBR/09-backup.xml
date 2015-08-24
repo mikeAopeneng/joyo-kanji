@@ -47,7 +47,7 @@
   <string name="backup_del_collection">Deletar coleção e cria uma nova</string>
   <string name="backup_del_collection_question">Deseja deletar a coleção e criar uma nova? Isso vai apagar todo o seu progresso de aprendizado e deletar todos os cartões!</string>
   <string name="backup_full_sync_from_server">Sincronização completa do servidor</string>
-  <string name="backup_full_sync_from_server_question">Deseja mesmo substituir sua coleção pela da AnkiWeb? Isso vai apagar todo o seu progreso de aprendizado e informações adicionadas desde sua ultima sincronização!</string>
+  <string name="backup_full_sync_from_server_question">Deseja mesmo substituir sua coleção pela da KanjiWeb? Isso vai apagar todo o seu progreso de aprendizado e informações adicionadas desde sua ultima sincronização!</string>
   <string name="error_handling_title">Tratamento de erros</string>
   <string name="error_handling_options">Opções</string>
   <string name="backup_retry_opening">Tentar abrir novamente</string>

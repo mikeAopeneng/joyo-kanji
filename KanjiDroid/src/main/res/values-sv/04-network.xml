@@ -49,15 +49,15 @@
   <string name="terms_and_conditions"><a href="https://openeng.website/account/terms">Användarvillkor</a></string>
   <string name="menu_get_shared_decks">Hämta delade kortlekar</string>
   <string name="connection_error_message">Ett nätverksfel har uppstått.</string>
-  <string name="not_logged_in_title">Logga in på AnkiWeb</string>
-  <string name="login_create_account_message">Du måste logga in på ett AnkiWeb-konto. Du kan skapa ett i nästa steg.</string>
+  <string name="not_logged_in_title">Logga in på KanjiWeb</string>
+  <string name="login_create_account_message">Du måste logga in på ett KanjiWeb-konto. Du kan skapa ett i nästa steg.</string>
   <string name="no_email_client">Ingen epostklient tillgänglig</string>
   <string name="username">E-postadress</string>
   <string name="username_repeat">Upprepa e-postadress</string>
   <string name="password">Lösenord</string>
   <string name="password_repeat">Upprepa lösenord</string>
   <string name="log_in">Logga in</string>
-  <string name="sign_up_description">Har du inget AnkiWeb-konto? Det är gratis!</string>
+  <string name="sign_up_description">Har du inget KanjiWeb-konto? Det är gratis!</string>
   <string name="sign_up">Registrera dig</string>
   <string name="sign_up_terms">Genom att klicka <i>Registrera dig</i>, bekräftar du att du läst och går med på vårt <a href="https://openeng.website/account/terms">användaravtal</a>.</string>
   <string name="logged_as">Inloggad som</string>
@@ -68,7 +68,7 @@
   <string name="downloaddeck_search">Sök</string>
   <string name="preferences_title">Inställningar</string>
   <string name="deckpreferences_title">Alternativ för XXX</string>
-  <string name="sync_conflict_message">Dina kortlekar här och på AnkiWeb skiljer sig på ett sätt så att de inte kan slås samman, så kortlekarna på ena sidan måste skrivas över med de från den andra sidan.\n\nVill du ladda upp kortlekarna som används här, eller hämta kortlekarna från AnkiWeb?</string>
+  <string name="sync_conflict_message">Dina kortlekar här och på KanjiWeb skiljer sig på ett sätt så att de inte kan slås samman, så kortlekarna på ena sidan måste skrivas över med de från den andra sidan.\n\nVill du ladda upp kortlekarna som används här, eller hämta kortlekarna från KanjiWeb?</string>
   <string name="sync_conflict_local">Ladda upp</string>
   <string name="sync_conflict_remote">Hämta</string>
   <string name="sync_conflict_remote_confirm">Vill du verkligen hämta serverns samling? Var medveten om att detta skriver över din lokala samling.</string>
@@ -93,7 +93,7 @@
   <string name="sync_remote_db_error">Den nedladdade databasen var korrupt. Var vänlig och försök igen.</string>
   <string name="sync_overwrite_error">Din nuvarande samling kunde inte skrivas över av den hämtade filen.</string>
   <string name="sync_connection_error">Anslutningen nådde en maxtidsgräns. Det kan antingen vara ett problem med din internetanslutning, eller att du har en väldigt stor fil i din mediamapp.</string>
-  <string name="sync_error_409">Endast en klient åt gången kan använda AnkiWeb. Om en tidigare synkronisering misslyckades, vänligen försök igen.</string>
+  <string name="sync_error_409">Endast en klient åt gången kan använda KanjiWeb. Om en tidigare synkronisering misslyckades, vänligen försök igen.</string>
   <string name="sync_write_access_error">Den hämtade filen kunde inte sparas till SD-kortet. Antingen är kortet monterat enbart för läsning eller så har det inte tillräckligt ledigt utrymme.</string>
   <string name="sync_deletions_message">Synkroniserar borttagningar...</string>
   <string name="sync_small_objects_message">Synkroniserar små objekt...</string>
@@ -111,7 +111,7 @@
   <string name="sync_media_success">Media har synkroniserats</string>
   <string name="sync_media_changes_count">%d mediaförändringar att ladda upp</string>
   <string name="sync_media_downloaded_count">%d mediafiler nedladdade</string>
-  <string name="sync_sanity_failed">Vid synkronisering var den lokala samlingen och den på AnkiWeb i ett oförenligt läge. För att fixa det här kommer KanjiDroid tvinga en full synkronisering. Vänligen välj vilken sida du vill behålla, eller avbryt om du vill synkronisera senare.</string>
+  <string name="sync_sanity_failed">Vid synkronisering var den lokala samlingen och den på KanjiWeb i ett oförenligt läge. För att fixa det här kommer KanjiDroid tvinga en full synkronisering. Vänligen välj vilken sida du vill behålla, eller avbryt om du vill synkronisera senare.</string>
   <string name="sync_media_sanity_failed">Mediasynkroniseringen slutfördes, men antalet mediafiler stämmer inte överens med antalet på servern. Nästa mediasynkronisering kommer bli en fullständig synkronisering för att rätta till det som är fel.</string>
   <string name="sync_media_error">Fel vid synkronisering av medieinformation.</string>
   <string name="sync_media_unsupported">Komplexa mediafilnamn stöds inte av Android 2.2 och tidigare versioner. Mediasynkronisering har inaktiverats.</string>

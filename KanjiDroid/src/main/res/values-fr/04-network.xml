@@ -49,15 +49,15 @@
   <string name="terms_and_conditions"><a href="https://openeng.website/account/terms">Conditions générales</a></string>
   <string name="menu_get_shared_decks">Télécharger des paquets partagés</string>
   <string name="connection_error_message">Une erreur réseau s\'est produite.</string>
-  <string name="not_logged_in_title">Se connecter à AnkiWeb</string>
-  <string name="login_create_account_message">Vous devez vous connecter à un compte AnkiWeb. Vous pourrez en créer un à la prochaine étape.</string>
+  <string name="not_logged_in_title">Se connecter à KanjiWeb</string>
+  <string name="login_create_account_message">Vous devez vous connecter à un compte KanjiWeb. Vous pourrez en créer un à la prochaine étape.</string>
   <string name="no_email_client">Aucun client de messagerie disponible</string>
   <string name="username">Adresse électronique</string>
   <string name="username_repeat">Confirmation de l’adresse électronique</string>
   <string name="password">Mot de passe</string>
   <string name="password_repeat">Confirmation du mot de passe</string>
   <string name="log_in">Se connecter</string>
-  <string name="sign_up_description">Vous n\'avez pas de compte AnkiWeb ? C\'est gratuit !</string>
+  <string name="sign_up_description">Vous n\'avez pas de compte KanjiWeb ? C\'est gratuit !</string>
   <string name="sign_up">Inscrivez-vous</string>
   <string name="sign_up_terms">En cliquant sur <i>s\'inscrire</i>, vous confirmez que vous avez lu et accepté nos <a href="https://openeng.website/account/terms">conditions d\'utilisation</a>.</string>
   <string name="logged_as">Connecté en tant que</string>
@@ -68,7 +68,7 @@
   <string name="downloaddeck_search">Recherche</string>
   <string name="preferences_title">Préférences</string>
   <string name="deckpreferences_title">Options pour XXX</string>
-  <string name="sync_conflict_message">Vos paquets ici et sur AnkiWeb diffèrent de telle manière qu\'ils ne peuvent pas être fusionnés, il est donc nécessaire d\'écraser les uns ou les autres.\n\nVoulez vous garder et envoyer les paquets d\'ici, ou téléchargez les paquets de AnkiWeb ?</string>
+  <string name="sync_conflict_message">Vos paquets ici et sur KanjiWeb diffèrent de telle manière qu\'ils ne peuvent pas être fusionnés, il est donc nécessaire d\'écraser les uns ou les autres.\n\nVoulez vous garder et envoyer les paquets d\'ici, ou téléchargez les paquets de KanjiWeb ?</string>
   <string name="sync_conflict_local">Envoi</string>
   <string name="sync_conflict_remote">Télécharger</string>
   <string name="sync_conflict_remote_confirm">Êtes-vous sûr de vouloir récupérer la collection du serveur ? Soyez conscient que cela va écraser votre collection locale.</string>
@@ -93,7 +93,7 @@
   <string name="sync_remote_db_error">La base de données téléchargée est corrompue. Merci d’essayer de nouveau.</string>
   <string name="sync_overwrite_error">Votre collection actuelle ne peut pas être écrasée par le fichier téléchargé.</string>
   <string name="sync_connection_error">La connexion a expiré. Vérifiez votre connexion internet, ou peut-être avez-vous un très gros fichier dans votre dossier de médias ?</string>
-  <string name="sync_error_409">Seulement un client peut accéder à AnkiWeb à la fois. Si une précédente synchronisation a échoué, veuillez réessayer dans quelques minutes.</string>
+  <string name="sync_error_409">Seulement un client peut accéder à KanjiWeb à la fois. Si une précédente synchronisation a échoué, veuillez réessayer dans quelques minutes.</string>
   <string name="sync_write_access_error">Le fichier téléchargé n’a pas pu être sauvegardé sur la carte SD. Soit votre carte SD est montée en lecture seule soit il n’y a pas assez d’espace libre dessus.</string>
   <string name="sync_deletions_message">Synchronisation des suppressions...</string>
   <string name="sync_small_objects_message">Synchronisation des petits objets...</string>

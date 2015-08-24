@@ -100,7 +100,7 @@
   <string name="tts_summ">Đọc ra câu hỏi và câu trả lời nếu không có tập tin âm thanh nào được kèm theo</string>
   <string name="sync_fetch_missing_media">Tìm nạp phương tiện truyền thông trên đồng bộ</string>
   <string name="sync_fetch_missing_media_summ">Tự động lấy truyền thông bị thiếu khi đồng bộ hoá.</string>
-  <string name="sync_account">tài khoản AnkiWeb </string>
+  <string name="sync_account">tài khoản KanjiWeb </string>
   <string name="sync_account_summ_logged_out">Chưa đăng nhập</string>
   <string name="sync_account_summ_logged_in">%s</string>
   <string name="automatic_sync_choice">Automatic synchronization</string>

@@ -100,7 +100,7 @@
   <string name="tts_summ">Membaca pertanyaan dan jawaban jika file tidak ada file suara disertakan</string>
   <string name="sync_fetch_missing_media">Ambil media di sinkronisasi</string>
   <string name="sync_fetch_missing_media_summ">Otomatis ambil media yang hilang ketika sinkronisasi.</string>
-  <string name="sync_account">Akun AnkiWeb</string>
+  <string name="sync_account">Akun KanjiWeb</string>
   <string name="sync_account_summ_logged_out">Tidak masuk</string>
   <string name="sync_account_summ_logged_in">%s</string>
   <string name="automatic_sync_choice">Automatic synchronization</string>

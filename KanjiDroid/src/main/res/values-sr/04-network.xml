@@ -49,15 +49,15 @@
   <string name="terms_and_conditions"><a href="https://openeng.website/account/terms">Услови</a></string>
   <string name="menu_get_shared_decks">Преузми дељене шпилове</string>
   <string name="connection_error_message">Грешка у мрежи.</string>
-  <string name="not_logged_in_title">Прикључите се на AnkiWeb</string>
-  <string name="login_create_account_message">Морате да се прикључите на AnkiWeb. Можете направите налог у слећем кораку.</string>
+  <string name="not_logged_in_title">Прикључите се на KanjiWeb</string>
+  <string name="login_create_account_message">Морате да се прикључите на KanjiWeb. Можете направите налог у слећем кораку.</string>
   <string name="no_email_client">Немате клијент за е-пошту</string>
   <string name="username">Адреса е-поште</string>
   <string name="username_repeat">Поновите адресу е-поште</string>
   <string name="password">Лозинка</string>
   <string name="password_repeat">Поновите лозинку</string>
   <string name="log_in">Пријави се</string>
-  <string name="sign_up_description">Немате AnkiWeb налог? Бесплатан је!</string>
+  <string name="sign_up_description">Немате KanjiWeb налог? Бесплатан је!</string>
   <string name="sign_up">Региструј</string>
   <string name="sign_up_terms">Притиском <i>Региструј</i>, потврђујете да сте прочитали и да се слажете са нашим <a href="https://openeng.website/account/terms">условима коришћења</a>.</string>
   <string name="logged_as">Prijavljen kao</string>
@@ -68,7 +68,7 @@
   <string name="downloaddeck_search">Претрага</string>
   <string name="preferences_title">Поставке</string>
   <string name="deckpreferences_title">Опције за XXX</string>
-  <string name="sync_conflict_message">Ваши шпилови овде и на AnkiWeb се разликују и не могу бити обједињени, јер је неопходно попуно презаписати један шпил другим.\n\nЖелите ли да учитате шпил одавде или да преузмете шпил са AnkiWeb овамо?</string>
+  <string name="sync_conflict_message">Ваши шпилови овде и на KanjiWeb се разликују и не могу бити обједињени, јер је неопходно попуно презаписати један шпил другим.\n\nЖелите ли да учитате шпил одавде или да преузмете шпил са KanjiWeb овамо?</string>
   <string name="sync_conflict_local">Учитавање</string>
   <string name="sync_conflict_remote">Преузми</string>
   <string name="sync_conflict_remote_confirm">Да ли заиста желите да преузмете колекцију са сервера? Имајте на уму да ће то довести до презаписивања локалне колекције.</string>
@@ -93,7 +93,7 @@
   <string name="sync_remote_db_error">Преузета база података је оштећена. Покушајте касније.</string>
   <string name="sync_overwrite_error">Текућа колекција не може да се презапише учитаном датотеком.</string>
   <string name="sync_connection_error">Веза је истекла. Проблем је или до ваше мреже, или до великог датотеке у вашој фасцикли за медије.</string>
-  <string name="sync_error_409">Само једна површина може да приступи AnkiWeb-u. Ако је претходна синхронизација била неуспешна, пробајте опет за неколико минута.</string>
+  <string name="sync_error_409">Само једна површина може да приступи KanjiWeb-u. Ако је претходна синхронизација била неуспешна, пробајте опет за неколико минута.</string>
   <string name="sync_write_access_error">Учитана датотека не може бити сачувана на sd карту. Или је ваша SD картица у режиму само за читање или нема довољно места.</string>
   <string name="sync_deletions_message">Синхронизација брисања...</string>
   <string name="sync_small_objects_message">Синхронизација малих објеката...</string>

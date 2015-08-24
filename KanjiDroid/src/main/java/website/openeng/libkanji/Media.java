@@ -929,7 +929,7 @@ public class Media {
 
     /**
      * Used by other classes to determine the index of a regular expression group named "fname"
-     * (Anki2Importer needs this). This is needed because we didn't implement the "transformNames"
+     * (KanjiImporter needs this). This is needed because we didn't implement the "transformNames"
      * function and have delegated its job to the caller of this class.
      */
     public static int indexOfFname(Pattern p) {

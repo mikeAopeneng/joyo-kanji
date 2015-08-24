@@ -49,15 +49,15 @@
   <string name="terms_and_conditions"><a href="https://openeng.website/account/terms">Terms and conditions</a></string>
   <string name="menu_get_shared_decks">Få delte kortstokker</string>
   <string name="connection_error_message">Det oppstod en nettverksfeil.</string>
-  <string name="not_logged_in_title">Log in to AnkiWeb</string>
-  <string name="login_create_account_message">You must log in to an AnkiWeb account. You can create one in the next step.</string>
+  <string name="not_logged_in_title">Log in to KanjiWeb</string>
+  <string name="login_create_account_message">You must log in to an KanjiWeb account. You can create one in the next step.</string>
   <string name="no_email_client">No email client available</string>
   <string name="username">Email address</string>
   <string name="username_repeat">Repeat email address</string>
   <string name="password">Passord</string>
   <string name="password_repeat">Gjenta passord</string>
   <string name="log_in">Logg inn</string>
-  <string name="sign_up_description">Har du ingen AnkiWeb-konto? Det er gratis!</string>
+  <string name="sign_up_description">Har du ingen KanjiWeb-konto? Det er gratis!</string>
   <string name="sign_up">Registrer deg</string>
   <string name="sign_up_terms">By touching <i>Sign up</i>, you confirm that you have read and agree to our <a href="https://openeng.website/account/terms">terms of use</a>.</string>
   <string name="logged_as">Logget inn som</string>
@@ -68,7 +68,7 @@
   <string name="downloaddeck_search">Søk</string>
   <string name="preferences_title">Innstillinger</string>
   <string name="deckpreferences_title">Options for XXX</string>
-  <string name="sync_conflict_message">Kortstokkene dine her og på AnkiWeb er så ulike at de ikke kan slåes sammen, så kortstokkene på den ene siden må overskrives av kortstokkene fra den andre.\n\nVil du laste opp kortstokkene herfra, eller laste ned kortstokkene fra AnkiWeb?</string>
+  <string name="sync_conflict_message">Kortstokkene dine her og på KanjiWeb er så ulike at de ikke kan slåes sammen, så kortstokkene på den ene siden må overskrives av kortstokkene fra den andre.\n\nVil du laste opp kortstokkene herfra, eller laste ned kortstokkene fra KanjiWeb?</string>
   <string name="sync_conflict_local">Last opp</string>
   <string name="sync_conflict_remote">Last ned</string>
   <string name="sync_conflict_remote_confirm">Overwrite your local collection?</string>
@@ -93,7 +93,7 @@
   <string name="sync_remote_db_error">Den nedlastede databasen var ødelagt. Vennligst prøv på nytt.</string>
   <string name="sync_overwrite_error">Den valgte samlingen kunne ikke overskrives med den nedlastede filen.</string>
   <string name="sync_connection_error">Connection timed out. Either your internet connection is experiencing problems, or you have a very large file in your media folder.</string>
-  <string name="sync_error_409">Only one client can access AnkiWeb at a time. If a previous sync failed, please try again in a few minutes.</string>
+  <string name="sync_error_409">Only one client can access KanjiWeb at a time. If a previous sync failed, please try again in a few minutes.</string>
   <string name="sync_write_access_error">Den nedlastede filen kunne ikke lagres på SD-kortet. Enten er SD-kortet ditt skrivebeskyttet, eller så er det ikke nok plass.</string>
   <string name="sync_deletions_message">Synkroniserer slettede...</string>
   <string name="sync_small_objects_message">Synkroniserer små objekter...</string>

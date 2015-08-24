@@ -353,7 +353,7 @@ public class AnkiDb {
 
     /**
      * Anki desktop only uses a journal_mode of DELETE. We therefore set this before database closure to ensure
-     * compatibility. This allows full upload to AnkiWeb and manual collection migration, but has no bearing on partial
+     * compatibility. This allows full upload to KanjiWeb and manual collection migration, but has no bearing on partial
      * progress syncs.
      */
     protected void setDeleteJournalMode() {

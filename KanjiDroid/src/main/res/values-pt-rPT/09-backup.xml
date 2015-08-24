@@ -47,7 +47,7 @@
   <string name="backup_del_collection">Apagar colecção e criar uma nova</string>
   <string name="backup_del_collection_question">Deseja apagar a colecção e criar uma nova? Isso vai apagar todo o seu progresso de aprendizagem e eliminar todas as fichas.</string>
   <string name="backup_full_sync_from_server">Sincronização completa do servidor</string>
-  <string name="backup_full_sync_from_server_question">Substituir a sua colecção pela da AnkiWeb? Isto vai apagar todo o seu progresso de aprendizagem e informações adicionadas desde a última sincronização.</string>
+  <string name="backup_full_sync_from_server_question">Substituir a sua colecção pela da KanjiWeb? Isto vai apagar todo o seu progresso de aprendizagem e informações adicionadas desde a última sincronização.</string>
   <string name="error_handling_title">Tratamento de erros</string>
   <string name="error_handling_options">Opções</string>
   <string name="backup_retry_opening">Tentar abrir novamente</string>

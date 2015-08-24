@@ -100,7 +100,7 @@
   <string name="tts_summ">Prečíta otázku a odpoveď, ak nie je priložený žiaden zvukový súbor</string>
   <string name="sync_fetch_missing_media">Prevziať médiá počas synchronizácie</string>
   <string name="sync_fetch_missing_media_summ">Automaticky prevziať chýbajúce médiá počas synchronizácie.</string>
-  <string name="sync_account">AnkiWeb účet</string>
+  <string name="sync_account">KanjiWeb účet</string>
   <string name="sync_account_summ_logged_out">Neprihlásený</string>
   <string name="sync_account_summ_logged_in">%s</string>
   <string name="automatic_sync_choice">Automatic synchronization</string>

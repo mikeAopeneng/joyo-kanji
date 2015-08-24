@@ -1193,7 +1193,7 @@ public class Utils {
      * returned string.
      */
     public static String platDesc() {
-        // AnkiWeb reads this string and uses , and : as delimiters, so we remove them.
+        // KanjiWeb reads this string and uses , and : as delimiters, so we remove them.
         String model = android.os.Build.MODEL.replace(',', ' ').replace(':', ' ');
         return String.format(Locale.US, "android:%s:%s",
                 android.os.Build.VERSION.RELEASE, model);

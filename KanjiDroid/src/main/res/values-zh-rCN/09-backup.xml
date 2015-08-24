@@ -47,7 +47,7 @@
   <string name="backup_del_collection">删除集合，并创建新集合</string>
   <string name="backup_del_collection_question">您确实想要删除该集合，然后创建一个新吗？这将删除所有您的学习进度和删除所有卡牌！</string>
   <string name="backup_full_sync_from_server">从服务器完全同步</string>
-  <string name="backup_full_sync_from_server_question">确实要从AnkiWeb下载并覆盖您的本地集合吗？这将删除自您上次同步以来的所有学习进度，及增加的信息！</string>
+  <string name="backup_full_sync_from_server_question">确实要从KanjiWeb下载并覆盖您的本地集合吗？这将删除自您上次同步以来的所有学习进度，及增加的信息！</string>
   <string name="error_handling_title">错误处理</string>
   <string name="error_handling_options">选项</string>
   <string name="backup_retry_opening">重试打开</string>

@@ -100,7 +100,7 @@
   <string name="tts_summ">Ses dosyası bulunmuyorsa soruyu ve yanıtı sesli okur</string>
   <string name="sync_fetch_missing_media">Eşitlemede medyayı aktar</string>
   <string name="sync_fetch_missing_media_summ">Eşitlerken eksik medyayı otomatik olarak aktar</string>
-  <string name="sync_account">AnkiWeb hesabı</string>
+  <string name="sync_account">KanjiWeb hesabı</string>
   <string name="sync_account_summ_logged_out">Giriş yapılmamış</string>
   <string name="sync_account_summ_logged_in">%s</string>
   <string name="automatic_sync_choice">Automatic synchronization</string>

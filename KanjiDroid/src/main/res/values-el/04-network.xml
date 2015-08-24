@@ -49,15 +49,15 @@
   <string name="terms_and_conditions"><a href="https://openeng.website/account/terms">Terms and conditions</a></string>
   <string name="menu_get_shared_decks">Λήψη κοινόχρηστων τραπουλών</string>
   <string name="connection_error_message">Παρουσιάστηκε σφάλμα δικτύου.</string>
-  <string name="not_logged_in_title">Log in to AnkiWeb</string>
-  <string name="login_create_account_message">You must log in to an AnkiWeb account. You can create one in the next step.</string>
+  <string name="not_logged_in_title">Log in to KanjiWeb</string>
+  <string name="login_create_account_message">You must log in to an KanjiWeb account. You can create one in the next step.</string>
   <string name="no_email_client">No email client available</string>
   <string name="username">Διεύθυνση email</string>
   <string name="username_repeat">Επαναλάβετε τη διεύθυνση email</string>
   <string name="password">Κωδικός</string>
   <string name="password_repeat">Επανάληψη κωδικού</string>
   <string name="log_in">Σύνδεση</string>
-  <string name="sign_up_description">Δεν έχετε λογαριασμό στο AnkiWeb; Είναι δωρεάν!</string>
+  <string name="sign_up_description">Δεν έχετε λογαριασμό στο KanjiWeb; Είναι δωρεάν!</string>
   <string name="sign_up">Εγγραφή</string>
   <string name="sign_up_terms">By touching <i>Sign up</i>, you confirm that you have read and agree to our <a href="https://openeng.website/account/terms">terms of use</a>.</string>
   <string name="logged_as">Είστε συνδεδεμένοι ως</string>
@@ -68,7 +68,7 @@
   <string name="downloaddeck_search">Αναζήτηση</string>
   <string name="preferences_title">Προτιμήσεις</string>
   <string name="deckpreferences_title">Options for XXX</string>
-  <string name="sync_conflict_message">Οι τράπουλές σας εδώ και στο AnkiWeb διαφέρουν κατά τέτοιο τρόπο που δε μπορούν να συγχωνευτούν, για αυτό πρέπει να αντικαταστήσετε τις τράπουλες της μίας τοποθεσίας με τις τράπουλες της άλλης.\n\nΘέλετε να στείλετε τις τράπουλες από εδώ, ή να λάβετε τις τράπουλες από το AnkiWeb;</string>
+  <string name="sync_conflict_message">Οι τράπουλές σας εδώ και στο KanjiWeb διαφέρουν κατά τέτοιο τρόπο που δε μπορούν να συγχωνευτούν, για αυτό πρέπει να αντικαταστήσετε τις τράπουλες της μίας τοποθεσίας με τις τράπουλες της άλλης.\n\nΘέλετε να στείλετε τις τράπουλες από εδώ, ή να λάβετε τις τράπουλες από το KanjiWeb;</string>
   <string name="sync_conflict_local">Αποστολή</string>
   <string name="sync_conflict_remote">Λήψη</string>
   <string name="sync_conflict_remote_confirm">Είστε βέβαιοι ότι θέλετε να κατεβάσετε τη συλλογή του διακομιστή; Να γνωρίζετε ότι αυτό θα αντικαταστήσει την τοπική συλλογή σας.</string>
@@ -93,7 +93,7 @@
   <string name="sync_remote_db_error">Η ληφθήσα βάση δεδομένων ήταν κατεστραμμένη. Παρακαλούμε προσπαθήστε ξανά.</string>
   <string name="sync_overwrite_error">Η παρούσα συλλογή σας δεν ήταν δυνατό να αντικατασταθεί με το αρχείο που λάβατε.</string>
   <string name="sync_connection_error">Connection timed out. Either your internet connection is experiencing problems, or you have a very large file in your media folder.</string>
-  <string name="sync_error_409">Only one client can access AnkiWeb at a time. If a previous sync failed, please try again in a few minutes.</string>
+  <string name="sync_error_409">Only one client can access KanjiWeb at a time. If a previous sync failed, please try again in a few minutes.</string>
   <string name="sync_write_access_error">Δεν ήταν δυνατή η αποθήκευση του αρχείου που λάβατε στην κάρτα sd. Είτε η κάρτα sd σας είναι φορτωμένη μόνο για ανάγνωση, ή δεν υπάρχει αρκετός χώρος.</string>
   <string name="sync_deletions_message">Συγχρονισμός διαγραφών...</string>
   <string name="sync_small_objects_message">Συγχρονισμός μικρών στοιχείων...</string>

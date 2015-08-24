@@ -47,7 +47,7 @@
   <string name="backup_del_collection">Hapus koleksi dan buat yang baru</string>
   <string name="backup_del_collection_question">Apakah Anda benar-benar ingin menghapus koleksi dan membuat yang baru? Ini akan menghapus semua kemajuan belajar Anda dan menghapus semua kartu!</string>
   <string name="backup_full_sync_from_server">Sinkronisasi penuh dari server</string>
-  <string name="backup_full_sync_from_server_question">Overwrite your collection with the one from AnkiWeb? This will drop all your learning progress and added information since your last sync.</string>
+  <string name="backup_full_sync_from_server_question">Overwrite your collection with the one from KanjiWeb? This will drop all your learning progress and added information since your last sync.</string>
   <string name="error_handling_title">Penanganan kesalahan</string>
   <string name="error_handling_options">Pilihan</string>
   <string name="backup_retry_opening">Coba lagi pembukaan</string>

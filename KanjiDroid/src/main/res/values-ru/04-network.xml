@@ -49,15 +49,15 @@
   <string name="terms_and_conditions"><a href="https://openeng.website/account/terms">Условия</a></string>
   <string name="menu_get_shared_decks">Получить общедоступные колоды</string>
   <string name="connection_error_message">Ошибка сети.</string>
-  <string name="not_logged_in_title">Залогиниться в AnkiWeb</string>
-  <string name="login_create_account_message">Нужно залогиниться в AnkiWeb аккаунт. Далее можно создать аккаунт.</string>
+  <string name="not_logged_in_title">Залогиниться в KanjiWeb</string>
+  <string name="login_create_account_message">Нужно залогиниться в KanjiWeb аккаунт. Далее можно создать аккаунт.</string>
   <string name="no_email_client">Не клиент электронной почты</string>
   <string name="username">Имейл</string>
   <string name="username_repeat">Повторите имейл</string>
   <string name="password">Пароль</string>
   <string name="password_repeat">Повторите пароль</string>
   <string name="log_in">Войти</string>
-  <string name="sign_up_description">Нет AnkiWeb аккаунта? Это бесплатно!</string>
+  <string name="sign_up_description">Нет KanjiWeb аккаунта? Это бесплатно!</string>
   <string name="sign_up">Зарегистрироваться</string>
   <string name="sign_up_terms">Нажатием , <i>Зарегистрироваться</i>, вы подтверждаете, что вы прочитали и согласны с нашими <a href="https://openeng.website/account/terms"> условиями использования</a>.</string>
   <string name="logged_as">Используется логин</string>
@@ -68,7 +68,7 @@
   <string name="downloaddeck_search">Поиск</string>
   <string name="preferences_title">Настройки</string>
   <string name="deckpreferences_title">Опции для XXX</string>
-  <string name="sync_conflict_message">Ваши колоды тут и на AnkiWeb-онлайн отличаются таким образом, что они не могут быть объединены вместе, так что нужно перезаписать одну колоду другой полностью.\n\nВы хотите выгрузить колоду отсюда или скачать колоду с AnkiWeb сюда?</string>
+  <string name="sync_conflict_message">Ваши колоды тут и на KanjiWeb-онлайн отличаются таким образом, что они не могут быть объединены вместе, так что нужно перезаписать одну колоду другой полностью.\n\nВы хотите выгрузить колоду отсюда или скачать колоду с KanjiWeb сюда?</string>
   <string name="sync_conflict_local">Выгрузка</string>
   <string name="sync_conflict_remote">Загрузить</string>
   <string name="sync_conflict_remote_confirm">Вы действительно хотите скачать коллекцию с сервера? Имейте в виду, что это приведет к перезаписи локальной коллекции.</string>
@@ -93,7 +93,7 @@
   <string name="sync_remote_db_error">Скачанная база данных была повреждена. Пожалуйста, попробуйте еще раз.</string>
   <string name="sync_overwrite_error">Текущая коллекция не может быть перезаписана загруженным файлом.</string>
   <string name="sync_connection_error">Превышено время ожидания подключения. Либо у вас проблемы с интернет соединением, либо в медиа-папке есть очень большой файл.</string>
-  <string name="sync_error_409">К AnkiWeb может подключаться только один клиент одновременно.  Если недавняя синхронизация была неудачной, подождите, пожалуйста, несколько минут.</string>
+  <string name="sync_error_409">К KanjiWeb может подключаться только один клиент одновременно.  Если недавняя синхронизация была неудачной, подождите, пожалуйста, несколько минут.</string>
   <string name="sync_write_access_error">Загруженный файл не может быть сохранен на SD карту. Либо ваш SD карта установлена в режиме только для чтения или не хватает места.</string>
   <string name="sync_deletions_message">Синхронизация удаления...</string>
   <string name="sync_small_objects_message">Синхронизация небольших объектов...</string>

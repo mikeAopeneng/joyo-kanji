@@ -1316,7 +1316,7 @@ public class DeckPicker extends NavigationDrawerActivity implements
                         if (getCol().isEmpty()) {
                             // don't prompt user to resolve sync conflict if local collection empty
                             sync("download");
-                            // TODO: Also do reverse check to see if AnkiWeb collection is empty if Anki Desktop
+                            // TODO: Also do reverse check to see if KanjiWeb collection is empty if Anki Desktop
                             // implements it
                         } else {
                             // If can't be resolved then automatically then show conflict resolution dialog

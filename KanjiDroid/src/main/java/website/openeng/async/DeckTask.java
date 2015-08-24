@@ -39,7 +39,7 @@ import website.openeng.libkanji.Sched;
 import website.openeng.libkanji.Stats;
 import website.openeng.libkanji.Storage;
 import website.openeng.libkanji.Utils;
-import website.openeng.libkanji.importer.Anki2Importer;
+import website.openeng.libkanji.importer.KanjiImporter;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -774,7 +774,7 @@ public class DeckTask extends BaseAsyncTask<DeckTask.TaskData, DeckTask.TaskData
 
         int addedCount = -1;
         try {
-            Anki2Importer imp = new Anki2Importer(col, path, pc);
+            KanjiImporter imp = new KanjiImporter(col, path, pc);
             AnkiDb ankiDB = col.getDb();
             ankiDB.getDatabase().beginTransaction();
             try {

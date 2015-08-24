@@ -49,17 +49,17 @@
   <string name="terms_and_conditions"><a href="https://openeng.website/account/terms">이용 약관</a></string>
   <string name="menu_get_shared_decks">공유된 카드 묶음 얻기</string>
   <string name="connection_error_message">네트워크 오류가 발생했습니다.</string>
-  <string name="not_logged_in_title">AnkiWeb에 로그인</string>
-  <string name="login_create_account_message">AnkiWeb 계정으로 로그인 해야 합니다. 다음 단계에서 만들 수 있습니다.</string>
+  <string name="not_logged_in_title">KanjiWeb에 로그인</string>
+  <string name="login_create_account_message">KanjiWeb 계정으로 로그인 해야 합니다. 다음 단계에서 만들 수 있습니다.</string>
   <string name="no_email_client">사용 가능한 이메일 클라이언트가 없습니다.</string>
   <string name="username">이메일 주소</string>
   <string name="username_repeat">이메일 주소 다시 입력</string>
   <string name="password">암호</string>
   <string name="password_repeat">암호 다시 입력</string>
   <string name="log_in">로그인</string>
-  <string name="sign_up_description">AnkiWeb 계정이 없으십니까? 무료입니다!</string>
+  <string name="sign_up_description">KanjiWeb 계정이 없으십니까? 무료입니다!</string>
   <string name="sign_up">가입</string>
-  <string name="sign_up_terms"><i>가입</i>을 선택하면 AnkiWeb의 <a href="https://openeng.website/account/terms">이용 약관</a>을 읽고 동의한 것으로 확인합니다.</string>
+  <string name="sign_up_terms"><i>가입</i>을 선택하면 KanjiWeb의 <a href="https://openeng.website/account/terms">이용 약관</a>을 읽고 동의한 것으로 확인합니다.</string>
   <string name="logged_as">다음 사용자로 로그인 됨</string>
   <string name="log_out">로그아웃</string>
   <string name="alert_logging_message">로그인하는 중, 잠시 기다려 주십시오...</string>
@@ -68,7 +68,7 @@
   <string name="downloaddeck_search">검색</string>
   <string name="preferences_title">환경 설정</string>
   <string name="deckpreferences_title">XXX 옵션</string>
-  <string name="sync_conflict_message">컬렉션을 합칠 수 없기 때문에 이 컬렉션을 업로드하거나 AnkiWeb에서 다운로드를 해야만 합니다. 어느 한쪽의 콜렉션은 덮어쓰게 됩니다.</string>
+  <string name="sync_conflict_message">컬렉션을 합칠 수 없기 때문에 이 컬렉션을 업로드하거나 KanjiWeb에서 다운로드를 해야만 합니다. 어느 한쪽의 콜렉션은 덮어쓰게 됩니다.</string>
   <string name="sync_conflict_local">업로드</string>
   <string name="sync_conflict_remote">다운로드</string>
   <string name="sync_conflict_remote_confirm">장치에 저장된 컬렉션을 덮어쓸까요?</string>
@@ -93,7 +93,7 @@
   <string name="sync_remote_db_error">다운로드한 데이터베이스 파일이 손상되었습니다. 다시 시도 하십시오.</string>
   <string name="sync_overwrite_error">다운로드한 파일을 현재 컬렉션 파일에 덮어쓸 수 없습니다.</string>
   <string name="sync_connection_error">연결 시간이 초과되었습니다. 인터넷 연결 상태에 문제가 있거나 미디어 폴더에 매우 큰 용량의 파일이 있는 것 같습니다.</string>
-  <string name="sync_error_409">한번에 단 하나의 클라이언트만 AnkiWeb에 접속할 수 있습니다. 만약 이전의 동기화가 실패했다면 몇 분 뒤에 다시 시도하세요.</string>
+  <string name="sync_error_409">한번에 단 하나의 클라이언트만 KanjiWeb에 접속할 수 있습니다. 만약 이전의 동기화가 실패했다면 몇 분 뒤에 다시 시도하세요.</string>
   <string name="sync_write_access_error">다운로드한 파일을 sd 카드에 저장할 수 없습니다. 읽기 전용 sd 카드이거나 저장공간이 부족합니다.</string>
   <string name="sync_deletions_message">삭제 내용 동기화...</string>
   <string name="sync_small_objects_message">오브젝트 동기화...</string>

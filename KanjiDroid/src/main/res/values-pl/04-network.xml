@@ -49,15 +49,15 @@
   <string name="terms_and_conditions"><a href="https://openeng.website/account/terms">Warunki użytkowania</a></string>
   <string name="menu_get_shared_decks">Pobierz udostępniane talie</string>
   <string name="connection_error_message">Wystąpił błąd sieciowy.</string>
-  <string name="not_logged_in_title">Zaloguj się do AnkiWeb</string>
-  <string name="login_create_account_message">Musisz zalogować się na konto AnkiWeb. Możesz je utworzyć w następnym kroku.</string>
+  <string name="not_logged_in_title">Zaloguj się do KanjiWeb</string>
+  <string name="login_create_account_message">Musisz zalogować się na konto KanjiWeb. Możesz je utworzyć w następnym kroku.</string>
   <string name="no_email_client">Brak dostępnego klienta poczty</string>
   <string name="username">Adres e-mail</string>
   <string name="username_repeat">Powtórz adres e-mail</string>
   <string name="password">Hasło</string>
   <string name="password_repeat">Powtórz hasło</string>
   <string name="log_in">Zaloguj się</string>
-  <string name="sign_up_description">Nie masz konta AnkiWeb? Jest darmowe!</string>
+  <string name="sign_up_description">Nie masz konta KanjiWeb? Jest darmowe!</string>
   <string name="sign_up">Zarejestruj się</string>
   <string name="sign_up_terms">Wybierając <i>Zarejestruj się</i>, potwierdzasz, że przeczytałeś i zgadzasz się na nasze <a href="https://openeng.website/account/terms">warunki użytkowania</a>.</string>
   <string name="logged_as">Zalogowany jako</string>
@@ -68,7 +68,7 @@
   <string name="downloaddeck_search">Szukaj</string>
   <string name="preferences_title">Ustawienia</string>
   <string name="deckpreferences_title">Opcje dla XXX</string>
-  <string name="sync_conflict_message">Twoje talie tutaj oraz na AnkiWeb różnią się do tego stopnia, że nie mogą być połączone. Konieczne jest zatem nadpisanie talii w jednym miejscu taliami skądinąd.\n\nCzy chciałbyś przesłać talie stąd czy pobrać talie z AnkiWeb?</string>
+  <string name="sync_conflict_message">Twoje talie tutaj oraz na KanjiWeb różnią się do tego stopnia, że nie mogą być połączone. Konieczne jest zatem nadpisanie talii w jednym miejscu taliami skądinąd.\n\nCzy chciałbyś przesłać talie stąd czy pobrać talie z KanjiWeb?</string>
   <string name="sync_conflict_local">Wysyłanie</string>
   <string name="sync_conflict_remote">Pobieranie</string>
   <string name="sync_conflict_remote_confirm">Czy chcesz pobrać kolekcję z serwera? Należy pamiętać, że zastąpi ona lokalną kolekcję.</string>
@@ -93,7 +93,7 @@
   <string name="sync_remote_db_error">Pobrana baza danych jest uszkodzona. Spróbuj ponownie.</string>
   <string name="sync_overwrite_error">Sciągany plik nie może nadpisać twojej obecnej kolekcji.</string>
   <string name="sync_connection_error">Upłynął limit czasu połączenia. Albo połączenie z internetem napotyka problemy, albo masz bardzo duży plik w folderze media.</string>
-  <string name="sync_error_409">Tylko jeden klient na raz może uzyskać dostęp do AnkiWeb. Jeśli poprzednia synchronizacja nie powiodła się, spróbuj ponownie za kilka minut.</string>
+  <string name="sync_error_409">Tylko jeden klient na raz może uzyskać dostęp do KanjiWeb. Jeśli poprzednia synchronizacja nie powiodła się, spróbuj ponownie za kilka minut.</string>
   <string name="sync_write_access_error">Nie udało się zapisać pobranego pliku na karcie SD. Karta SD jest zamontowana w trybie tylko do odczytu lub nie ma na niej miejsca.</string>
   <string name="sync_deletions_message">Synchronizacja usunięć...</string>
   <string name="sync_small_objects_message">Synchronizacja małych obiektów...</string>

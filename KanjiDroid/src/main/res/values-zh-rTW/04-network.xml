@@ -49,15 +49,15 @@
   <string name="terms_and_conditions"><a href="https://openeng.website/account/terms">Terms and conditions</a></string>
   <string name="menu_get_shared_decks">取得共用的牌組</string>
   <string name="connection_error_message">網路出了點問題。</string>
-  <string name="not_logged_in_title">Log in to AnkiWeb</string>
-  <string name="login_create_account_message">You must log in to an AnkiWeb account. You can create one in the next step.</string>
+  <string name="not_logged_in_title">Log in to KanjiWeb</string>
+  <string name="login_create_account_message">You must log in to an KanjiWeb account. You can create one in the next step.</string>
   <string name="no_email_client">No email client available</string>
   <string name="username">電子郵件地址</string>
   <string name="username_repeat">再次輸入電子郵件地址</string>
   <string name="password">密碼</string>
   <string name="password_repeat">再次輸入密碼</string>
   <string name="log_in">登入</string>
-  <string name="sign_up_description">沒有 AnkiWeb 帳戶嗎？它是免費的！</string>
+  <string name="sign_up_description">沒有 KanjiWeb 帳戶嗎？它是免費的！</string>
   <string name="sign_up">註冊</string>
   <string name="sign_up_terms">By touching <i>Sign up</i>, you confirm that you have read and agree to our <a href="https://openeng.website/account/terms">terms of use</a>.</string>
   <string name="logged_as">登入為</string>
@@ -68,7 +68,7 @@
   <string name="downloaddeck_search">搜尋</string>
   <string name="preferences_title">偏好設定</string>
   <string name="deckpreferences_title">Options for XXX</string>
-  <string name="sync_conflict_message">您本地的牌組與 AnkiWeb 牌組之間的差異無法合併，因此需要以某一方的牌組來覆寫另一方的牌組。\n\n您想要上傳本地的牌組，或是從KanjiDroid 下載牌組呢？</string>
+  <string name="sync_conflict_message">您本地的牌組與 KanjiWeb 牌組之間的差異無法合併，因此需要以某一方的牌組來覆寫另一方的牌組。\n\n您想要上傳本地的牌組，或是從KanjiDroid 下載牌組呢？</string>
   <string name="sync_conflict_local">上傳</string>
   <string name="sync_conflict_remote">下載</string>
   <string name="sync_conflict_remote_confirm">你真的想要下載伺服器上的收藏嗎？請注意這將覆寫您本地的收藏。</string>
@@ -93,7 +93,7 @@
   <string name="sync_remote_db_error">已下載的資料庫已損壞。請再試一次。</string>
   <string name="sync_overwrite_error">所下載的檔案無法覆蓋您當前的收藏。</string>
   <string name="sync_connection_error">Connection timed out. Either your internet connection is experiencing problems, or you have a very large file in your media folder.</string>
-  <string name="sync_error_409">Only one client can access AnkiWeb at a time. If a previous sync failed, please try again in a few minutes.</string>
+  <string name="sync_error_409">Only one client can access KanjiWeb at a time. If a previous sync failed, please try again in a few minutes.</string>
   <string name="sync_write_access_error">下載的檔無法保存到 SD 卡。你的 SD 卡設定為唯讀，或者沒有足夠的空間。</string>
   <string name="sync_deletions_message">同步刪除...</string>
   <string name="sync_small_objects_message">同步小物件...</string>

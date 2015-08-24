@@ -47,7 +47,7 @@
   <string name="backup_del_collection">Удаление коллекции и создание новой</string>
   <string name="backup_del_collection_question">Вы действительно хотите удалить коллекцию и создать новую? Это удалит всю информацию о прогрессе обучения и все карты!</string>
   <string name="backup_full_sync_from_server">Полная синхронизация с сервера</string>
-  <string name="backup_full_sync_from_server_question">Вы действительно хотите переписать Вашу коллекцию коллекцией, которая будет получена из AnkiWeb? Это может стереть весь ваш учебный прогресс и добавленную информацию с момента последней синхронизации!</string>
+  <string name="backup_full_sync_from_server_question">Вы действительно хотите переписать Вашу коллекцию коллекцией, которая будет получена из KanjiWeb? Это может стереть весь ваш учебный прогресс и добавленную информацию с момента последней синхронизации!</string>
   <string name="error_handling_title">Обработка ошибок</string>
   <string name="error_handling_options">Параметры</string>
   <string name="backup_retry_opening">Повторить открытие</string>

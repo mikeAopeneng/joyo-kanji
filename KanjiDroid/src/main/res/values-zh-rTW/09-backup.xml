@@ -47,7 +47,7 @@
   <string name="backup_del_collection">刪除收藏，並建立新的收藏</string>
   <string name="backup_del_collection_question">是否真的要刪除收藏，並建立新的收藏？這會刪除所有的學習進度以及所有的卡片!</string>
   <string name="backup_full_sync_from_server">從伺服器完整同步</string>
-  <string name="backup_full_sync_from_server_question">你確定要用 AnkiWeb 上的收藏來覆蓋本地的收藏嗎？這會把從上次同步以來所有的學習進度以及新增的資料都刪掉!</string>
+  <string name="backup_full_sync_from_server_question">你確定要用 KanjiWeb 上的收藏來覆蓋本地的收藏嗎？這會把從上次同步以來所有的學習進度以及新增的資料都刪掉!</string>
   <string name="error_handling_title">錯誤處理</string>
   <string name="error_handling_options">選項</string>
   <string name="backup_retry_opening">重試開啟</string>

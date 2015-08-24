@@ -100,7 +100,7 @@
   <string name="tts_summ">Lê pergunta e resposta se nenhum arquivo de som estiver incluído</string>
   <string name="sync_fetch_missing_media">Busca multimédia durante a sincronização</string>
   <string name="sync_fetch_missing_media_summ">Busca automaticamente de multimédia em falta durante a sincronização.</string>
-  <string name="sync_account">Conta AnkiWeb</string>
+  <string name="sync_account">Conta KanjiWeb</string>
   <string name="sync_account_summ_logged_out">Sem sessão iniciada</string>
   <string name="sync_account_summ_logged_in">%s</string>
   <string name="automatic_sync_choice">Automatic synchronization</string>

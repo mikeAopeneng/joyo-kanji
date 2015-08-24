@@ -50,7 +50,7 @@ import java.util.zip.ZipFile;
 
 import timber.log.Timber;
 
-public class Anki2Importer {
+public class KanjiImporter {
 
     Collection mCol;
     ZipFile mZip;
@@ -80,7 +80,7 @@ public class Anki2Importer {
     private static final String CHECKMARK = "\u2714";
 
 
-    public Anki2Importer(Collection col, String file, DeckTask.ProgressCallback progressCallback) throws IOException {
+    public KanjiImporter(Collection col, String file, DeckTask.ProgressCallback progressCallback) throws IOException {
         mCol = col;
         mZip = new ZipFile(new File(file), ZipFile.OPEN_READ);
         mTotal = 0;
@@ -655,7 +655,7 @@ public class Anki2Importer {
 
 
     /**
-     * Return the contents of the given input stream, limited to Anki2Importer.MEDIAPICKLIMIT bytes This is only used
+     * Return the contents of the given input stream, limited to KanjiImporter.MEDIAPICKLIMIT bytes This is only used
      * for comparison of media files with the limited resources of mobile devices
      */
     byte[] _mediaPick(BufferedInputStream is) {
@@ -700,7 +700,7 @@ public class Anki2Importer {
     /**
      * Data for FNAME in src collection.
      *
-     * @return A string containing the contents of fname, limited to Anki2Importer.MEDIAPICKLIMIT bytes
+     * @return A string containing the contents of fname, limited to KanjiImporter.MEDIAPICKLIMIT bytes
      */
     private BufferedInputStream _srcMediaData(String fname) {
         if (nameToNum.containsKey(fname)) {
@@ -717,7 +717,7 @@ public class Anki2Importer {
     /**
      * Data for FNAME in src collection.
      *
-     * @return A string containing the contents of fname, limited to Anki2Importer.MEDIAPICKLIMIT bytes
+     * @return A string containing the contents of fname, limited to KanjiImporter.MEDIAPICKLIMIT bytes
      */
     private BufferedInputStream _dstMediaData(String fname) {
         return _mediaData(fname, mDst.getMedia().dir());
@@ -731,7 +731,7 @@ public class Anki2Importer {
             mDst.getMedia().markFileAdd(fname);
         } catch (IOException e) {
             // the user likely used subdirectories
-            Timber.e(e, "Anki2Importer._writeDstMedia: error copying file to %s, ignoring and continuing.", fname);
+            Timber.e(e, "KanjiImporter._writeDstMedia: error copying file to %s, ignoring and continuing.", fname);
         }
     }
 

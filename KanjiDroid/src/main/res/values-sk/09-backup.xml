@@ -47,7 +47,7 @@
   <string name="backup_del_collection">Odstrániť zbierku a vytvoriť novú</string>
   <string name="backup_del_collection_question">Skutočne chcete odstrániť zbierku a vytvoriť novú? Týmto zrušíte celé učenie a vymažete všetky karty!</string>
   <string name="backup_full_sync_from_server">Úplná synchronizácia so serverom</string>
-  <string name="backup_full_sync_from_server_question">Skutočne chcete prepísať vašu zbierku tou z AnkiWeb? Prídete tak o všetky zmeny a informácie pridané od poslednej synchronizácie!</string>
+  <string name="backup_full_sync_from_server_question">Skutočne chcete prepísať vašu zbierku tou z KanjiWeb? Prídete tak o všetky zmeny a informácie pridané od poslednej synchronizácie!</string>
   <string name="error_handling_title">Chyba pri spracovaní</string>
   <string name="error_handling_options">Možnosti</string>
   <string name="backup_retry_opening">Znova skúsiť otvoriť</string>

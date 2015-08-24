@@ -100,7 +100,7 @@
   <string name="tts_summ">Читать вопрос/ответ, если нет прикреплённого звукового файла</string>
   <string name="sync_fetch_missing_media">Загружать медиа</string>
   <string name="sync_fetch_missing_media_summ">Автоматически загружать отсутствующие медиа-файлы при синхронизации.</string>
-  <string name="sync_account">AnkiWeb аккаунт</string>
+  <string name="sync_account">KanjiWeb аккаунт</string>
   <string name="sync_account_summ_logged_out">Не авторизованы</string>
   <string name="sync_account_summ_logged_in">%s</string>
   <string name="automatic_sync_choice">Automatic synchronization</string>

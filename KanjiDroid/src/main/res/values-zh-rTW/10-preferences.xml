@@ -100,7 +100,7 @@
   <string name="tts_summ">如果沒有內含音效檔，則大聲讀出問題和答案</string>
   <string name="sync_fetch_missing_media">同步時讀取媒體檔案</string>
   <string name="sync_fetch_missing_media_summ">同步時自動取得缺少的媒體檔案</string>
-  <string name="sync_account">AnkiWeb 帳號</string>
+  <string name="sync_account">KanjiWeb 帳號</string>
   <string name="sync_account_summ_logged_out">未登入</string>
   <string name="sync_account_summ_logged_in">%s</string>
   <string name="automatic_sync_choice">Automatic synchronization</string>

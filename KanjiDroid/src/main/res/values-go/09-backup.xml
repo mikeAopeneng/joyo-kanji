@@ -47,7 +47,7 @@
   <string name="backup_del_collection">Usnim galisa jah skapei niuja</string>
   <string name="backup_del_collection_question">Usnim galisa jah skapei niuja? Þata fraliusiþ laiseinaframgaht þeina jah usnimiþ allos kartos!</string>
   <string name="backup_full_sync_from_server">Full sync from server</string>
-  <string name="backup_full_sync_from_server_question">Overwrite your collection with the one from AnkiWeb? This will drop all your learning progress and added information since your last sync.</string>
+  <string name="backup_full_sync_from_server_question">Overwrite your collection with the one from KanjiWeb? This will drop all your learning progress and added information since your last sync.</string>
   <string name="error_handling_title">Error handling</string>
   <string name="error_handling_options">Waleinos</string>
   <string name="backup_retry_opening">Aftragakiusei uslukan</string>

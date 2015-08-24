@@ -47,7 +47,7 @@
   <string name="backup_del_collection">Törölje a gyűjteményt, és hozzon létre egy újat</string>
   <string name="backup_del_collection_question">Valóban törölni szeretnéd a gyűjteményt és egy újat szeretnél létrehozni? Ezzel elveszted az összes kártyádat és tanulási információdat!</string>
   <string name="backup_full_sync_from_server">Teljes szinkronizáció a szerverről</string>
-  <string name="backup_full_sync_from_server_question">Valóban felül szeretnéd írni a gyűjteményedet az AnkiWeben levővel? Ezzel elvesztesz az utolsó szinkronizálás óta minden tanulási információt és módosítást!</string>
+  <string name="backup_full_sync_from_server_question">Valóban felül szeretnéd írni a gyűjteményedet az KanjiWeben levővel? Ezzel elvesztesz az utolsó szinkronizálás óta minden tanulási információt és módosítást!</string>
   <string name="error_handling_title">Hibakezelés</string>
   <string name="error_handling_options">Beállítások</string>
   <string name="backup_retry_opening">Megnyitás újra</string>
