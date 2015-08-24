@@ -87,7 +87,7 @@ public class Statistics extends NavigationDrawerActivity implements
         sIsSubtitle = true;
         super.onCreate(savedInstanceState);
 
-        mMainLayout = getLayoutInflater().inflate(R.layout.activity_anki_stats, null);
+        mMainLayout = getLayoutInflater().inflate(R.layout.activity_kanji_stats, null);
         initNavigationDrawer(mMainLayout);
         setContentView(mMainLayout);
         startLoadingCollection();
@@ -179,7 +179,7 @@ public class Statistics extends NavigationDrawerActivity implements
         mMenu = menu;
         //System.err.println("in onCreateOptionsMenu");
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.anki_stats, mMenu);
+        inflater.inflate(R.menu.kanji_stats, mMenu);
         return true;
     }
 
@@ -440,7 +440,7 @@ public class Statistics extends NavigationDrawerActivity implements
             mSectionNumber = bundle.getInt(ARG_SECTION_NUMBER);
             //int sectionNumber = 0;
             //System.err.println("sectionNumber: " + mSectionNumber);
-            View rootView = inflater.inflate(R.layout.fragment_anki_stats, container, false);
+            View rootView = inflater.inflate(R.layout.fragment_kanji_stats, container, false);
             mChart = (ChartView) rootView.findViewById(R.id.image_view_chart);
             if(mChart == null)
                 Timber.d("mChart null!!!");
@@ -604,7 +604,7 @@ public class Statistics extends NavigationDrawerActivity implements
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             setHasOptionsMenu(true);
-            View rootView = inflater.inflate(R.layout.fragment_anki_stats_overview, container, false);
+            View rootView = inflater.inflate(R.layout.fragment_kanji_stats_overview, container, false);
             KanjiStatsTaskHandler handler = (((Statistics)getActivity()).getTaskHandler());
             // Workaround for issue 2406 -- crash when resuming after app is purged from RAM
             // TODO: Implementing loader for Collection in Fragment itself would be a better solution.

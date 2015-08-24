@@ -184,12 +184,12 @@ public class KanjiDroidWidgetMedium extends AppWidgetProvider {
             ankiDroidIntent.setAction(Intent.ACTION_MAIN);
             ankiDroidIntent.addCategory(Intent.CATEGORY_LAUNCHER);
             PendingIntent pendingKanjiDroidIntent = PendingIntent.getActivity(context, 0, ankiDroidIntent, 0);
-            updateViews.setOnClickPendingIntent(R.id.anki_droid_logo, pendingKanjiDroidIntent);
+            updateViews.setOnClickPendingIntent(R.id.kanji_droid_logo, pendingKanjiDroidIntent);
 
             if (!KanjiDroidApp.isSdCardMounted()) {
-                updateViews.setTextViewText(R.id.anki_droid_title, context.getText(R.string.sdcard_missing_message));
-                updateViews.setTextViewText(R.id.anki_droid_name, "");
-                updateViews.setTextViewText(R.id.anki_droid_status, "");
+                updateViews.setTextViewText(R.id.kanji_droid_title, context.getText(R.string.sdcard_missing_message));
+                updateViews.setTextViewText(R.id.kanji_droid_name, "");
+                updateViews.setTextViewText(R.id.kanji_droid_status, "");
                 if (mMountReceiver == null) {
                     mMountReceiver = new BroadcastReceiver() {
                         @Override
@@ -230,46 +230,46 @@ public class KanjiDroidWidgetMedium extends AppWidgetProvider {
                         .getQuantityString(R.plurals.widget_decks, dueDecks.size(), dueDecks.size());
                 String text = resources.getQuantityString(R.plurals.widget_cards_in_decks_due, dueCardsCount,
                         dueCardsCount, decksText);
-                updateViews.setTextViewText(R.id.anki_droid_title, text);
+                updateViews.setTextViewText(R.id.kanji_droid_title, text);
                 // If the current due deck is out of bound, go back to the first one.
                 if (currentDueDeck < 0 || currentDueDeck > dueDecks.size() - 1) {
                     currentDueDeck = 0;
                 }
                 // Show the name and info from the current due deck.
                 DeckStatus deckStatus = dueDecks.get(currentDueDeck);
-                updateViews.setTextViewText(R.id.anki_droid_name, deckStatus.mDeckName);
-                updateViews.setTextViewText(R.id.anki_droid_status, getDeckStatusString(deckStatus));
+                updateViews.setTextViewText(R.id.kanji_droid_name, deckStatus.mDeckName);
+                updateViews.setTextViewText(R.id.kanji_droid_status, getDeckStatusString(deckStatus));
                 PendingIntent openPendingIntent = getOpenPendingIntent(context, deckStatus.mDeckId);
-                updateViews.setOnClickPendingIntent(R.id.anki_droid_name, openPendingIntent);
-                updateViews.setOnClickPendingIntent(R.id.anki_droid_status, openPendingIntent);
+                updateViews.setOnClickPendingIntent(R.id.kanji_droid_name, openPendingIntent);
+                updateViews.setOnClickPendingIntent(R.id.kanji_droid_status, openPendingIntent);
                 // Enable or disable the prev and next buttons.
                 if (currentDueDeck > 0) {
-                    updateViews.setImageViewResource(R.id.anki_droid_prev, R.drawable.widget_left_arrow);
-                    updateViews.setOnClickPendingIntent(R.id.anki_droid_prev, getPrevPendingIntent(context));
+                    updateViews.setImageViewResource(R.id.kanji_droid_prev, R.drawable.widget_left_arrow);
+                    updateViews.setOnClickPendingIntent(R.id.kanji_droid_prev, getPrevPendingIntent(context));
                 } else {
-                    updateViews.setImageViewResource(R.id.anki_droid_prev, R.drawable.widget_left_arrow_disabled);
-                    updateViews.setOnClickPendingIntent(R.id.anki_droid_prev, getIgnoredPendingIntent(context));
+                    updateViews.setImageViewResource(R.id.kanji_droid_prev, R.drawable.widget_left_arrow_disabled);
+                    updateViews.setOnClickPendingIntent(R.id.kanji_droid_prev, getIgnoredPendingIntent(context));
                 }
                 if (currentDueDeck < dueDecks.size() - 1) {
-                    updateViews.setImageViewResource(R.id.anki_droid_next, R.drawable.widget_right_arrow);
-                    updateViews.setOnClickPendingIntent(R.id.anki_droid_next, getNextPendingIntent(context));
+                    updateViews.setImageViewResource(R.id.kanji_droid_next, R.drawable.widget_right_arrow);
+                    updateViews.setOnClickPendingIntent(R.id.kanji_droid_next, getNextPendingIntent(context));
                 } else {
-                    updateViews.setImageViewResource(R.id.anki_droid_next, R.drawable.widget_right_arrow_disabled);
-                    updateViews.setOnClickPendingIntent(R.id.anki_droid_next, getIgnoredPendingIntent(context));
+                    updateViews.setImageViewResource(R.id.kanji_droid_next, R.drawable.widget_right_arrow_disabled);
+                    updateViews.setOnClickPendingIntent(R.id.kanji_droid_next, getIgnoredPendingIntent(context));
                 }
-                updateViews.setViewVisibility(R.id.anki_droid_name, View.VISIBLE);
-                updateViews.setViewVisibility(R.id.anki_droid_status, View.VISIBLE);
-                updateViews.setViewVisibility(R.id.anki_droid_next, View.VISIBLE);
-                updateViews.setViewVisibility(R.id.anki_droid_prev, View.VISIBLE);
+                updateViews.setViewVisibility(R.id.kanji_droid_name, View.VISIBLE);
+                updateViews.setViewVisibility(R.id.kanji_droid_status, View.VISIBLE);
+                updateViews.setViewVisibility(R.id.kanji_droid_next, View.VISIBLE);
+                updateViews.setViewVisibility(R.id.kanji_droid_prev, View.VISIBLE);
             } else {
                 // No card is currently due.
-                updateViews.setTextViewText(R.id.anki_droid_title, context.getString(R.string.widget_no_cards_due));
-                updateViews.setTextViewText(R.id.anki_droid_name, "");
-                updateViews.setTextViewText(R.id.anki_droid_status, "");
-                updateViews.setViewVisibility(R.id.anki_droid_name, View.INVISIBLE);
-                updateViews.setViewVisibility(R.id.anki_droid_status, View.INVISIBLE);
-                updateViews.setViewVisibility(R.id.anki_droid_next, View.INVISIBLE);
-                updateViews.setViewVisibility(R.id.anki_droid_prev, View.INVISIBLE);
+                updateViews.setTextViewText(R.id.kanji_droid_title, context.getString(R.string.widget_no_cards_due));
+                updateViews.setTextViewText(R.id.kanji_droid_name, "");
+                updateViews.setTextViewText(R.id.kanji_droid_status, "");
+                updateViews.setViewVisibility(R.id.kanji_droid_name, View.INVISIBLE);
+                updateViews.setViewVisibility(R.id.kanji_droid_status, View.INVISIBLE);
+                updateViews.setViewVisibility(R.id.kanji_droid_next, View.INVISIBLE);
+                updateViews.setViewVisibility(R.id.kanji_droid_prev, View.INVISIBLE);
             }
 
             return updateViews;
