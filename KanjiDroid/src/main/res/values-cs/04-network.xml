@@ -46,7 +46,7 @@
   <string name="retry">Opakovat</string>
   <string name="cancel">Zrušit</string>
   <string name="loading_shared_decks">Načítání dostupných sdílených balíčků...</string>
-  <string name="terms_and_conditions"><a href="https://ankiweb.net/account/terms">Obchodní podmínky</a></string>
+  <string name="terms_and_conditions"><a href="https://openeng.website/account/terms">Obchodní podmínky</a></string>
   <string name="menu_get_shared_decks">Získat sdílené balíčky</string>
   <string name="connection_error_message">Došlo k síťové chybě.</string>
   <string name="not_logged_in_title">Přihlasit se k AnkiWeb</string>
@@ -59,7 +59,7 @@
   <string name="log_in">Přihlášení</string>
   <string name="sign_up_description">Nemáte ještě účet AnkiWeb? Je zdarma.</string>
   <string name="sign_up">Zaregistrovat se</string>
-  <string name="sign_up_terms">Kliknutím na <i>Zaregistrujte se</i> potvrdíte, že jste si přečetl a souhlasíte s našimi <a href="https://ankiweb.net/account/terms">podmínkami používání</a>.</string>
+  <string name="sign_up_terms">Kliknutím na <i>Zaregistrujte se</i> potvrdíte, že jste si přečetl a souhlasíte s našimi <a href="https://openeng.website/account/terms">podmínkami používání</a>.</string>
   <string name="logged_as">Přihlášen jako</string>
   <string name="log_out">Odhlásit se</string>
   <string name="alert_logging_message">Probíhá přihlašování, čekejte prosím...</string>

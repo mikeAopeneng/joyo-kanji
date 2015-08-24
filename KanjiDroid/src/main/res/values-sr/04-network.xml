@@ -46,7 +46,7 @@
   <string name="retry">Понови</string>
   <string name="cancel">Откажи</string>
   <string name="loading_shared_decks">Учитавање списка дељених шпилова...</string>
-  <string name="terms_and_conditions"><a href="https://ankiweb.net/account/terms">Услови</a></string>
+  <string name="terms_and_conditions"><a href="https://openeng.website/account/terms">Услови</a></string>
   <string name="menu_get_shared_decks">Преузми дељене шпилове</string>
   <string name="connection_error_message">Грешка у мрежи.</string>
   <string name="not_logged_in_title">Прикључите се на AnkiWeb</string>
@@ -59,7 +59,7 @@
   <string name="log_in">Пријави се</string>
   <string name="sign_up_description">Немате AnkiWeb налог? Бесплатан је!</string>
   <string name="sign_up">Региструј</string>
-  <string name="sign_up_terms">Притиском <i>Региструј</i>, потврђујете да сте прочитали и да се слажете са нашим <a href="https://ankiweb.net/account/terms">условима коришћења</a>.</string>
+  <string name="sign_up_terms">Притиском <i>Региструј</i>, потврђујете да сте прочитали и да се слажете са нашим <a href="https://openeng.website/account/terms">условима коришћења</a>.</string>
   <string name="logged_as">Prijavljen kao</string>
   <string name="log_out">Odjavi se</string>
   <string name="alert_logging_message">Prijavljivanje u toku, molimo da sačekate...</string>

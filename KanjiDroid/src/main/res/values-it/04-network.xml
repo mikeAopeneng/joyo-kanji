@@ -46,7 +46,7 @@
   <string name="retry">Riprova</string>
   <string name="cancel">Annulla</string>
   <string name="loading_shared_decks">Carico i mazzi condivisi disponibili...</string>
-  <string name="terms_and_conditions"><a href="https://ankiweb.net/account/terms">Termini e condizioni</a></string>
+  <string name="terms_and_conditions"><a href="https://openeng.website/account/terms">Termini e condizioni</a></string>
   <string name="menu_get_shared_decks">Ottieni mazzi condivisi</string>
   <string name="connection_error_message">Si è verificato un errore di rete.</string>
   <string name="not_logged_in_title">Accedi a AnkiWeb</string>
@@ -59,7 +59,7 @@
   <string name="log_in">Accedi</string>
   <string name="sign_up_description">Non hai un account AnkiWeb? È gratis!</string>
   <string name="sign_up">Registrati</string>
-  <string name="sign_up_terms">Toccando <i>Registrati</i>, confermi di avere letto e di accettare le nostre <a href="https://ankiweb.net/account/terms">condizioni d\'utilizzo</a>.</string>
+  <string name="sign_up_terms">Toccando <i>Registrati</i>, confermi di avere letto e di accettare le nostre <a href="https://openeng.website/account/terms">condizioni d\'utilizzo</a>.</string>
   <string name="logged_as">Connesso come</string>
   <string name="log_out">Esci</string>
   <string name="alert_logging_message">Accesso in corso, attendi...</string>

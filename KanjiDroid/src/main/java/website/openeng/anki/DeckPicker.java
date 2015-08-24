@@ -1300,7 +1300,7 @@ public class DeckPicker extends NavigationDrawerActivity implements
                     } else if (resultType.equals("clockOff")) {
                         long diff = (Long) result[1];
                         if (diff >= 86100) {
-                            // The difference if more than a day minus 5 minutes acceptable by ankiweb error
+                            // The difference if more than a day minus 5 minutes acceptable by kanjiweb error
                             dialogMessage = res.getString(R.string.sync_log_clocks_unsynchronized, diff,
                                     res.getString(R.string.sync_log_clocks_unsynchronized_date));
                         } else if (Math.abs((diff % 3600.0) - 1800.0) >= 1500.0) {

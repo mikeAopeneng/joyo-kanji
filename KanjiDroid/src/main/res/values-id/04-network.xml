@@ -46,7 +46,7 @@
   <string name="retry">Cuba lagi</string>
   <string name="cancel">Batal</string>
   <string name="loading_shared_decks">Memuat dek bersama yang tersedia &#8230;</string>
-  <string name="terms_and_conditions"><a href="https://ankiweb.net/account/terms">Terms and conditions</a></string>
+  <string name="terms_and_conditions"><a href="https://openeng.website/account/terms">Terms and conditions</a></string>
   <string name="menu_get_shared_decks">Get shared decks</string>
   <string name="connection_error_message">Telah terjadi ralat jaringan.</string>
   <string name="not_logged_in_title">Log in to AnkiWeb</string>
@@ -59,7 +59,7 @@
   <string name="log_in">Masuk</string>
   <string name="sign_up_description">Belum punya akun AnkiWeb? Gratis!</string>
   <string name="sign_up">Mendaftar</string>
-  <string name="sign_up_terms">By touching <i>Sign up</i>, you confirm that you have read and agree to our <a href="https://ankiweb.net/account/terms">terms of use</a>.</string>
+  <string name="sign_up_terms">By touching <i>Sign up</i>, you confirm that you have read and agree to our <a href="https://openeng.website/account/terms">terms of use</a>.</string>
   <string name="logged_as">Login sebagai</string>
   <string name="log_out">Log keluar</string>
   <string name="alert_logging_message">Login, harap tunggu &#8230;</string>

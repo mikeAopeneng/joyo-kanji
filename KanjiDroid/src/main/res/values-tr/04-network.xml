@@ -46,7 +46,7 @@
   <string name="retry">Yeniden Dene</string>
   <string name="cancel">İptâl</string>
   <string name="loading_shared_decks">Mevcut paylaşılan desteler yükleniyor...</string>
-  <string name="terms_and_conditions"><a href="https://ankiweb.net/account/terms">Kayıtlar ve Koşullar</a></string>
+  <string name="terms_and_conditions"><a href="https://openeng.website/account/terms">Kayıtlar ve Koşullar</a></string>
   <string name="menu_get_shared_decks">Paylaşılan desteler edin</string>
   <string name="connection_error_message">Bir ağ hatası meydana geldi.</string>
   <string name="not_logged_in_title">AnkiWeb\'e giriş yap</string>
@@ -59,7 +59,7 @@
   <string name="log_in">Giriş yap</string>
   <string name="sign_up_description">AnkiWeb hesabınız yok mu? Ücretsiz edinin!</string>
   <string name="sign_up">Kaydol</string>
-  <string name="sign_up_terms"><i>Kaydol</i>a basarak, <a href="https://ankiweb.net/account/terms">kullanım koşulları</a>mızı okuyup kabul ettiğinizi onaylıyorsunuz.</string>
+  <string name="sign_up_terms"><i>Kaydol</i>a basarak, <a href="https://openeng.website/account/terms">kullanım koşulları</a>mızı okuyup kabul ettiğinizi onaylıyorsunuz.</string>
   <string name="logged_as">Şu adla giriş yapıldı:</string>
   <string name="log_out">Çıkış yap</string>
   <string name="alert_logging_message">Giriş yapılıyor, lütfen bekleyin...</string>

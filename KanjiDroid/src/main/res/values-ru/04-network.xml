@@ -46,7 +46,7 @@
   <string name="retry">Повторить</string>
   <string name="cancel">Отмена</string>
   <string name="loading_shared_decks">Загрузка списка общедоступных колод.</string>
-  <string name="terms_and_conditions"><a href="https://ankiweb.net/account/terms">Условия</a></string>
+  <string name="terms_and_conditions"><a href="https://openeng.website/account/terms">Условия</a></string>
   <string name="menu_get_shared_decks">Получить общедоступные колоды</string>
   <string name="connection_error_message">Ошибка сети.</string>
   <string name="not_logged_in_title">Залогиниться в AnkiWeb</string>
@@ -59,7 +59,7 @@
   <string name="log_in">Войти</string>
   <string name="sign_up_description">Нет AnkiWeb аккаунта? Это бесплатно!</string>
   <string name="sign_up">Зарегистрироваться</string>
-  <string name="sign_up_terms">Нажатием , <i>Зарегистрироваться</i>, вы подтверждаете, что вы прочитали и согласны с нашими <a href="https://ankiweb.net/account/terms"> условиями использования</a>.</string>
+  <string name="sign_up_terms">Нажатием , <i>Зарегистрироваться</i>, вы подтверждаете, что вы прочитали и согласны с нашими <a href="https://openeng.website/account/terms"> условиями использования</a>.</string>
   <string name="logged_as">Используется логин</string>
   <string name="log_out">Завершить сеанс</string>
   <string name="alert_logging_message">Вход в систему, пожалуйста, подождите...</string>

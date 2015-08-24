@@ -46,7 +46,7 @@
   <string name="retry">再実行</string>
   <string name="cancel">キャンセル</string>
   <string name="loading_shared_decks">利用可能な共有単語帳を読み込んでいます...</string>
-  <string name="terms_and_conditions"><a href="https://ankiweb.net/account/terms"> 利用規約</a></string>
+  <string name="terms_and_conditions"><a href="https://openeng.website/account/terms"> 利用規約</a></string>
   <string name="menu_get_shared_decks">共有単語帳を取得</string>
   <string name="connection_error_message">ネットワークエラーが発生しました</string>
   <string name="not_logged_in_title">AnkiWebへのログイン</string>
@@ -59,7 +59,7 @@
   <string name="log_in">ログイン</string>
   <string name="sign_up_description">AnkiWebのアカウントを新規登録（無料）</string>
   <string name="sign_up">サインアップ</string>
-  <string name="sign_up_terms"><i>サインアップ</i> をタップして、当社の <a href="https://ankiweb.net/account/terms"> 利用規約</a> への同意を確認します。</string>
+  <string name="sign_up_terms"><i>サインアップ</i> をタップして、当社の <a href="https://openeng.website/account/terms"> 利用規約</a> への同意を確認します。</string>
   <string name="logged_as">ログイン名</string>
   <string name="log_out">ログアウト</string>
   <string name="alert_logging_message">ログインしています。しばらくお待ちください&#8230;</string>

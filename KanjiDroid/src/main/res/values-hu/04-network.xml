@@ -46,7 +46,7 @@
   <string name="retry">Újra</string>
   <string name="cancel">Mégse</string>
   <string name="loading_shared_decks">Elérhető megosztott paklik betöltése...</string>
-  <string name="terms_and_conditions"><a href="https://ankiweb.net/account/terms">Feltételek és kikötések</a></string>
+  <string name="terms_and_conditions"><a href="https://openeng.website/account/terms">Feltételek és kikötések</a></string>
   <string name="menu_get_shared_decks">Megosztott paklik</string>
   <string name="connection_error_message">Hálózati hiba történt.</string>
   <string name="not_logged_in_title">Bejelentkezés az AnkiWebre</string>
@@ -59,7 +59,7 @@
   <string name="log_in">Bejelentkezés</string>
   <string name="sign_up_description">Nincs AnkiWeb fiókod? Ingyenes, meg minden!</string>
   <string name="sign_up">Regisztráció</string>
-  <string name="sign_up_terms">A <i>Feliratkozás</i> megérintésével megerősíted, hogy elolvastad és elfogadod a <a href="https://ankiweb.net/account/terms">felhasználási feltételeinket</a>.</string>
+  <string name="sign_up_terms">A <i>Feliratkozás</i> megérintésével megerősíted, hogy elolvastad és elfogadod a <a href="https://openeng.website/account/terms">felhasználási feltételeinket</a>.</string>
   <string name="logged_as">Bejelentkezve mint</string>
   <string name="log_out">Kijelentkezés</string>
   <string name="alert_logging_message">Bejelentkezés, kérem várjon...</string>

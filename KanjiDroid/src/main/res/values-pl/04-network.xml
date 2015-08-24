@@ -46,7 +46,7 @@
   <string name="retry">Próbuj ponownie</string>
   <string name="cancel">Anuluj</string>
   <string name="loading_shared_decks">Ładowanie dostępnych udostępnionych talii...</string>
-  <string name="terms_and_conditions"><a href="https://ankiweb.net/account/terms">Warunki użytkowania</a></string>
+  <string name="terms_and_conditions"><a href="https://openeng.website/account/terms">Warunki użytkowania</a></string>
   <string name="menu_get_shared_decks">Pobierz udostępniane talie</string>
   <string name="connection_error_message">Wystąpił błąd sieciowy.</string>
   <string name="not_logged_in_title">Zaloguj się do AnkiWeb</string>
@@ -59,7 +59,7 @@
   <string name="log_in">Zaloguj się</string>
   <string name="sign_up_description">Nie masz konta AnkiWeb? Jest darmowe!</string>
   <string name="sign_up">Zarejestruj się</string>
-  <string name="sign_up_terms">Wybierając <i>Zarejestruj się</i>, potwierdzasz, że przeczytałeś i zgadzasz się na nasze <a href="https://ankiweb.net/account/terms">warunki użytkowania</a>.</string>
+  <string name="sign_up_terms">Wybierając <i>Zarejestruj się</i>, potwierdzasz, że przeczytałeś i zgadzasz się na nasze <a href="https://openeng.website/account/terms">warunki użytkowania</a>.</string>
   <string name="logged_as">Zalogowany jako</string>
   <string name="log_out">Wyloguj się</string>
   <string name="alert_logging_message">Logowanie, proszę czekać...</string>

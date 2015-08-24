@@ -46,7 +46,7 @@
   <string name="retry">تلاش مجدد</string>
   <string name="cancel">لغو</string>
   <string name="loading_shared_decks">بارگذاري كارتهاي اشتراكي دردسترس...</string>
-  <string name="terms_and_conditions"><a href="https://ankiweb.net/account/terms">Terms and Conditions</a></string>
+  <string name="terms_and_conditions"><a href="https://openeng.website/account/terms">Terms and Conditions</a></string>
   <string name="menu_get_shared_decks">دريافت كارتهاي اشتراكي</string>
   <string name="connection_error_message">خطاي شبكه رخ داده است.</string>
   <string name="not_logged_in_title">Log in to AnkiWeb</string>
@@ -59,7 +59,7 @@
   <string name="log_in">ورود به حساب کاربری</string>
   <string name="sign_up_description">آيا حساب كاربري در آنکی وب نداريد؟ حساب كاربري رايگان است!</string>
   <string name="sign_up">ثبت نام</string>
-  <string name="sign_up_terms">با فشردن <i>ثبت نام</i>, شما تایید می کنید که شرایط استفاده از برنامه <a href="https://ankiweb.net/account/terms"> را خوانده و قبول دارید</a>.</string>
+  <string name="sign_up_terms">با فشردن <i>ثبت نام</i>, شما تایید می کنید که شرایط استفاده از برنامه <a href="https://openeng.website/account/terms"> را خوانده و قبول دارید</a>.</string>
   <string name="logged_as">ورود به حساب کاربری به عنوان</string>
   <string name="log_out">خروج</string>
   <string name="alert_logging_message">ورود اعضاء، لطفا صبر کنید...</string>

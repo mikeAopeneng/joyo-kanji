@@ -46,7 +46,7 @@
   <string name="retry">Réessayer</string>
   <string name="cancel">Annuler</string>
   <string name="loading_shared_decks">Chargement des paquets partagés disponibles...</string>
-  <string name="terms_and_conditions"><a href="https://ankiweb.net/account/terms">Conditions générales</a></string>
+  <string name="terms_and_conditions"><a href="https://openeng.website/account/terms">Conditions générales</a></string>
   <string name="menu_get_shared_decks">Télécharger des paquets partagés</string>
   <string name="connection_error_message">Une erreur réseau s\'est produite.</string>
   <string name="not_logged_in_title">Se connecter à AnkiWeb</string>
@@ -59,7 +59,7 @@
   <string name="log_in">Se connecter</string>
   <string name="sign_up_description">Vous n\'avez pas de compte AnkiWeb ? C\'est gratuit !</string>
   <string name="sign_up">Inscrivez-vous</string>
-  <string name="sign_up_terms">En cliquant sur <i>s\'inscrire</i>, vous confirmez que vous avez lu et accepté nos <a href="https://ankiweb.net/account/terms">conditions d\'utilisation</a>.</string>
+  <string name="sign_up_terms">En cliquant sur <i>s\'inscrire</i>, vous confirmez que vous avez lu et accepté nos <a href="https://openeng.website/account/terms">conditions d\'utilisation</a>.</string>
   <string name="logged_as">Connecté en tant que</string>
   <string name="log_out">Se déconnecter</string>
   <string name="alert_logging_message">Connexion, patientez s’il vous plaît &#8230;</string>

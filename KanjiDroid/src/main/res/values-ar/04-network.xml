@@ -46,7 +46,7 @@
   <string name="retry">إعادة المحاولة</string>
   <string name="cancel">إلغاء</string>
   <string name="loading_shared_decks">تحميل الرزم المشاركة المتاحة...</string>
-  <string name="terms_and_conditions"><a href="https://ankiweb.net/account/terms">Terms and conditions</a></string>
+  <string name="terms_and_conditions"><a href="https://openeng.website/account/terms">Terms and conditions</a></string>
   <string name="menu_get_shared_decks">احصل على رزم مشاركة</string>
   <string name="connection_error_message">حدث خطأ في شبكة الاتصال.</string>
   <string name="not_logged_in_title">Log in to AnkiWeb</string>
@@ -59,7 +59,7 @@
   <string name="log_in">تسجيل الدخول</string>
   <string name="sign_up_description">ألا تملك حساب أنكي ويب؟ إنه مجاني</string>
   <string name="sign_up">التسجيل</string>
-  <string name="sign_up_terms">By touching <i>Sign up</i>, you confirm that you have read and agree to our <a href="https://ankiweb.net/account/terms">terms of use</a>.</string>
+  <string name="sign_up_terms">By touching <i>Sign up</i>, you confirm that you have read and agree to our <a href="https://openeng.website/account/terms">terms of use</a>.</string>
   <string name="logged_as">تسجيل</string>
   <string name="log_out">تسجيل الخروج</string>
   <string name="alert_logging_message">تسجيل الدخول، الرجاء الانتظار...</string>

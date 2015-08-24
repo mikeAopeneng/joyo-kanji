@@ -77,7 +77,7 @@ import timber.log.Timber;
  * # HTTP syncing tools
  * Calling code should catch the following codes:
  * - 501: client needs upgrade
- * - 502: ankiweb down
+ * - 502: kanjiweb down
  * - 503/504: server too busy
  */
 public class HttpSyncer {

@@ -409,7 +409,7 @@ public class Utils {
     }
 
 
-    // used in ankiweb
+    // used in kanjiweb
     public static String base62(int num, String extra) {
         String table = ALL_CHARACTERS + extra;
         int len = table.length();

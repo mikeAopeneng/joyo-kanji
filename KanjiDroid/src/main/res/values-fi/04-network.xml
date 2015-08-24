@@ -46,7 +46,7 @@
   <string name="retry">Yritä uudelleen</string>
   <string name="cancel">Peru</string>
   <string name="loading_shared_decks">Ladataan saatavilla olevia jaettuja korttipakkoja&#8230;</string>
-  <string name="terms_and_conditions"><a href="https://ankiweb.net/account/terms">Käyttöehdot</a></string>
+  <string name="terms_and_conditions"><a href="https://openeng.website/account/terms">Käyttöehdot</a></string>
   <string name="menu_get_shared_decks">Hanki jaettuja pakkoja</string>
   <string name="connection_error_message">Tapahtui verkkovirhe.</string>
   <string name="not_logged_in_title">Kirjaudu AnkiWebiin</string>
@@ -59,7 +59,7 @@
   <string name="log_in">Kirjaudu sisään</string>
   <string name="sign_up_description">Eikö sinulla ole AnkiWeb-tiliä? Se on ilmainen!</string>
   <string name="sign_up">Rekisteröidy</string>
-  <string name="sign_up_terms">Napauttamalla <i>Rekisteröidy</i>-painiketta, vahvistat, että olet lukenut ja hyväksynyt <a href="https://ankiweb.net/account/terms">käyttöehdot</a>.</string>
+  <string name="sign_up_terms">Napauttamalla <i>Rekisteröidy</i>-painiketta, vahvistat, että olet lukenut ja hyväksynyt <a href="https://openeng.website/account/terms">käyttöehdot</a>.</string>
   <string name="logged_as">Kirjauduttu nimellä</string>
   <string name="log_out">Kirjaudu ulos</string>
   <string name="alert_logging_message">Kirjaudutaan&#8230;</string>

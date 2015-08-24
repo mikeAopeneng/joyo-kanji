@@ -46,7 +46,7 @@
   <string name="retry">Intenta-ho de nou</string>
   <string name="cancel">Anul·la</string>
   <string name="loading_shared_decks">S\estàn carregant els paquets compartits...</string>
-  <string name="terms_and_conditions"><a href="https://ankiweb.net/account/terms">Terms and conditions</a></string>
+  <string name="terms_and_conditions"><a href="https://openeng.website/account/terms">Terms and conditions</a></string>
   <string name="menu_get_shared_decks">Baixeu paquets compartits</string>
   <string name="connection_error_message">Hi ha hagut un error de la xarxa.</string>
   <string name="not_logged_in_title">Log in to AnkiWeb</string>
@@ -59,7 +59,7 @@
   <string name="log_in">Inicia la sessió</string>
   <string name="sign_up_description">No teniu un compte d\'AnkiWeb? És gratuït!</string>
   <string name="sign_up">Registreu-vos</string>
-  <string name="sign_up_terms">By touching <i>Sign up</i>, you confirm that you have read and agree to our <a href="https://ankiweb.net/account/terms">terms of use</a>.</string>
+  <string name="sign_up_terms">By touching <i>Sign up</i>, you confirm that you have read and agree to our <a href="https://openeng.website/account/terms">terms of use</a>.</string>
   <string name="logged_as">Heu entrat com a</string>
   <string name="log_out">Desconnecta</string>
   <string name="alert_logging_message">S\'està iniciant la sessió, un moment...</string>
