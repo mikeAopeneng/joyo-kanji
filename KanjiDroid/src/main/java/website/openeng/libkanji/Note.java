@@ -317,7 +317,7 @@ public class Note implements Cloneable {
 
     /*
      * ***********************************************************
-     * The methods below are not in LibAnki.
+     * The methods below are not in LibKanji.
      * ***********************************************************
      */
 

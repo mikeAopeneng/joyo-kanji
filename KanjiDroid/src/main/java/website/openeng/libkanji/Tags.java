@@ -365,7 +365,7 @@ public class Tags {
 
     /*
      * ***********************************************************
-     * The methods below are not in LibAnki.
+     * The methods below are not in LibKanji.
      * ***********************************************************
      */
 

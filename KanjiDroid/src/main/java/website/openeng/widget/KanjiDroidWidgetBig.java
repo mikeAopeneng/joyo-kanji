@@ -1091,7 +1091,7 @@
 //                Timber.i("doInBackgroundGetTomorrowDue");
 //                //
 //                // File dir = new File(params[0]);
-//                // File[] fileList = dir.listFiles(new WidgetStatus.AnkiFileFilter());
+//                // File[] fileList = dir.listFiles(new WidgetStatus.KanjiFileFilter());
 //                //
 //                // DeckStatus[] todayDues = WidgetStatus.fetch(sContext);
 //                //

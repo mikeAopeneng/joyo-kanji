@@ -70,7 +70,7 @@ public class Card implements Cloneable {
 
     private Collection mCol;
     private double mTimerStarted;
-    private double mTimerStopped; // Not in LibAnki. Used to calculate time taken if activity is stopped/resumed.
+    private double mTimerStopped; // Not in LibKanji. Used to calculate time taken if activity is stopped/resumed.
 
     // BEGIN SQL table entries
     private long mId;
@@ -390,7 +390,7 @@ public class Card implements Cloneable {
 
     /*
      * ***********************************************************
-     * The methods below are not in LibAnki.
+     * The methods below are not in LibKanji.
      * ***********************************************************
      */
 

@@ -19,7 +19,7 @@ import java.util.Set;
 
 public class KanjiDatabaseManager {
 
-    private static HashMap<String, KanjiDb> sAnkiDatabases = new HashMap<String, KanjiDb>();
+    private static HashMap<String, KanjiDb> sKanjiDatabases = new HashMap<String, KanjiDb>();
 
 
     /* Prevent class from being instantiated */
@@ -36,15 +36,15 @@ public class KanjiDatabaseManager {
     public static KanjiDb getDatabase(String pathDB) {
 
         // If the DB is already opened
-        if (sAnkiDatabases.containsKey(pathDB)) {
-            return sAnkiDatabases.get(pathDB);
+        if (sKanjiDatabases.containsKey(pathDB)) {
+            return sKanjiDatabases.get(pathDB);
         }
 
         // If a connection to the desired DB does not exist, we create it
         KanjiDb ankiDB = new KanjiDb(pathDB);
 
         // Insert the new DB to the map of opened DBs
-        sAnkiDatabases.put(pathDB, ankiDB);
+        sKanjiDatabases.put(pathDB, ankiDB);
 
         return ankiDB;
     }
@@ -56,7 +56,7 @@ public class KanjiDatabaseManager {
      * @param pathDB the path to the database to close.
      */
     public static void closeDatabase(String pathDB) {
-        KanjiDb ankiDB = sAnkiDatabases.remove(pathDB);
+        KanjiDb ankiDB = sKanjiDatabases.remove(pathDB);
         if (ankiDB != null) {
             ankiDB.closeDatabase();
         }
@@ -67,7 +67,7 @@ public class KanjiDatabaseManager {
      * Close connections to all opened databases. XXX Currently unused.
      */
     public static void closeAllDatabases() {
-        Set<String> databases = sAnkiDatabases.keySet();
+        Set<String> databases = sKanjiDatabases.keySet();
         for (String pathDB : databases) {
             KanjiDatabaseManager.closeDatabase(pathDB);
         }
@@ -81,6 +81,6 @@ public class KanjiDatabaseManager {
      * @return True if the database is already opened, false otherwise.
      */
     public static boolean isDatabaseOpen(String pathDB) {
-        return sAnkiDatabases.containsKey(pathDB);
+        return sKanjiDatabases.containsKey(pathDB);
     }
 }

@@ -82,7 +82,7 @@ import timber.log.Timber;
  */
 public class HttpSyncer {
 
-    private static final String BOUNDARY = "Anki-sync-boundary";
+    private static final String BOUNDARY = "Kanji-sync-boundary";
     public static final String ANKIWEB_STATUS_OK = "OK";
 
     public volatile long bytesSent = 0;

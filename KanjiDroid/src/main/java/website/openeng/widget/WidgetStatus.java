@@ -278,7 +278,7 @@ public final class WidgetStatus {
     // }
     //
     // /** Filter for Anki files. */
-    // public static final class AnkiFileFilter implements FileFilter {
+    // public static final class KanjiFileFilter implements FileFilter {
     // @Override
     // public boolean accept(File pathname) {
     // return pathname.isFile() && pathname.getName().endsWith(".anki");

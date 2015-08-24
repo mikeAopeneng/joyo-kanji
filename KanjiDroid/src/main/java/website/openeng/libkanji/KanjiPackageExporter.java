@@ -58,7 +58,7 @@ class Exporter {
 
 
 
-class AnkiExporter extends Exporter {
+class KanjiExporter extends Exporter {
     boolean mIncludeSched;
     boolean mIncludeMedia;
     Collection mSrc;
@@ -67,7 +67,7 @@ class AnkiExporter extends Exporter {
     ArrayList<String> mMediaFiles = new ArrayList<String>();
 
 
-    public AnkiExporter(Collection col) {
+    public KanjiExporter(Collection col) {
         super(col);
         mIncludeSched = false;
         mIncludeMedia = true;
@@ -257,7 +257,7 @@ class AnkiExporter extends Exporter {
 
 
 
-public final class KanjiPackageExporter extends AnkiExporter {
+public final class KanjiPackageExporter extends KanjiExporter {
 
     public KanjiPackageExporter(Collection col) {
         super(col);

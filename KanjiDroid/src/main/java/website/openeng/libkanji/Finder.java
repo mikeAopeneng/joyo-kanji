@@ -226,7 +226,7 @@ public class Finder {
      */
 
     /**
-     * LibAnki creates a dictionary and operates on it with an inner function inside _where().
+     * LibKanji creates a dictionary and operates on it with an inner function inside _where().
      * KanjiDroid combines the two in this class instead.
      */
     public class SearchState {
@@ -521,7 +521,7 @@ public class Finder {
         // is val valid?
         try {
             if (prop.equals("ease")) {
-                // LibAnki does this below, but we do it here to avoid keeping a separate float value.
+                // LibKanji does this below, but we do it here to avoid keeping a separate float value.
                 val = (int)(Double.parseDouble(sval) * 1000);
             } else {
                 val = Integer.parseInt(sval);
@@ -1008,7 +1008,7 @@ public class Finder {
 
     /*
      * ***********************************************************
-     * The methods below are not in LibAnki.
+     * The methods below are not in LibKanji.
      * ***********************************************************
      */
 
