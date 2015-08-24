@@ -39,7 +39,7 @@ import website.openeng.themes.StyledProgressDialog;
 
 import timber.log.Timber;
 
-public class MyAccount extends AnkiActivity {
+public class MyAccount extends KanjiActivity {
     private final static int STATE_ACCOUNT_SIGN_UP = 0;
     private final static int STATE_LOG_IN  = 1;
     private final static int STATE_LOGGED_IN = 2;

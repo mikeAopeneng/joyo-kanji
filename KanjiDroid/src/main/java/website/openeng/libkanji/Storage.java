@@ -19,8 +19,8 @@ package website.openeng.libkanji;
 import android.content.ContentValues;
 import android.database.SQLException;
 
-import website.openeng.anki.AnkiDatabaseManager;
-import website.openeng.anki.AnkiDb;
+import website.openeng.anki.KanjiDatabaseManager;
+import website.openeng.anki.KanjiDb;
 import website.openeng.anki.exception.ConfirmModSchemaException;
 
 import org.json.JSONArray;
@@ -47,7 +47,7 @@ public class Storage {
         File dbFile = new File(path);
         boolean create = !dbFile.exists();
         // connect
-        AnkiDb db = AnkiDatabaseManager.getDatabase(path);
+        KanjiDb db = KanjiDatabaseManager.getDatabase(path);
         int ver;
         if (create) {
             ver = _createDB(db);
@@ -56,7 +56,7 @@ public class Storage {
         }
         db.execute("PRAGMA temp_store = memory");
 
-        // LIBANKI: sync, journal_mode --> in KanjiDroid done in AnkiDb
+        // LIBANKI: sync, journal_mode --> in KanjiDroid done in KanjiDb
 
         // add db to col and do any remaining upgrades
         Collection col = new Collection(db, path, server, log);
@@ -80,7 +80,7 @@ public class Storage {
     }
 
 
-    private static int _upgradeSchema(AnkiDb db) {
+    private static int _upgradeSchema(KanjiDb db) {
         int ver = db.queryScalar("SELECT ver FROM col");
         if (ver == Consts.SCHEMA_VERSION) {
             return ver;
@@ -262,7 +262,7 @@ public class Storage {
     }
 
 
-    private static int _createDB(AnkiDb db) {
+    private static int _createDB(KanjiDb db) {
         db.execute("PRAGMA page_size = 4096");
         db.execute("PRAGMA legacy_file_format = 0");
         db.execute("VACUUM");
@@ -273,12 +273,12 @@ public class Storage {
     }
 
 
-    private static void _addSchema(AnkiDb db) {
+    private static void _addSchema(KanjiDb db) {
         _addSchema(db, true);
     }
 
 
-    private static void _addSchema(AnkiDb db, boolean setColConf) {
+    private static void _addSchema(KanjiDb db, boolean setColConf) {
         db.execute("create table if not exists col ( " + "id              integer primary key, "
                 + "crt             integer not null," + "mod             integer not null,"
                 + "scm             integer not null," + "ver             integer not null,"
@@ -318,7 +318,7 @@ public class Storage {
     }
 
 
-    private static void _setColVars(AnkiDb db) {
+    private static void _setColVars(KanjiDb db) {
         try {
             JSONObject g = new JSONObject(Decks.defaultDeck);
             g.put("id", 1);
@@ -342,7 +342,7 @@ public class Storage {
     }
 
 
-    private static void _updateIndices(AnkiDb db) {
+    private static void _updateIndices(KanjiDb db) {
         db.execute("create index if not exists ix_notes_usn on notes (usn);");
         db.execute("create index if not exists ix_cards_usn on cards (usn);");
         db.execute("create index if not exists ix_revlog_usn on revlog (usn);");
@@ -353,7 +353,7 @@ public class Storage {
     }
 
 
-    public static void addIndices(AnkiDb db) {
+    public static void addIndices(KanjiDb db) {
         _updateIndices(db);
     }
 
@@ -375,7 +375,7 @@ public class Storage {
      */
 
     public static boolean check(String path) {
-        AnkiDb db = AnkiDatabaseManager.getDatabase(path);
+        KanjiDb db = KanjiDatabaseManager.getDatabase(path);
         // corrupt?
         try {
             if (!db.queryString("PRAGMA integrity_check").equalsIgnoreCase("ok")) {

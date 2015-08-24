@@ -156,7 +156,7 @@ public class IntentHandler extends Activity {
             // Otherwise show confirmation dialog asking to confirm import with add
             handlerMessage.what = DialogHandler.MSG_SHOW_COLLECTION_IMPORT_ADD_DIALOG;
         }
-        // Store the message in KanjiDroidApp message holder, which is loaded later in AnkiActivity.onResume
+        // Store the message in KanjiDroidApp message holder, which is loaded later in KanjiActivity.onResume
         DialogHandler.storeMessage(handlerMessage);
     }
 

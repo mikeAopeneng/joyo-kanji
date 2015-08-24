@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.support.v4.app.TaskStackBuilder;
 import android.view.View;
 
-import website.openeng.anki.AnkiActivity;
+import website.openeng.anki.KanjiActivity;
 
 import java.text.Normalizer;
 
@@ -24,8 +24,8 @@ public class CompatV11 extends CompatV9 implements Compat {
     /**
      * Restart the activity and discard old backstack, creating it new from the heirarchy in the manifest
      */
-    public void restartActivityInvalidateBackstack(AnkiActivity activity) {
-        Timber.i("AnkiActivity -- restartActivityInvalidateBackstack()");
+    public void restartActivityInvalidateBackstack(KanjiActivity activity) {
+        Timber.i("KanjiActivity -- restartActivityInvalidateBackstack()");
         Intent intent = new Intent();
         intent.setClass(activity, activity.getClass());
         TaskStackBuilder stackBuilder = TaskStackBuilder.create(activity);

@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 
-import website.openeng.anki.AnkiActivity;
+import website.openeng.anki.KanjiActivity;
 import website.openeng.anki.KanjiDroidApp;
 import website.openeng.anki.DeckPicker;
 import java.lang.ref.WeakReference;
@@ -36,12 +36,12 @@ public class DialogHandler extends Handler {
     public static final int MSG_SHOW_FORCE_FULL_SYNC_DIALOG = 7;
 
 
-    WeakReference<AnkiActivity> mActivity;
+    WeakReference<KanjiActivity> mActivity;
     private static Message sStoredMessage;
     
-    public DialogHandler(AnkiActivity activity) {
+    public DialogHandler(KanjiActivity activity) {
         // Use weak reference to main activity to prevent leaking the activity when it's closed
-        mActivity = new WeakReference<AnkiActivity>(activity);
+        mActivity = new WeakReference<KanjiActivity>(activity);
     }
 
 
@@ -84,7 +84,7 @@ public class DialogHandler extends Handler {
                 @Override
                 public void confirm() {
                     // Bypass the check once the user confirms
-                    ((AnkiActivity) getActivity()).getCol().modSchemaNoCheck();
+                    ((KanjiActivity) getActivity()).getCol().modSchemaNoCheck();
                 }
             };
             dialog.setArgs(msgData.getString("message"));

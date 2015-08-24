@@ -22,7 +22,7 @@ import android.speech.tts.TextToSpeech;
 import android.view.View;
 import android.widget.RemoteViews;
 
-import website.openeng.anki.AnkiActivity;
+import website.openeng.anki.KanjiActivity;
 import website.openeng.anki.NavigationDrawerActivity;
 import website.openeng.anki.exception.APIVersionException;
 
@@ -55,7 +55,7 @@ public interface Compat {
     void enableCookiesForFileSchemePages();
     void updateWidgetDimensions(Context context, RemoteViews updateViews, Class<?> cls);
     void setAlpha(View view, float alpha);
-    void restartActivityInvalidateBackstack(AnkiActivity activity);
+    void restartActivityInvalidateBackstack(KanjiActivity activity);
     void setFullScreen(NavigationDrawerActivity activity);
 }
 

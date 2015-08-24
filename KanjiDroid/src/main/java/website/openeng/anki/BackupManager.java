@@ -247,7 +247,7 @@ public class BackupManager {
         if (col != null) {
             col.close();
         }
-        AnkiDatabaseManager.closeDatabase(deckPath);
+        KanjiDatabaseManager.closeDatabase(deckPath);
 
         // repair file
         String execString = "sqlite3 " + deckPath + " .dump | sqlite3 " + deckPath + ".tmp";

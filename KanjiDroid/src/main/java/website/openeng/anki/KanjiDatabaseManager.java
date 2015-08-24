@@ -17,13 +17,13 @@ package website.openeng.anki;
 import java.util.HashMap;
 import java.util.Set;
 
-public class AnkiDatabaseManager {
+public class KanjiDatabaseManager {
 
-    private static HashMap<String, AnkiDb> sAnkiDatabases = new HashMap<String, AnkiDb>();
+    private static HashMap<String, KanjiDb> sAnkiDatabases = new HashMap<String, KanjiDb>();
 
 
     /* Prevent class from being instantiated */
-    private AnkiDatabaseManager() {
+    private KanjiDatabaseManager() {
     }
 
 
@@ -33,7 +33,7 @@ public class AnkiDatabaseManager {
      * @param pathDB the path to the database.
      * @return the Anki database.
      */
-    public static AnkiDb getDatabase(String pathDB) {
+    public static KanjiDb getDatabase(String pathDB) {
 
         // If the DB is already opened
         if (sAnkiDatabases.containsKey(pathDB)) {
@@ -41,7 +41,7 @@ public class AnkiDatabaseManager {
         }
 
         // If a connection to the desired DB does not exist, we create it
-        AnkiDb ankiDB = new AnkiDb(pathDB);
+        KanjiDb ankiDB = new KanjiDb(pathDB);
 
         // Insert the new DB to the map of opened DBs
         sAnkiDatabases.put(pathDB, ankiDB);
@@ -56,7 +56,7 @@ public class AnkiDatabaseManager {
      * @param pathDB the path to the database to close.
      */
     public static void closeDatabase(String pathDB) {
-        AnkiDb ankiDB = sAnkiDatabases.remove(pathDB);
+        KanjiDb ankiDB = sAnkiDatabases.remove(pathDB);
         if (ankiDB != null) {
             ankiDB.closeDatabase();
         }
@@ -69,7 +69,7 @@ public class AnkiDatabaseManager {
     public static void closeAllDatabases() {
         Set<String> databases = sAnkiDatabases.keySet();
         for (String pathDB : databases) {
-            AnkiDatabaseManager.closeDatabase(pathDB);
+            KanjiDatabaseManager.closeDatabase(pathDB);
         }
     }
 

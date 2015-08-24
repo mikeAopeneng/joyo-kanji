@@ -23,7 +23,7 @@ import android.content.res.Resources;
 import android.os.AsyncTask;
 
 import com.google.gson.stream.JsonReader;
-import website.openeng.anki.AnkiDb;
+import website.openeng.anki.KanjiDb;
 import website.openeng.anki.KanjiDroidApp;
 import website.openeng.anki.BackupManager;
 import website.openeng.anki.CardBrowser;
@@ -31,7 +31,7 @@ import website.openeng.anki.CollectionHelper;
 import website.openeng.anki.R;
 import website.openeng.anki.exception.APIVersionException;
 import website.openeng.anki.exception.ConfirmModSchemaException;
-import website.openeng.libkanji.AnkiPackageExporter;
+import website.openeng.libkanji.KanjiPackageExporter;
 import website.openeng.libkanji.Card;
 import website.openeng.libkanji.Collection;
 import website.openeng.libkanji.Note;
@@ -356,7 +356,7 @@ public class DeckTask extends BaseAsyncTask<DeckTask.TaskData, DeckTask.TaskData
         Note note = params[0].getNote();
         Collection col = CollectionHelper.getInstance().getCol(mContext);
         try {
-            AnkiDb ankiDB = col.getDb();
+            KanjiDb ankiDB = col.getDb();
             ankiDB.getDatabase().beginTransaction();
             try {
                 publishProgress(new TaskData(col.addNote(note)));
@@ -427,7 +427,7 @@ public class DeckTask extends BaseAsyncTask<DeckTask.TaskData, DeckTask.TaskData
         int ease = params[0].getInt();
         Card newCard = null;
         try {
-            AnkiDb ankiDB = col.getDb();
+            KanjiDb ankiDB = col.getDb();
             ankiDB.getDatabase().beginTransaction();
             try {
                 if (oldCard != null) {
@@ -566,7 +566,7 @@ public class DeckTask extends BaseAsyncTask<DeckTask.TaskData, DeckTask.TaskData
         Card card = params[0].getCard();
         Collection col = CollectionHelper.getInstance().getCol(mContext);
         try {
-            AnkiDb ankiDB = col.getDb();
+            KanjiDb ankiDB = col.getDb();
             ankiDB.getDatabase().beginTransaction();
             try {
                 if (card != null) {
@@ -775,7 +775,7 @@ public class DeckTask extends BaseAsyncTask<DeckTask.TaskData, DeckTask.TaskData
         int addedCount = -1;
         try {
             KanjiImporter imp = new KanjiImporter(col, path, pc);
-            AnkiDb ankiDB = col.getDb();
+            KanjiDb ankiDB = col.getDb();
             ankiDB.getDatabase().beginTransaction();
             try {
                 addedCount = imp.run();
@@ -941,7 +941,7 @@ public class DeckTask extends BaseAsyncTask<DeckTask.TaskData, DeckTask.TaskData
         boolean includeMedia = (Boolean) data[4];
         
         try {
-            AnkiPackageExporter exporter = new AnkiPackageExporter(col);
+            KanjiPackageExporter exporter = new KanjiPackageExporter(col);
             exporter.setIncludeSched(includeSched);
             exporter.setIncludeMedia(includeMedia);
             exporter.setDid(did);

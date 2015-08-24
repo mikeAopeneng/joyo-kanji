@@ -19,7 +19,7 @@ import java.util.Set;
 
 import timber.log.Timber;
 
-public class AnkiFont {
+public class KanjiFont {
     private String mName;
     private String mFamily;
     private List<String> mAttributes;
@@ -30,7 +30,7 @@ public class AnkiFont {
     private static Set<String> corruptFonts = new HashSet<String>();
 
 
-    private AnkiFont(String name, String family, List<String> attributes, String path) {
+    private KanjiFont(String name, String family, List<String> attributes, String path) {
         mName = name;
         mFamily = family;
         mAttributes = attributes;
@@ -41,14 +41,14 @@ public class AnkiFont {
 
 
     /**
-     * Factory for AnkiFont creation. Creates a typeface wrapper from a font file representing.
+     * Factory for KanjiFont creation. Creates a typeface wrapper from a font file representing.
      *
      * @param ctx Activity context, needed to access assets
      * @param path Path to typeface file, needed when this is a custom font.
      * @param fromAssets True if the font is to be found in assets of application
-     * @return A new AnkiFont object or null if the file can't be interpreted as typeface.
+     * @return A new KanjiFont object or null if the file can't be interpreted as typeface.
      */
-    public static AnkiFont createAnkiFont(Context ctx, String path, boolean fromAssets) {
+    public static KanjiFont createKanjiFont(Context ctx, String path, boolean fromAssets) {
         File fontfile = new File(path);
         String name = Utils.removeExtension(fontfile.getName());
         String family = name;
@@ -91,7 +91,7 @@ public class AnkiFont {
             family = family.replaceFirst("(?i)-?Wide(r)?", "");
         }
 
-        AnkiFont createdFont = new AnkiFont(name, family, attributes, path);
+        KanjiFont createdFont = new KanjiFont(name, family, attributes, path);
 
         // determine if override font or default font
         SharedPreferences preferences = KanjiDroidApp.getSharedPrefs(ctx);
@@ -129,7 +129,7 @@ public class AnkiFont {
                     sb.deleteCharAt(sb.length() - 1);
                     sb.append(" !important;");
                 } else {
-                    Timber.d("AnkiFont.getCSS() - unable to set a font attribute important while override is set.");
+                    Timber.d("KanjiFont.getCSS() - unable to set a font attribute important while override is set.");
                 }
             }
         }

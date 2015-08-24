@@ -9,8 +9,8 @@ import android.view.View;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 
-import website.openeng.anki.AnkiActivity;
-import website.openeng.anki.AnkiDatabaseManager;
+import website.openeng.anki.KanjiActivity;
+import website.openeng.anki.KanjiDatabaseManager;
 import website.openeng.anki.BackupManager;
 import website.openeng.anki.CollectionHelper;
 import website.openeng.anki.R;
@@ -166,7 +166,7 @@ public class DatabaseErrorDialog extends AsyncDialogFragment {
                 // to the previous dialog
                 ArrayList<String> options = new ArrayList<String>();
                 ArrayList<Integer> values = new ArrayList<Integer>();
-                if (!((AnkiActivity)getActivity()).colIsOpen()) {
+                if (!((KanjiActivity)getActivity()).colIsOpen()) {
                     // retry
                     options.add(res.getString(R.string.backup_retry_opening));
                     values.add(0);
@@ -320,7 +320,7 @@ public class DatabaseErrorDialog extends AsyncDialogFragment {
                             public void onPositive(MaterialDialog dialog) {
                                 CollectionHelper.getInstance().closeCollection(false);
                                 String path = CollectionHelper.getInstance().getCollectionPath(getActivity());
-                                AnkiDatabaseManager.closeDatabase(path);
+                                KanjiDatabaseManager.closeDatabase(path);
                                 if (BackupManager.moveDatabaseToBrokenFolder(path, false)) {
                                     ((DatabaseErrorDialogListener) getActivity()).startLoadingCollection();
                                 } else {

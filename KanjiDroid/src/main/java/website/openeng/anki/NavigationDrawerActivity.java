@@ -35,7 +35,7 @@ import website.openeng.compat.CompatHelper;
 import timber.log.Timber;
 
 
-public class NavigationDrawerActivity extends AnkiActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class NavigationDrawerActivity extends KanjiActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     /** Navigation Drawer */
     protected CharSequence mTitle;

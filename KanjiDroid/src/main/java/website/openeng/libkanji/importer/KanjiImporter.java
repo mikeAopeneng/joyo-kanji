@@ -20,7 +20,7 @@ import android.content.res.Resources;
 import android.database.Cursor;
 
 import com.google.gson.stream.JsonReader;
-import website.openeng.anki.AnkiDatabaseManager;
+import website.openeng.anki.KanjiDatabaseManager;
 import website.openeng.anki.BackupManager;
 import website.openeng.anki.R;
 import website.openeng.async.DeckTask;
@@ -139,7 +139,7 @@ public class KanjiImporter {
             } finally {
                 // do not close collection but close only db (in order not to confuse access counting in storage.java
                 // Note that the media database is still open and needs to be closed below.
-                AnkiDatabaseManager.closeDatabase(mSrc.getPath());
+                KanjiDatabaseManager.closeDatabase(mSrc.getPath());
             }
             // import static media
             String mediaDir = mCol.getMedia().dir();

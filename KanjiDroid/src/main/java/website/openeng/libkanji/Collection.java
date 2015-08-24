@@ -24,8 +24,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.text.TextUtils;
 import android.util.Pair;
 
-import website.openeng.anki.AnkiDatabaseManager;
-import website.openeng.anki.AnkiDb;
+import website.openeng.anki.KanjiDatabaseManager;
+import website.openeng.anki.KanjiDb;
 import website.openeng.anki.KanjiDroidApp;
 import website.openeng.anki.R;
 import website.openeng.anki.UIUtils;
@@ -63,7 +63,7 @@ import timber.log.Timber;
 
 public class Collection {
 
-    private AnkiDb mDb;
+    private KanjiDb mDb;
     private boolean mServer;
     private double mLastSave;
     private Media mMedia;
@@ -127,15 +127,15 @@ public class Collection {
 
     private static final int UNDO_SIZE_MAX = 20;
 
-    public Collection(AnkiDb db, String path) {
+    public Collection(KanjiDb db, String path) {
         this(db, path, false);
     }
 
-    public Collection(AnkiDb db, String path, boolean server) {
+    public Collection(KanjiDb db, String path, boolean server) {
         this(db, path, false, false);
     }
 
-    public Collection(AnkiDb db, String path, boolean server, boolean log) {
+    public Collection(KanjiDb db, String path, boolean server, boolean log) {
         mDebugLog = log;
         mDb = db;
         mPath = path;
@@ -320,7 +320,7 @@ public class Collection {
             } catch (RuntimeException e) {
                 KanjiDroidApp.sendExceptionReport(e, "closeDB");
             }
-            AnkiDatabaseManager.closeDatabase(mPath);
+            KanjiDatabaseManager.closeDatabase(mPath);
             mDb = null;
             mMedia.close();
             _closeLog();
@@ -331,7 +331,7 @@ public class Collection {
 
     public void reopen() {
         if (mDb == null) {
-            mDb = AnkiDatabaseManager.getDatabase(mPath);
+            mDb = KanjiDatabaseManager.getDatabase(mPath);
             mMedia.connect();
             _openLog();
         }
@@ -1562,7 +1562,7 @@ public class Collection {
      * Getters/Setters ********************************************************** *************************************
      */
 
-    public AnkiDb getDb() {
+    public KanjiDb getDb() {
         return mDb;
     }
 

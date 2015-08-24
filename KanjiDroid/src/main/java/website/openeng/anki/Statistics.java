@@ -39,7 +39,7 @@ import android.widget.TextView;
 
 import website.openeng.ui.SlidingTabLayout;
 import website.openeng.anim.ActivityTransitionAnimation;
-import website.openeng.anki.stats.AnkiStatsTaskHandler;
+import website.openeng.anki.stats.KanjiStatsTaskHandler;
 import website.openeng.anki.stats.ChartView;
 import website.openeng.anki.widgets.DeckDropDownAdapter;
 import website.openeng.libkanji.Collection;
@@ -73,7 +73,7 @@ public class Statistics extends NavigationDrawerActivity implements
     private SectionsPagerAdapter mSectionsPagerAdapter;
     private ViewPager mViewPager;
     private SlidingTabLayout mSlidingTabLayout;
-    private AnkiStatsTaskHandler mTaskHandler = null;
+    private KanjiStatsTaskHandler mTaskHandler = null;
     private View mMainLayout;
     private ArrayList<JSONObject> mDropDownDecks;
     private DeckDropDownAdapter mDropDownAdapter;
@@ -117,7 +117,7 @@ public class Statistics extends NavigationDrawerActivity implements
         mActionBarSpinner.setVisibility(View.VISIBLE);
 
         // Setup Task Handler
-        mTaskHandler = new AnkiStatsTaskHandler(col);
+        mTaskHandler = new KanjiStatsTaskHandler(col);
 
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
@@ -129,7 +129,7 @@ public class Statistics extends NavigationDrawerActivity implements
         mViewPager.setOffscreenPageLimit(8);
         mSlidingTabLayout = (SlidingTabLayout) findViewById(R.id.sliding_tabs);
         mSlidingTabLayout.setViewPager(mViewPager);
-        AnkiStatsTaskHandler.createFirstStatisticChooserTask(col, mViewPager);
+        KanjiStatsTaskHandler.createFirstStatisticChooserTask(col, mViewPager);
 
         // Dirty way to get text size from a TextView with current style, change if possible
         float size = new TextView(this).getTextSize();
@@ -272,7 +272,7 @@ public class Statistics extends NavigationDrawerActivity implements
     }
 
 
-    public AnkiStatsTaskHandler getTaskHandler(){
+    public KanjiStatsTaskHandler getTaskHandler(){
         return mTaskHandler;
     }
 
@@ -605,7 +605,7 @@ public class Statistics extends NavigationDrawerActivity implements
                                  Bundle savedInstanceState) {
             setHasOptionsMenu(true);
             View rootView = inflater.inflate(R.layout.fragment_anki_stats_overview, container, false);
-            AnkiStatsTaskHandler handler = (((Statistics)getActivity()).getTaskHandler());
+            KanjiStatsTaskHandler handler = (((Statistics)getActivity()).getTaskHandler());
             // Workaround for issue 2406 -- crash when resuming after app is purged from RAM
             // TODO: Implementing loader for Collection in Fragment itself would be a better solution.
             if (handler == null) {
@@ -653,7 +653,7 @@ public class Statistics extends NavigationDrawerActivity implements
         }
 
         private void createStatisticOverview(){
-            AnkiStatsTaskHandler handler = (((Statistics)getActivity()).getTaskHandler());
+            KanjiStatsTaskHandler handler = (((Statistics)getActivity()).getTaskHandler());
             mCreateStatisticsOverviewTask = handler.createStatisticsOverview(mWebView, mProgressBar);
         }
 

@@ -38,7 +38,7 @@ import website.openeng.themes.Themes;
 
 import timber.log.Timber;
 
-public class AnkiActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Collection>,
+public class KanjiActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Collection>,
         SimpleMessageDialog.SimpleMessageDialogListener {
 
     public final int SIMPLE_NOTIFICATION_ID = 0;
@@ -232,10 +232,10 @@ public class AnkiActivity extends AppCompatActivity implements LoaderManager.Loa
     }
 
 
-    // Method for loading the collection which is inherited by all AnkiActivitys
+    // Method for loading the collection which is inherited by all KanjiActivitys
     public void startLoadingCollection() {
         // Initialize the open collection loader
-        Timber.d("AnkiActivity.startLoadingCollection()");
+        Timber.d("KanjiActivity.startLoadingCollection()");
         if (!colIsOpen()) {
             showProgressBar();
         }
@@ -440,7 +440,7 @@ public class AnkiActivity extends AppCompatActivity implements LoaderManager.Loa
             if (resultPendingIntent == null) {
                 // PendingIntent could not be created... probably something wrong with the extras
                 // try again without the extras, though the original dialog will not be shown when app started
-                Timber.e("AnkiActivity.showSimpleNotification() failed due to null PendingIntent");
+                Timber.e("KanjiActivity.showSimpleNotification() failed due to null PendingIntent");
                 resultIntent = new Intent(this, DeckPicker.class);
                 resultPendingIntent = PendingIntent.getActivity(this, 0, resultIntent, PendingIntent.FLAG_UPDATE_CURRENT);
             }
@@ -477,7 +477,7 @@ public class AnkiActivity extends AppCompatActivity implements LoaderManager.Loa
     // Restart the activity
     @SuppressLint("NewApi")
     protected void restartActivity() {
-        Timber.i("AnkiActivity -- restartActivity()");
+        Timber.i("KanjiActivity -- restartActivity()");
         Intent intent = new Intent();
         intent.setClass(this, this.getClass());
         intent.putExtras(new Bundle());

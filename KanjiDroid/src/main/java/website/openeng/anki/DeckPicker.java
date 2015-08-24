@@ -68,7 +68,7 @@ import website.openeng.anki.dialogs.MediaCheckDialog;
 import website.openeng.anki.dialogs.SyncErrorDialog;
 import website.openeng.anki.exception.ConfirmModSchemaException;
 import website.openeng.anki.receiver.SdCardReceiver;
-import website.openeng.anki.stats.AnkiStatsTaskHandler;
+import website.openeng.anki.stats.KanjiStatsTaskHandler;
 import website.openeng.anki.widgets.DeckAdapter;
 import website.openeng.async.Connection;
 import website.openeng.async.Connection.Payload;
@@ -1665,7 +1665,7 @@ public class DeckPicker extends NavigationDrawerActivity implements
                 // update options menu and clear welcome screen
                 supportInvalidateOptionsMenu();
                 // Update the mini statistics bar as well
-                AnkiStatsTaskHandler.createSmallTodayOverview(getCol(), mTodayTextView);
+                KanjiStatsTaskHandler.createSmallTodayOverview(getCol(), mTodayTextView);
             }
 
             @Override

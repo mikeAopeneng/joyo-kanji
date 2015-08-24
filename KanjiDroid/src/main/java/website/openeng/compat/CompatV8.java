@@ -12,7 +12,7 @@ import android.view.WindowManager;
 import android.view.animation.AlphaAnimation;
 import android.widget.RemoteViews;
 
-import website.openeng.anki.AnkiActivity;
+import website.openeng.anki.KanjiActivity;
 import website.openeng.anki.DeckPicker;
 import website.openeng.anki.NavigationDrawerActivity;
 import website.openeng.anki.ReadText;
@@ -109,8 +109,8 @@ public class CompatV8 implements Compat {
     /**
      * Pre-honeycomb just completely boot back to the DeckPicker
      */
-    public void restartActivityInvalidateBackstack(AnkiActivity activity) {
-        Timber.i("AnkiActivity -- restartActivityInvalidateBackstack()");
+    public void restartActivityInvalidateBackstack(KanjiActivity activity) {
+        Timber.i("KanjiActivity -- restartActivityInvalidateBackstack()");
         //TODO: Find a way to recreate the backstack even pre-Honeycomb
         Intent intent = new Intent(activity, DeckPicker.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

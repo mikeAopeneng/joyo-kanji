@@ -100,7 +100,7 @@ import timber.log.Timber;
  *
  * @see <a href="http://ankisrs.net/docs/manual.html#cards">the Anki Desktop manual</a>
  */
-public class NoteEditor extends AnkiActivity {
+public class NoteEditor extends KanjiActivity {
 
 //    public static final String SOURCE_LANGUAGE = "SOURCE_LANGUAGE";
 //    public static final String TARGET_LANGUAGE = "TARGET_LANGUAGE";
@@ -1117,7 +1117,7 @@ public class NoteEditor extends AnkiActivity {
         SharedPreferences preferences = KanjiDroidApp.getSharedPrefs(getBaseContext());
         String customFont = preferences.getString("browserEditorFont", "");
         if (!customFont.equals("")) {
-            mCustomTypeface = AnkiFont.getTypeface(this, customFont);
+            mCustomTypeface = KanjiFont.getTypeface(this, customFont);
         }
 
         for (int i = 0; i < fields.length; i++) {

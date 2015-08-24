@@ -12,7 +12,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.afollestad.materialdialogs.MaterialDialog;
-import website.openeng.anki.AnkiActivity;
+import website.openeng.anki.KanjiActivity;
 import website.openeng.anki.KanjiDroidApp;
 import website.openeng.anki.CollectionHelper;
 import website.openeng.anki.R;
@@ -152,7 +152,7 @@ public class CustomStudyDialog extends DialogFragment {
 
                     @Override
                     public void onNegative(MaterialDialog dialog) {
-                        ((AnkiActivity) getActivity()).dismissAllDialogFragments();
+                        ((KanjiActivity) getActivity()).dismissAllDialogFragments();
                     }
                 })
                 .build();

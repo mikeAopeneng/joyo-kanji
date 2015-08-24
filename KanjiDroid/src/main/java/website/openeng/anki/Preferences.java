@@ -618,7 +618,7 @@ public class Preferences extends AppCompatPreferenceActivity implements Preferen
 
 
     private String[] getCustomFonts(String defaultValue, boolean useFullPath) {
-        List<AnkiFont> mFonts = Utils.getCustomFonts(this);
+        List<KanjiFont> mFonts = Utils.getCustomFonts(this);
         int count = mFonts.size();
         Timber.d("There are %d custom fonts", count);
         String[] names = new String[count + 1];

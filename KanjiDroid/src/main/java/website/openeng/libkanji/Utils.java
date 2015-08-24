@@ -32,9 +32,9 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
-import website.openeng.anki.AnkiDb;
+import website.openeng.anki.KanjiDb;
 import website.openeng.anki.KanjiDroidApp;
-import website.openeng.anki.AnkiFont;
+import website.openeng.anki.KanjiFont;
 import website.openeng.anki.CollectionHelper;
 import website.openeng.anki.R;
 import website.openeng.utils.LanguageUtil;
@@ -389,7 +389,7 @@ public class Utils {
     }
 
     /** Return a non-conflicting timestamp for table. */
-    public static long timestampID(AnkiDb db, String table) {
+    public static long timestampID(KanjiDb db, String table) {
         // be careful not to create multiple objects without flushing them, or they
         // may share an ID.
         long t = intNow(1000);
@@ -401,7 +401,7 @@ public class Utils {
 
 
     /** Return the first safe ID to use. */
-    public static long maxID(AnkiDb db) {
+    public static long maxID(KanjiDb db) {
         long now = intNow(1000);
         now = Math.max(now, db.queryLongScalar("SELECT MAX(id) FROM cards"));
         now = Math.max(now, db.queryLongScalar("SELECT MAX(id) FROM notes"));
@@ -1053,7 +1053,7 @@ public class Utils {
 
 
     /** Returns a list of files for the installed custom fonts. */
-    public static List<AnkiFont> getCustomFonts(Context context) {
+    public static List<KanjiFont> getCustomFonts(Context context) {
         String deckPath = CollectionHelper.getCurrentKanjiDroidDirectory(context);
         String fontsPath = deckPath + "/fonts/";
         File fontsDir = new File(fontsPath);
@@ -1069,7 +1069,7 @@ public class Utils {
         } catch (IOException e) {
             Timber.e(e, "Error on retrieving kanjidroid fonts");
         }
-        List<AnkiFont> fonts = new ArrayList<AnkiFont>();
+        List<KanjiFont> fonts = new ArrayList<KanjiFont>();
         for (int i = 0; i < fontsCount; i++) {
             String filePath = fontsList[i].getAbsolutePath();
             String filePathExtension = getFileExtension(filePath);
@@ -1077,7 +1077,7 @@ public class Utils {
                 // Go through the list of allowed extensios.
                 if (filePathExtension.equalsIgnoreCase(fontExtension)) {
                     // This looks like a font file.
-                    AnkiFont font = AnkiFont.createAnkiFont(context, filePath, false);
+                    KanjiFont font = KanjiFont.createKanjiFont(context, filePath, false);
                     if (font != null) {
                         fonts.add(font);
                     }
@@ -1088,7 +1088,7 @@ public class Utils {
         if (ankiDroidFonts != null) {
             for (int i = 0; i < ankiDroidFonts.length; i++) {
                 // Assume all files in the assets directory are actually fonts.
-                AnkiFont font = AnkiFont.createAnkiFont(context, ankiDroidFonts[i], true);
+                KanjiFont font = KanjiFont.createKanjiFont(context, ankiDroidFonts[i], true);
                 if (font != null) {
                     fonts.add(font);
                 }

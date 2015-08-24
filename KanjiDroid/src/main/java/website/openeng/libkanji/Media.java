@@ -24,8 +24,8 @@ import android.text.TextUtils;
 
 import android.util.Pair;
 
-import website.openeng.anki.AnkiDatabaseManager;
-import website.openeng.anki.AnkiDb;
+import website.openeng.anki.KanjiDatabaseManager;
+import website.openeng.anki.KanjiDb;
 import website.openeng.anki.exception.APIVersionException;
 import website.openeng.compat.CompatHelper;
 import website.openeng.libkanji.template.Template;
@@ -112,7 +112,7 @@ public class Media {
 
     private Collection mCol;
     private String mDir;
-    private AnkiDb mDb;
+    private KanjiDb mDb;
 
 
     public Media(Collection col, boolean server) {
@@ -143,7 +143,7 @@ public class Media {
         String path = dir() + ".ad.db2";
         File dbFile = new File(path);
         boolean create = !(dbFile.exists());
-        mDb = AnkiDatabaseManager.getDatabase(path);
+        mDb = KanjiDatabaseManager.getDatabase(path);
         if (create) {
             _initDB();
         }
@@ -200,7 +200,7 @@ public class Media {
         if (mCol.getServer()) {
             return;
         }
-        AnkiDatabaseManager.closeDatabase(mDb.getPath());
+        KanjiDatabaseManager.closeDatabase(mDb.getPath());
         mDb = null;
     }
 
@@ -922,7 +922,7 @@ public class Media {
     /**
      * Used by unit tests only.
      */
-    public AnkiDb getDb() {
+    public KanjiDb getDb() {
         return mDb;
     }
 

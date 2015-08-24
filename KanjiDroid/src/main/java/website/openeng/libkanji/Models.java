@@ -106,7 +106,7 @@ public class Models {
     // BEGIN SQL table entries
 
     // private Decks mDeck;
-    // private AnkiDb mDb;
+    // private KanjiDb mDb;
     //
     /** Map for compiled Mustache Templates */
     private Map<String, Template> mCmpldTemplateMap = new HashMap<String, Template>();

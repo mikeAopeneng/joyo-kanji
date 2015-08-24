@@ -39,9 +39,9 @@ import java.util.concurrent.locks.ReentrantLock;
 
 import timber.log.Timber;
 
-public class AnkiStatsTaskHandler {
+public class KanjiStatsTaskHandler {
 
-    private static AnkiStatsTaskHandler sInstance;
+    private static KanjiStatsTaskHandler sInstance;
 
     private Collection mCollectionData;
     private float mStandardTextSize = 10f;
@@ -51,7 +51,7 @@ public class AnkiStatsTaskHandler {
     private static Lock sLock = new ReentrantLock();
 
 
-    public AnkiStatsTaskHandler(Collection collection){
+    public KanjiStatsTaskHandler(Collection collection){
         sInstance = this;
         mCollectionData = collection;
         sSelectedDeckId = mCollectionData.getDecks().selected();
@@ -62,10 +62,10 @@ public class AnkiStatsTaskHandler {
     }
 
     public static void setsSelectedDeckId(long sSelectedDeckId) {
-        AnkiStatsTaskHandler.sSelectedDeckId = sSelectedDeckId;
+        KanjiStatsTaskHandler.sSelectedDeckId = sSelectedDeckId;
     }
 
-    public static AnkiStatsTaskHandler getInstance() {
+    public static KanjiStatsTaskHandler getInstance() {
         return sInstance;
     }
 

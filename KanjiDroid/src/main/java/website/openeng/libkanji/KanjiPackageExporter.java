@@ -257,9 +257,9 @@ class AnkiExporter extends Exporter {
 
 
 
-public final class AnkiPackageExporter extends AnkiExporter {
+public final class KanjiPackageExporter extends AnkiExporter {
 
-    public AnkiPackageExporter(Collection col) {
+    public KanjiPackageExporter(Collection col) {
         super(col);
     }
 

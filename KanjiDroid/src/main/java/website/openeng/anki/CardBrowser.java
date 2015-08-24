@@ -1180,7 +1180,7 @@ public class CardBrowser extends NavigationDrawerActivity implements
             mColorFlagKey = colorFlagKey;
             mFontSizeScalePcent = fontSizeScalePcent;
             if (!customFont.equals("")) {
-                mCustomTypeface = AnkiFont.getTypeface(context, customFont);
+                mCustomTypeface = KanjiFont.getTypeface(context, customFont);
             }
             mInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         }

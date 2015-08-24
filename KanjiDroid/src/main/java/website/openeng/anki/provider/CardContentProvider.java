@@ -25,7 +25,7 @@ import android.database.MatrixCursor;
 import android.database.SQLException;
 import android.net.Uri;
 
-import website.openeng.anki.AnkiDb;
+import website.openeng.anki.KanjiDb;
 import website.openeng.anki.KanjiDroidApp;
 import website.openeng.anki.CollectionHelper;
 import website.openeng.anki.provider.FlashCardsContract.Data.Field;
@@ -736,7 +736,7 @@ public class CardContentProvider extends ContentProvider {
 
     private void answerCard(Collection col, Sched sched, Card cardToAnswer, int ease, long timeTaken) {
         try {
-            AnkiDb ankiDB = col.getDb();
+            KanjiDb ankiDB = col.getDb();
             ankiDB.getDatabase().beginTransaction();
             try {
                 if (cardToAnswer != null) {

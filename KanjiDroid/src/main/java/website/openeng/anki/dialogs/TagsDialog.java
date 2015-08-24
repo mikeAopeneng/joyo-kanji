@@ -31,7 +31,7 @@ import android.widget.Toast;
 
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
-import website.openeng.anki.AnkiActivity;
+import website.openeng.anki.KanjiActivity;
 import website.openeng.anki.R;
 
 import java.util.ArrayList;

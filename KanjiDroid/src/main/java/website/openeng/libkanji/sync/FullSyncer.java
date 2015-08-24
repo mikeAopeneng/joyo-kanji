@@ -19,8 +19,8 @@ package website.openeng.libkanji.sync;
 import android.database.sqlite.SQLiteDatabaseCorruptException;
 
 
-import website.openeng.anki.AnkiDatabaseManager;
-import website.openeng.anki.AnkiDb;
+import website.openeng.anki.KanjiDatabaseManager;
+import website.openeng.anki.KanjiDb;
 import website.openeng.anki.KanjiDroidApp;
 import website.openeng.anki.R;
 import website.openeng.anki.exception.UnknownHttpResponseException;
@@ -105,7 +105,7 @@ public class FullSyncer extends HttpSyncer {
         // check the received file is ok
         mCon.publishProgress(R.string.sync_check_download_file);
         try {
-            AnkiDb d = AnkiDatabaseManager.getDatabase(tpath);
+            KanjiDb d = KanjiDatabaseManager.getDatabase(tpath);
             if (!d.queryString("PRAGMA integrity_check").equalsIgnoreCase("ok")) {
                 Timber.e("Full sync - downloaded file corrupt");
                 return new Object[] { "remoteDbError" };
@@ -114,7 +114,7 @@ public class FullSyncer extends HttpSyncer {
             Timber.e("Full sync - downloaded file corrupt");
             return new Object[] { "remoteDbError" };
         } finally {
-            AnkiDatabaseManager.closeDatabase(tpath);
+            KanjiDatabaseManager.closeDatabase(tpath);
         }
         // overwrite existing collection
         File newFile = new File(tpath);

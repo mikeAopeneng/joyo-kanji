@@ -44,7 +44,7 @@ public class SyncErrorDialog extends AsyncDialogFragment {
 
 
     /**
-     * A set of dialogs belonging to AnkiActivity which deal with sync problems
+     * A set of dialogs belonging to KanjiActivity which deal with sync problems
      * 
      * @param dialogType An integer which specifies which of the sub-dialogs to show
      * @param dialogMessage A string which can be optionally used to set the dialog message

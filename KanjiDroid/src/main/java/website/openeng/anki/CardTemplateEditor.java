@@ -60,7 +60,7 @@ import timber.log.Timber;
 /**
  * Allows the user to view the template for the current note type
  */
-public class CardTemplateEditor extends AnkiActivity {
+public class CardTemplateEditor extends KanjiActivity {
     private TemplatePagerAdapter mTemplateAdapter;
     private ViewPager mViewPager;
     private SlidingTabLayout mSlidingTabLayout;
@@ -299,7 +299,7 @@ public class CardTemplateEditor extends AnkiActivity {
             try {
                 // Load template
                 long mid = getArguments().getLong("modelId");
-                JSONObject model = ((AnkiActivity) getActivity()).getCol().getModels().get(mid);
+                JSONObject model = ((KanjiActivity) getActivity()).getCol().getModels().get(mid);
                 JSONObject template = model.getJSONArray("tmpls").getJSONObject(position);
                 // Load EditText Views
                 EditText front = ((EditText) mainView.findViewById(R.id.front_edit));
@@ -359,7 +359,7 @@ public class CardTemplateEditor extends AnkiActivity {
         public boolean onOptionsItemSelected(MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.home:
-                    ((AnkiActivity) getActivity()).finishWithAnimation(ActivityTransitionAnimation.DIALOG_EXIT);
+                    ((KanjiActivity) getActivity()).finishWithAnimation(ActivityTransitionAnimation.DIALOG_EXIT);
                     return true;
                 case R.id.action_add:
                     Timber.i("CardTemplateEditor:: Add template button pressed");
@@ -368,7 +368,7 @@ public class CardTemplateEditor extends AnkiActivity {
                 case R.id.action_delete:
                     Timber.i("CardTemplateEditor:: Delete template button pressed");
                     Resources res = getResources();
-                    final Collection col = ((AnkiActivity) getActivity()).getCol();
+                    final Collection col = ((KanjiActivity) getActivity()).getCol();
                     int position = getArguments().getInt("position");
                     try {
                         // Get model & template
@@ -400,7 +400,7 @@ public class CardTemplateEditor extends AnkiActivity {
          */
         private JSONObject getModel() {
             long mid = getArguments().getLong("modelId");
-            return ((AnkiActivity) getActivity()).getCol().getModels().get(mid);
+            return ((KanjiActivity) getActivity()).getCol().getModels().get(mid);
         }
 
         /**
@@ -421,7 +421,7 @@ public class CardTemplateEditor extends AnkiActivity {
             String msg = String.format(res.getQuantityString(R.plurals.card_template_editor_confirm_delete,
                             numAffectedCards), numAffectedCards, tmpl.optString("name"));
             d.setArgs(msg);
-            ((AnkiActivity) getActivity()).showDialogFragment(d);
+            ((KanjiActivity) getActivity()).showDialogFragment(d);
         }
 
         /**
@@ -442,7 +442,7 @@ public class CardTemplateEditor extends AnkiActivity {
                     }
                 };
                 d.setArgs(getResources().getString(R.string.full_sync_confirmation));
-                ((AnkiActivity) getActivity()).showDialogFragment(d);
+                ((KanjiActivity) getActivity()).showDialogFragment(d);
             }
         }
 
@@ -477,7 +477,7 @@ public class CardTemplateEditor extends AnkiActivity {
                     }
                 };
                 d.setArgs(getResources().getString(R.string.full_sync_confirmation));
-                ((AnkiActivity) getActivity()).showDialogFragment(d);
+                ((KanjiActivity) getActivity()).showDialogFragment(d);
             }
         }
 

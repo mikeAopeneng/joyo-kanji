@@ -21,7 +21,7 @@ import android.content.SharedPreferences;
 import android.text.TextUtils;
 
 import website.openeng.anki.KanjiDroidApp;
-import website.openeng.anki.AnkiFont;
+import website.openeng.anki.KanjiFont;
 import website.openeng.libkanji.Utils;
 import website.openeng.themes.Themes;
 
@@ -40,7 +40,7 @@ public class CustomFontsReviewerExt implements ReviewerExt {
 
 
     public CustomFontsReviewerExt(Context context) {
-        Map<String, AnkiFont> customFontsMap = getCustomFontsMap(context);
+        Map<String, KanjiFont> customFontsMap = getCustomFontsMap(context);
         mCustomStyle = getCustomFontsStyle(customFontsMap) + getDominantFontStyle(context, customFontsMap);
         mSupportsQuickUpdate = customFontsMap.size() == 0;
     }
@@ -65,9 +65,9 @@ public class CustomFontsReviewerExt implements ReviewerExt {
      * <p>
      * Each font is mapped to the font family by the same name as the name of the font without the extension.
      */
-    private static String getCustomFontsStyle(Map<String, AnkiFont> customFontsMap) {
+    private static String getCustomFontsStyle(Map<String, KanjiFont> customFontsMap) {
         StringBuilder builder = new StringBuilder();
-        for (AnkiFont font : customFontsMap.values()) {
+        for (KanjiFont font : customFontsMap.values()) {
             builder.append(font.getDeclaration());
             builder.append('\n');
         }
@@ -104,10 +104,10 @@ public class CustomFontsReviewerExt implements ReviewerExt {
      * 
      * @return the default font style, or the empty string if no default font is set
      */
-    private String getDefaultFontStyle(Context context, Map<String, AnkiFont> customFontsMap) {
+    private String getDefaultFontStyle(Context context, Map<String, KanjiFont> customFontsMap) {
         if (mDefaultFontStyle == null) {
             SharedPreferences preferences = KanjiDroidApp.getSharedPrefs(context);
-            AnkiFont defaultFont = customFontsMap.get(preferences.getString("defaultFont", null));
+            KanjiFont defaultFont = customFontsMap.get(preferences.getString("defaultFont", null));
             if (defaultFont != null) {
                 mDefaultFontStyle = "BODY { " + defaultFont.getCSS() + " }\n";
             } else {
@@ -123,10 +123,10 @@ public class CustomFontsReviewerExt implements ReviewerExt {
      * 
      * @return the override font style, or the empty string if no override font is set
      */
-    private String getOverrideFontStyle(Context context, Map<String, AnkiFont> customFontsMap) {
+    private String getOverrideFontStyle(Context context, Map<String, KanjiFont> customFontsMap) {
         if (mOverrideFontStyle == null) {
             SharedPreferences preferences = KanjiDroidApp.getSharedPrefs(context);
-            AnkiFont defaultFont = customFontsMap.get(preferences.getString("defaultFont", null));
+            KanjiFont defaultFont = customFontsMap.get(preferences.getString("defaultFont", null));
             boolean overrideFont = preferences.getString("overrideFontBehavior", "0").equals("1");
             if (defaultFont != null && overrideFont) {
                 mOverrideFontStyle = "BODY, .card, * { " + defaultFont.getCSS() + " }\n";
@@ -143,7 +143,7 @@ public class CustomFontsReviewerExt implements ReviewerExt {
      * 
      * @return the font style, or the empty string if none applies
      */
-    private String getDominantFontStyle(Context context, Map<String, AnkiFont> customFontsMap) {
+    private String getDominantFontStyle(Context context, Map<String, KanjiFont> customFontsMap) {
         if (mDominantFontStyle == null) {
             mDominantFontStyle = getOverrideFontStyle(context, customFontsMap);
             if (TextUtils.isEmpty(mDominantFontStyle)) {
@@ -158,14 +158,14 @@ public class CustomFontsReviewerExt implements ReviewerExt {
 
 
     /**
-     * Returns a map from custom fonts names to the corresponding {@link AnkiFont} object.
+     * Returns a map from custom fonts names to the corresponding {@link KanjiFont} object.
      * <p>
      * The list of constructed lazily the first time is needed.
      */
-    private static Map<String, AnkiFont> getCustomFontsMap(Context context) {
-        List<AnkiFont> fonts = Utils.getCustomFonts(context);
-        Map<String, AnkiFont> customFontsMap = new HashMap<String, AnkiFont>();
-        for (AnkiFont f : fonts) {
+    private static Map<String, KanjiFont> getCustomFontsMap(Context context) {
+        List<KanjiFont> fonts = Utils.getCustomFonts(context);
+        Map<String, KanjiFont> customFontsMap = new HashMap<String, KanjiFont>();
+        for (KanjiFont f : fonts) {
             customFontsMap.put(f.getName(), f);
         }
         return customFontsMap;

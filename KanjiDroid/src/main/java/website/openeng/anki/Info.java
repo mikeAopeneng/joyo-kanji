@@ -49,7 +49,7 @@ import timber.log.Timber;
  * Shows an about box, which is a small HTML page.
  */
 
-public class Info extends AnkiActivity {
+public class Info extends KanjiActivity {
 
     public static final String TYPE_EXTRA = "infoType";
 

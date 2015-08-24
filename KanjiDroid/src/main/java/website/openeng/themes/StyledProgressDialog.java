@@ -24,7 +24,7 @@ import android.content.DialogInterface;
 import android.view.WindowManager.BadTokenException;
 
 import com.afollestad.materialdialogs.MaterialDialog;
-import website.openeng.anki.AnkiActivity;
+import website.openeng.anki.KanjiActivity;
 import website.openeng.anki.R;
 
 import timber.log.Timber;
@@ -75,8 +75,8 @@ public class StyledProgressDialog extends Dialog {
 
 
     private static boolean animationEnabled(Context context) {
-        if (context instanceof AnkiActivity) {
-            return ((AnkiActivity) context).animationEnabled();
+        if (context instanceof KanjiActivity) {
+            return ((KanjiActivity) context).animationEnabled();
         } else {
             return true;
         }

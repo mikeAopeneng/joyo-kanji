@@ -30,7 +30,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
 
-import website.openeng.anki.AnkiActivity;
+import website.openeng.anki.KanjiActivity;
 import website.openeng.anki.R;
 import website.openeng.anki.multimediacard.IMultimediaEditableNote;
 import website.openeng.anki.multimediacard.fields.AudioField;
@@ -46,7 +46,7 @@ import java.io.File;
 
 import timber.log.Timber;
 
-public class MultimediaEditFieldActivity extends AnkiActivity {
+public class MultimediaEditFieldActivity extends KanjiActivity {
 
     public static final String EXTRA_RESULT_FIELD = "edit.field.result.field";
     public static final String EXTRA_RESULT_FIELD_INDEX = "edit.field.result.field.index";

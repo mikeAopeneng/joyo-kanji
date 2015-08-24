@@ -48,7 +48,7 @@ import website.openeng.anim.ViewAnimation;
 import website.openeng.anki.dialogs.CustomStudyDialog;
 import website.openeng.anki.dialogs.TagsDialog;
 import website.openeng.anki.dialogs.TagsDialog.TagsDialogListener;
-import website.openeng.anki.stats.AnkiStatsTaskHandler;
+import website.openeng.anki.stats.KanjiStatsTaskHandler;
 import website.openeng.anki.stats.ChartView;
 import website.openeng.async.CollectionLoader;
 import website.openeng.async.DeckTask;
@@ -259,7 +259,7 @@ public class StudyOptionsFragment extends Fragment implements LoaderManager.Load
         }
         refreshInterface(true);
         setHasOptionsMenu(true);
-        ((AnkiActivity) getActivity()).hideProgressBar();
+        ((KanjiActivity) getActivity()).hideProgressBar();
 
         // Added by Mike Aug 15: redirect to cards
         openReviewer();
@@ -454,7 +454,7 @@ public class StudyOptionsFragment extends Fragment implements LoaderManager.Load
                                     });
                         }
                         // Show the DialogFragment via Activity
-                        ((AnkiActivity) getActivity()).showDialogFragment(dialogFragment);
+                        ((KanjiActivity) getActivity()).showDialogFragment(dialogFragment);
                     }
                 })
                 .build();
@@ -524,7 +524,7 @@ public class StudyOptionsFragment extends Fragment implements LoaderManager.Load
     private void updateChart(double[][] serieslist) {
         if (mChartView != null) {
             Collection col = CollectionHelper.getInstance().getCol(getActivity());
-            AnkiStatsTaskHandler.createSmallDueChartChart(col, serieslist, mChartView);
+            KanjiStatsTaskHandler.createSmallDueChartChart(col, serieslist, mChartView);
             if (mChartView.getVisibility() == View.INVISIBLE) {
                 mChartView.setVisibility(View.VISIBLE);
                 mChartView.setAnimation(ViewAnimation.fade(ViewAnimation.FADE_IN, 500, 0));
@@ -882,7 +882,7 @@ public class StudyOptionsFragment extends Fragment implements LoaderManager.Load
     protected void startLoadingCollection() {
         // Initialize the open collection loader
         Timber.d("startLoadingCollection()");
-        AnkiActivity activity = (AnkiActivity) getActivity();
+        KanjiActivity activity = (KanjiActivity) getActivity();
         activity.showProgressBar();
         getLoaderManager().initLoader(0, null, this);
     }
@@ -900,7 +900,7 @@ public class StudyOptionsFragment extends Fragment implements LoaderManager.Load
         if (col != null) {
             onCollectionLoaded(col);
         } else {
-            AnkiDatabaseManager.closeDatabase(CollectionHelper.getCollectionPath(getActivity()));
+            KanjiDatabaseManager.closeDatabase(CollectionHelper.getCollectionPath(getActivity()));
             //showDialog(DIALOG_LOAD_FAILED);
         }
     }
