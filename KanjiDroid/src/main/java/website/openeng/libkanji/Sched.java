@@ -29,8 +29,8 @@ import android.text.TextUtils;
 import android.text.style.StyleSpan;
 import android.util.Pair;
 
-import website.openeng.anki.KanjiDroidApp;
-import website.openeng.anki.R;
+import website.openeng.kandroidpkg.KanjiDroidApp;
+import website.openeng.kandroidpkg.R;
 import website.openeng.libkanji.hooks.Hooks;
 
 import org.json.JSONArray;

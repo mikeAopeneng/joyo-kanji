@@ -49,7 +49,7 @@
 
             <FrameLayout
                 android:id="@+id/studyoptions_fragment"
-                android:name="website.openeng.anki.StudyOptionsFragment"
+                android:name="website.openeng.kandroidpkg.StudyOptionsFragment"
                 android:layout_width="0dip"
                 android:layout_height="fill_parent"
                 android:layout_weight="3"

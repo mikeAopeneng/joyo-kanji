@@ -24,12 +24,12 @@ import android.database.sqlite.SQLiteDatabase;
 import android.text.TextUtils;
 import android.util.Pair;
 
-import website.openeng.anki.KanjiDatabaseManager;
-import website.openeng.anki.KanjiDb;
-import website.openeng.anki.KanjiDroidApp;
-import website.openeng.anki.R;
-import website.openeng.anki.UIUtils;
-import website.openeng.anki.exception.ConfirmModSchemaException;
+import website.openeng.kandroidpkg.KanjiDatabaseManager;
+import website.openeng.kandroidpkg.KanjiDb;
+import website.openeng.kandroidpkg.KanjiDroidApp;
+import website.openeng.kandroidpkg.R;
+import website.openeng.kandroidpkg.UIUtils;
+import website.openeng.kandroidpkg.exception.ConfirmModSchemaException;
 import website.openeng.libkanji.hooks.Hooks;
 import website.openeng.libkanji.template.Template;
 import website.openeng.utils.VersionUtils;

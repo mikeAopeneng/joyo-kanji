@@ -1,7 +1,7 @@
 //
 //package website.openeng.widget;
 //
-//import website.openeng.anki.KanjiDroidApp;
+//import website.openeng.kandroidpkg.KanjiDroidApp;
 //import website.openeng.libkanji.Card;
 //import website.openeng.libkanji.Collection;
 //

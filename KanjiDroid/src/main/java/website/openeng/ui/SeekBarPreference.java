@@ -18,7 +18,7 @@ import android.widget.LinearLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import website.openeng.anki.KanjiDroidApp;
+import website.openeng.kandroidpkg.KanjiDroidApp;
 
 public class SeekBarPreference extends DialogPreference implements SeekBar.OnSeekBarChangeListener {
     private static final String androidns = "http://schemas.android.com/apk/res/android";

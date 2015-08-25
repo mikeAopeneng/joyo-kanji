@@ -22,7 +22,7 @@
 
 <!-- Reviewing Preferences -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://arbitrary.app.namespace/website.openeng.anki"
+    xmlns:app="http://arbitrary.app.namespace/website.openeng.kandroidpkg"
     android:title="@string/pref_cat_reviewing"
     android:summary="@string/pref_cat_reviewing_summ" >
     <PreferenceCategory android:title="@string/pref_cat_reviewer_behaviour" >

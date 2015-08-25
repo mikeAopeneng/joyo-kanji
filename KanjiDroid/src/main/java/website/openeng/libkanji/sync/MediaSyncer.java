@@ -20,11 +20,11 @@ package website.openeng.libkanji.sync;
 import android.text.TextUtils;
 import android.util.Pair;
 
-import website.openeng.anki.KanjiDroidApp;
-import website.openeng.anki.R;
-import website.openeng.anki.exception.APIVersionException;
-import website.openeng.anki.exception.UnknownHttpResponseException;
-import website.openeng.anki.exception.UnsupportedSyncException;
+import website.openeng.kandroidpkg.KanjiDroidApp;
+import website.openeng.kandroidpkg.R;
+import website.openeng.kandroidpkg.exception.APIVersionException;
+import website.openeng.kandroidpkg.exception.UnknownHttpResponseException;
+import website.openeng.kandroidpkg.exception.UnsupportedSyncException;
 import website.openeng.async.Connection;
 import website.openeng.libkanji.Collection;
 import website.openeng.libkanji.Consts;

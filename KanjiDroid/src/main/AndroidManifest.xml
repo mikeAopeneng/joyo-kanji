@@ -19,7 +19,7 @@
 ~ this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="website.openeng.anki"
+    package="website.openeng.kandroidpkg"
     android:installLocation="auto"
     android:versionCode="20500151"
     android:versionName="2.5alpha51" >
@@ -69,7 +69,7 @@
         android:xlargeScreens="true" />
 
     <application
-        android:name="website.openeng.anki.KanjiDroidApp"
+        android:name="website.openeng.kandroidpkg.KanjiDroidApp"
         android:allowBackup="true"
         android:icon="@drawable/anki"
         android:label="@string/app_name"
@@ -77,7 +77,7 @@
         android:windowSoftInputMode="adjustResize"
         android:largeHeap="true">
         <activity
-            android:name="website.openeng.anki.IntentHandler"
+            android:name="website.openeng.kandroidpkg.IntentHandler"
             android:configChanges="keyboardHidden|orientation|screenSize|locale"
             android:label="@string/app_name">
             <intent-filter>
@@ -140,55 +140,55 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="website.openeng.anki.DeckPicker"
+            android:name="website.openeng.kandroidpkg.DeckPicker"
             android:configChanges="keyboardHidden|orientation|screenSize|locale"
             android:label="@string/app_name">
         </activity>
         <activity
-            android:name="website.openeng.anki.StudyOptionsActivity"
+            android:name="website.openeng.kandroidpkg.StudyOptionsActivity"
             android:configChanges="keyboardHidden|locale|orientation|screenSize"
             android:label="StudyOptions"
             android:parentActivityName=".DeckPicker">
             <!-- The meta-data element is needed for versions lower than 4.1 -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="website.openeng.anki.DeckPicker" />
+                android:value="website.openeng.kandroidpkg.DeckPicker" />
         </activity>
         <activity
-            android:name="website.openeng.anki.CardBrowser"
+            android:name="website.openeng.kandroidpkg.CardBrowser"
             android:configChanges="keyboardHidden|orientation|locale|screenSize"
             android:label="Card Browser"
             android:parentActivityName=".DeckPicker">
             <!-- The meta-data element is needed for versions lower than 4.1 -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="website.openeng.anki.DeckPicker" />
+                android:value="website.openeng.kandroidpkg.DeckPicker" />
         </activity>
         <activity
-            android:name="website.openeng.anki.Reviewer"
+            android:name="website.openeng.kandroidpkg.Reviewer"
             android:configChanges="keyboardHidden|orientation|locale|screenSize"
             android:windowSoftInputMode="stateAlwaysHidden"
             android:parentActivityName=".StudyOptionsActivity">
             <!-- The meta-data element is needed for versions lower than 4.1 -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="website.openeng.anki.StudyOptionsActivity" />
+                android:value="website.openeng.kandroidpkg.StudyOptionsActivity" />
         </activity>
         <activity
-            android:name="website.openeng.anki.VideoPlayer"
+            android:name="website.openeng.kandroidpkg.VideoPlayer"
             android:configChanges="keyboardHidden|orientation|locale|screenSize"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
         <activity
-            android:name="website.openeng.anki.MyAccount"
+            android:name="website.openeng.kandroidpkg.MyAccount"
             android:configChanges="keyboardHidden|orientation|locale|screenSize"
             android:label="@string/menu_my_account" />
         <activity
-            android:name="website.openeng.anki.Preferences"
+            android:name="website.openeng.kandroidpkg.Preferences"
             android:configChanges="keyboardHidden|orientation|locale|screenSize"
             android:label="@string/preferences_title"
             android:theme="@style/LegacyActionBarWhite"/>
         <activity
-            android:name="website.openeng.anki.DeckOptions"
+            android:name="website.openeng.kandroidpkg.DeckOptions"
             android:configChanges="keyboardHidden|orientation|locale|screenSize"
             android:label="@string/deckpreferences_title"
             android:theme="@style/LegacyActionBarWhite"/>
@@ -198,11 +198,11 @@
             android:label="@string/deckpreferences_title"
             android:theme="@style/LegacyActionBarWhite"/>
         <activity
-            android:name="website.openeng.anki.Info"
+            android:name="website.openeng.kandroidpkg.Info"
             android:configChanges="locale"
             android:label="@string/about_title" />
         <activity
-            android:name="website.openeng.anki.NoteEditor"
+            android:name="website.openeng.kandroidpkg.NoteEditor"
             android:configChanges="keyboardHidden|orientation|locale|screenSize"
             android:label="@string/fact_adder_intent_title" >
             <intent-filter>
@@ -218,27 +218,27 @@
                 <data android:mimeType="text/plain" />
             </intent-filter>
         </activity>
-        <activity android:name="website.openeng.anki.dialogs.KanjiDroidCrashReportDialog"
+        <activity android:name="website.openeng.kandroidpkg.dialogs.KanjiDroidCrashReportDialog"
             android:theme="@style/Theme.CrashReportDialog"
             android:launchMode="singleInstance"
             android:excludeFromRecents="true"
             android:finishOnTaskLaunch="true" />
         <activity
-            android:name="website.openeng.anki.Statistics"
+            android:name="website.openeng.kandroidpkg.Statistics"
             android:theme="@style/Theme_White_Statistics"
             android:configChanges="keyboardHidden|orientation|locale|screenSize"
             android:parentActivityName=".DeckPicker">
             <!-- The meta-data element is needed for versions lower than 4.1 -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="website.openeng.anki.DeckPicker" />
+                android:value="website.openeng.kandroidpkg.DeckPicker" />
         </activity>
         <activity
-            android:name="website.openeng.anki.Previewer"
+            android:name="website.openeng.kandroidpkg.Previewer"
             android:configChanges="locale"
             android:label="@string/preview_title" />
 
-        <service android:name="website.openeng.anki.services.NotificationService" />
+        <service android:name="website.openeng.kandroidpkg.services.NotificationService" />
 
         <!-- small widget -->
         <receiver
@@ -287,7 +287,7 @@
         -->
 
         <receiver
-            android:name="website.openeng.anki.receiver.SdCardReceiver"
+            android:name="website.openeng.kandroidpkg.receiver.SdCardReceiver"
             android:enabled="true"
             android:exported="true" >
             <intent-filter>
@@ -308,22 +308,22 @@
             android:label="@string/title_activity_edit_text" >
         </activity>
         <activity
-            android:name="website.openeng.anki.multimediacard.activity.TranslationActivity"
+            android:name="website.openeng.kandroidpkg.multimediacard.activity.TranslationActivity"
             android:configChanges="keyboardHidden|orientation|locale|screenSize"
             android:label="@string/title_activity_translation" >
         </activity>
         <activity
-            android:name="website.openeng.anki.multimediacard.activity.LoadPronounciationActivity"
+            android:name="website.openeng.kandroidpkg.multimediacard.activity.LoadPronounciationActivity"
             android:configChanges="keyboardHidden|orientation|locale|screenSize"
             android:label="@string/title_activity_load_pronounciation" >
         </activity>
         <activity
-            android:name="website.openeng.anki.multimediacard.activity.SearchImageActivity"
+            android:name="website.openeng.kandroidpkg.multimediacard.activity.SearchImageActivity"
             android:configChanges="keyboardHidden|orientation|locale|screenSize"
             android:label="@string/title_activity_search_image" >
         </activity>
         <activity
-            android:name="website.openeng.anki.CardTemplateEditor"
+            android:name="website.openeng.kandroidpkg.CardTemplateEditor"
             android:configChanges="keyboardHidden|orientation|locale|screenSize"
             android:label="@string/title_activity_template_editor"
             android:windowSoftInputMode="stateAlwaysHidden" >
@@ -345,7 +345,7 @@
 
         <provider
             android:name=".provider.CardContentProvider"
-            android:authorities="website.openeng.anki.flashcards"
+            android:authorities="website.openeng.kandroidpkg.flashcards"
             android:enabled="true"
             android:exported="true" >
         </provider>

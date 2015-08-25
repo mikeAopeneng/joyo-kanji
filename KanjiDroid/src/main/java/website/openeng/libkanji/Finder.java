@@ -24,8 +24,8 @@ import android.text.TextUtils;
 
 import android.util.Pair;
 
-import website.openeng.anki.KanjiDroidApp;
-import website.openeng.anki.CardBrowser;
+import website.openeng.kandroidpkg.KanjiDroidApp;
+import website.openeng.kandroidpkg.CardBrowser;
 import website.openeng.async.DeckTask;
 
 import org.json.JSONArray;

@@ -20,8 +20,8 @@ package website.openeng.libkanji;
 import android.content.Context;
 import android.database.Cursor;
 
-import website.openeng.anki.KanjiDroidApp;
-import website.openeng.anki.R;
+import website.openeng.kandroidpkg.KanjiDroidApp;
+import website.openeng.kandroidpkg.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;

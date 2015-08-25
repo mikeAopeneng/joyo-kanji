@@ -22,7 +22,7 @@
 
 <!-- Fonts & Style Prefrences -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://arbitrary.app.namespace/website.openeng.anki"
+    xmlns:app="http://arbitrary.app.namespace/website.openeng.kandroidpkg"
             android:title="@string/pref_cat_fonts"
         android:key="font_preference_group"
         android:summary="@string/pref_cat_fonts_summ">

@@ -13,17 +13,17 @@
  * You should have received a copy of the GNU General Public License along with         *
  * this program.  If not, see <http://www.gnu.org/licenses/>.                           *
  ****************************************************************************************/
-package website.openeng.anki.tests;
+package website.openeng.kandroidpkg.tests;
 
 import android.test.AndroidTestCase;
 import android.test.suitebuilder.annotation.Suppress;
 
-import website.openeng.anki.BackupManager;
-import website.openeng.anki.exception.APIVersionException;
+import website.openeng.kandroidpkg.BackupManager;
+import website.openeng.kandroidpkg.exception.APIVersionException;
 import website.openeng.libkanji.Collection;
 import website.openeng.libkanji.Note;
 import website.openeng.libkanji.Media;
-import website.openeng.anki.tests.Shared;
+import website.openeng.kandroidpkg.tests.Shared;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;

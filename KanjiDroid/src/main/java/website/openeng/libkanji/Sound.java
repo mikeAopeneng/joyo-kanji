@@ -33,9 +33,9 @@ import android.view.WindowManager;
 import android.webkit.MimeTypeMap;
 import android.widget.VideoView;
 
-import website.openeng.anki.AbstractFlashcardViewer;
-import website.openeng.anki.KanjiDroidApp;
-import website.openeng.anki.ReadText;
+import website.openeng.kandroidpkg.AbstractFlashcardViewer;
+import website.openeng.kandroidpkg.KanjiDroidApp;
+import website.openeng.kandroidpkg.ReadText;
 import website.openeng.compat.CompatHelper;
 
 import java.lang.ref.WeakReference;

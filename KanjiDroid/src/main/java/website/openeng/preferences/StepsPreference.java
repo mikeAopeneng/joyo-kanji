@@ -22,8 +22,8 @@ import android.text.InputType;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 
-import website.openeng.anki.KanjiDroidApp;
-import website.openeng.anki.R;
+import website.openeng.kandroidpkg.KanjiDroidApp;
+import website.openeng.kandroidpkg.R;
 import website.openeng.themes.Themes;
 
 import org.json.JSONArray;

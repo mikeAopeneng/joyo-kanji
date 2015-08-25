@@ -23,7 +23,7 @@ import android.text.InputType;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 
-import website.openeng.anki.KanjiDroidApp;
+import website.openeng.kandroidpkg.KanjiDroidApp;
 
 public class NumberRangePreference extends EditTextPreference {
 

@@ -21,8 +21,8 @@ import android.content.res.Resources;
 
 import android.widget.Toast;
 
-import website.openeng.anki.KanjiDroidApp;
-import website.openeng.anki.R;
+import website.openeng.kandroidpkg.KanjiDroidApp;
+import website.openeng.kandroidpkg.R;
 import website.openeng.libkanji.Card;
 
 import timber.log.Timber;

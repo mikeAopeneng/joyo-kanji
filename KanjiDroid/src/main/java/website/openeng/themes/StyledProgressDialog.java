@@ -24,8 +24,8 @@ import android.content.DialogInterface;
 import android.view.WindowManager.BadTokenException;
 
 import com.afollestad.materialdialogs.MaterialDialog;
-import website.openeng.anki.KanjiActivity;
-import website.openeng.anki.R;
+import website.openeng.kandroidpkg.KanjiActivity;
+import website.openeng.kandroidpkg.R;
 
 import timber.log.Timber;
 

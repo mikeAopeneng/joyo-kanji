@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 
-import website.openeng.anki.KanjiDroidApp;
+import website.openeng.kandroidpkg.KanjiDroidApp;
 
 import timber.log.Timber;
 

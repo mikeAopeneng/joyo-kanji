@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.support.v4.app.TaskStackBuilder;
 import android.view.View;
 
-import website.openeng.anki.KanjiActivity;
+import website.openeng.kandroidpkg.KanjiActivity;
 
 import java.text.Normalizer;
 

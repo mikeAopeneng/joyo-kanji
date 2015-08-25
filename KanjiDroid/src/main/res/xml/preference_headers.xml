@@ -22,53 +22,53 @@
 
     <!--  General Preferences -->
     <header
-        android:fragment="website.openeng.anki.Preferences$SettingsFragment"
+        android:fragment="website.openeng.kandroidpkg.Preferences$SettingsFragment"
         android:summary="@string/pref_cat_general_summ"
         android:title="@string/pref_cat_general">
         <extra
             android:name="subscreen"
-            android:value="website.openeng.anki.prefs.general" />
+            android:value="website.openeng.kandroidpkg.prefs.general" />
     </header>
 
     <!-- Reviewing Preferences -->
     <header
-        android:fragment="website.openeng.anki.Preferences$SettingsFragment"
+        android:fragment="website.openeng.kandroidpkg.Preferences$SettingsFragment"
         android:summary="@string/pref_cat_reviewing_summ"
         android:title="@string/pref_cat_reviewing">
         <extra
             android:name="subscreen"
-            android:value="website.openeng.anki.prefs.reviewing" />
+            android:value="website.openeng.kandroidpkg.prefs.reviewing" />
     </header>
 
     <!-- Fonts & Style Prefrences -->
     <header
-        android:fragment="website.openeng.anki.Preferences$SettingsFragment"
+        android:fragment="website.openeng.kandroidpkg.Preferences$SettingsFragment"
         android:key="font_preference_group"
         android:summary="@string/pref_cat_fonts_summ"
         android:title="@string/pref_cat_fonts">
         <extra
             android:name="subscreen"
-            android:value="website.openeng.anki.prefs.fonts" />
+            android:value="website.openeng.kandroidpkg.prefs.fonts" />
     </header>
 
     <!-- Navigation Prefrences -->
     <header
-        android:fragment="website.openeng.anki.Preferences$SettingsFragment"
+        android:fragment="website.openeng.kandroidpkg.Preferences$SettingsFragment"
         android:summary="@string/pref_cat_gestures_summ"
         android:title="@string/pref_cat_gestures">
         <extra
             android:name="subscreen"
-            android:value="website.openeng.anki.prefs.gestures" />
+            android:value="website.openeng.kandroidpkg.prefs.gestures" />
     </header>
 
     <!-- Advanced Preferences -->
     <header
-        android:fragment="website.openeng.anki.Preferences$SettingsFragment"
+        android:fragment="website.openeng.kandroidpkg.Preferences$SettingsFragment"
         android:key="pref_screen_advanced"
         android:summary="@string/pref_cat_advanced_summ"
         android:title="@string/pref_cat_advanced">
         <extra
             android:name="subscreen"
-            android:value="website.openeng.anki.prefs.advanced" />
+            android:value="website.openeng.kandroidpkg.prefs.advanced" />
     </header>
 </preference-headers>

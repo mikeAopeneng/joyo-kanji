@@ -20,10 +20,10 @@ import android.content.SharedPreferences;
 import android.database.SQLException;
 import android.os.AsyncTask;
 
-import website.openeng.anki.KanjiDroidApp;
-import website.openeng.anki.CollectionHelper;
-import website.openeng.anki.MetaDB;
-import website.openeng.anki.services.NotificationService;
+import website.openeng.kandroidpkg.KanjiDroidApp;
+import website.openeng.kandroidpkg.CollectionHelper;
+import website.openeng.kandroidpkg.MetaDB;
+import website.openeng.kandroidpkg.services.NotificationService;
 import website.openeng.async.BaseAsyncTask;
 import website.openeng.libkanji.Collection;
 import website.openeng.libkanji.Decks;

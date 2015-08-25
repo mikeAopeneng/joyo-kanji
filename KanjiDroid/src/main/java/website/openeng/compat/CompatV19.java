@@ -14,8 +14,8 @@ import android.util.TypedValue;
 import android.view.View;
 import android.widget.RemoteViews;
 
-import website.openeng.anki.NavigationDrawerActivity;
-import website.openeng.anki.R;
+import website.openeng.kandroidpkg.NavigationDrawerActivity;
+import website.openeng.kandroidpkg.R;
 
 /** Implementation of {@link Compat} for SDK level 19 */
 @TargetApi(19)

@@ -1,8 +1,8 @@
-package website.openeng.anki.tests;
+package website.openeng.kandroidpkg.tests;
 
 import android.test.AndroidTestCase;
 
-import website.openeng.anki.CollectionHelper;
+import website.openeng.kandroidpkg.CollectionHelper;
 
 import java.io.IOException;
 

@@ -23,7 +23,7 @@ import android.content.ContentValues;
 import android.database.Cursor;
 import android.util.Pair;
 
-import website.openeng.anki.exception.ConfirmModSchemaException;
+import website.openeng.kandroidpkg.exception.ConfirmModSchemaException;
 import website.openeng.libkanji.template.Template;
 import org.json.JSONArray;
 import org.json.JSONException;

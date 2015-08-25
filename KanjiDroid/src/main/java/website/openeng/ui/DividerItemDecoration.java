@@ -7,7 +7,7 @@ import android.graphics.drawable.Drawable;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
-import website.openeng.anki.R;
+import website.openeng.kandroidpkg.R;
 
 /**
  * Copied and modified from http://stackoverflow.com/questions/24618829/27037230#27037230

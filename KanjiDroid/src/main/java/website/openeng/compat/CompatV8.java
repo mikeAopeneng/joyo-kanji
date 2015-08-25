@@ -12,11 +12,11 @@ import android.view.WindowManager;
 import android.view.animation.AlphaAnimation;
 import android.widget.RemoteViews;
 
-import website.openeng.anki.KanjiActivity;
-import website.openeng.anki.DeckPicker;
-import website.openeng.anki.NavigationDrawerActivity;
-import website.openeng.anki.ReadText;
-import website.openeng.anki.exception.APIVersionException;
+import website.openeng.kandroidpkg.KanjiActivity;
+import website.openeng.kandroidpkg.DeckPicker;
+import website.openeng.kandroidpkg.NavigationDrawerActivity;
+import website.openeng.kandroidpkg.ReadText;
+import website.openeng.kandroidpkg.exception.APIVersionException;
 
 import java.util.regex.Pattern;
 

@@ -3,7 +3,7 @@ package website.openeng.utils;
 
 
 
-import website.openeng.anki.KanjiDroidApp;
+import website.openeng.kandroidpkg.KanjiDroidApp;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;

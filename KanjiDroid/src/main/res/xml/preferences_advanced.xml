@@ -22,7 +22,7 @@
 
 <!-- Advanced Preferences -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://arbitrary.app.namespace/website.openeng.anki"
+    xmlns:app="http://arbitrary.app.namespace/website.openeng.kandroidpkg"
     android:title="@string/pref_cat_advanced"
     android:summary="@string/pref_cat_advanced_summ"
     android:key="pref_screen_advanced">
@@ -121,7 +121,7 @@
         android:key="about_dialog_preference"
         android:title="@string/about_title">
         <intent
-            android:targetPackage="website.openeng.anki"
-            android:targetClass="website.openeng.anki.Info"/>
+            android:targetPackage="website.openeng.kandroidpkg"
+            android:targetClass="website.openeng.kandroidpkg.Info"/>
     </Preference>
 </PreferenceScreen>

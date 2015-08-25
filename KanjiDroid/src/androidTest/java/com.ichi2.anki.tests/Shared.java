@@ -14,7 +14,7 @@
  * this program.  If not, see <http://www.gnu.org/licenses/>.                           *
  ****************************************************************************************/
 
-package website.openeng.anki.tests;
+package website.openeng.kandroidpkg.tests;
 
 import android.content.Context;
 

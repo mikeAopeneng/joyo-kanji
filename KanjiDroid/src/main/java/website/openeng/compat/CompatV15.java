@@ -4,7 +4,7 @@ import android.annotation.TargetApi;
 import android.speech.tts.TextToSpeech;
 import android.speech.tts.UtteranceProgressListener;
 
-import website.openeng.anki.ReadText;
+import website.openeng.kandroidpkg.ReadText;
 
 /** Implementation of {@link Compat} for SDK level 15 */
 @TargetApi(15)

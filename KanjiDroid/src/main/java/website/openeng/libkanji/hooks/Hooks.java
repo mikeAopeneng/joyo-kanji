@@ -21,7 +21,7 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
 
-import website.openeng.anki.KanjiDroidApp;
+import website.openeng.kandroidpkg.KanjiDroidApp;
 import website.openeng.libkanji.LaTeX;
 
 import java.util.ArrayList;

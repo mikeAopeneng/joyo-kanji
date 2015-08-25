@@ -23,9 +23,9 @@ import android.preference.DialogPreference;
 import android.util.AttributeSet;
 import android.widget.Toast;
 
-import website.openeng.anki.KanjiDroidApp;
-import website.openeng.anki.MetaDB;
-import website.openeng.anki.R;
+import website.openeng.kandroidpkg.KanjiDroidApp;
+import website.openeng.kandroidpkg.MetaDB;
+import website.openeng.kandroidpkg.R;
 
 public class CustomDialogPreference extends DialogPreference implements DialogInterface.OnClickListener {
     private Context mContext;

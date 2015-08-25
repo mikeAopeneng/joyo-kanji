@@ -192,7 +192,7 @@
                     android:gravity="center"
                     android:weightSum="5">
 
-                    <website.openeng.anki.stats.ChartView
+                    <website.openeng.kandroidpkg.stats.ChartView
                         android:id="@+id/chart_view_small_chart"
                         android:layout_width="0dip"
                         android:layout_height="250dip"

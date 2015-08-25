@@ -18,7 +18,7 @@ package website.openeng.libkanji.hooks;
 
 
 
-import website.openeng.anki.KanjiDroidApp;
+import website.openeng.kandroidpkg.KanjiDroidApp;
 
 import java.util.Locale;
 import java.util.regex.Matcher;

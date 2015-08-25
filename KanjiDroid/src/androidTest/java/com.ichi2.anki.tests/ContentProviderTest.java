@@ -15,7 +15,7 @@
  * this program.  If not, see <http://www.gnu.org/licenses/>.                           *
  ****************************************************************************************/
 
-package website.openeng.anki.tests;
+package website.openeng.kandroidpkg.tests;
 
 import android.content.ContentResolver;
 import android.content.ContentValues;
@@ -24,10 +24,10 @@ import android.net.Uri;
 import android.test.AndroidTestCase;
 import android.util.Log;
 
-import website.openeng.anki.AbstractFlashcardViewer;
-import website.openeng.anki.KanjiDroidApp;
-import website.openeng.anki.CollectionHelper;
-import website.openeng.anki.provider.FlashCardsContract;
+import website.openeng.kandroidpkg.AbstractFlashcardViewer;
+import website.openeng.kandroidpkg.KanjiDroidApp;
+import website.openeng.kandroidpkg.CollectionHelper;
+import website.openeng.kandroidpkg.provider.FlashCardsContract;
 import website.openeng.libkanji.Card;
 import website.openeng.libkanji.Collection;
 import website.openeng.libkanji.Decks;
@@ -39,7 +39,7 @@ import org.json.JSONObject;
 import java.util.List;
 
 /**
- * Test cases for {@link website.openeng.anki.provider.CardContentProvider}.
+ * Test cases for {@link website.openeng.kandroidpkg.provider.CardContentProvider}.
  * <p/>
  * These tests should cover all supported operations for each URI.
  */

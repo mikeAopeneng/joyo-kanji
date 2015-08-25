@@ -21,9 +21,9 @@ import android.database.Cursor;
 import android.database.SQLException;
 
 
-import website.openeng.anki.KanjiDroidApp;
-import website.openeng.anki.R;
-import website.openeng.anki.exception.UnknownHttpResponseException;
+import website.openeng.kandroidpkg.KanjiDroidApp;
+import website.openeng.kandroidpkg.R;
+import website.openeng.kandroidpkg.exception.UnknownHttpResponseException;
 import website.openeng.async.Connection;
 import website.openeng.libkanji.Collection;
 import website.openeng.libkanji.Consts;

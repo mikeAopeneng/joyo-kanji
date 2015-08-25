@@ -32,9 +32,9 @@ import android.os.IBinder;
 import android.view.View;
 import android.widget.RemoteViews;
 
-import website.openeng.anki.KanjiDroidApp;
-import website.openeng.anki.DeckPicker;
-import website.openeng.anki.R;
+import website.openeng.kandroidpkg.KanjiDroidApp;
+import website.openeng.kandroidpkg.DeckPicker;
+import website.openeng.kandroidpkg.R;
 import website.openeng.compat.CompatHelper;
 
 import timber.log.Timber;

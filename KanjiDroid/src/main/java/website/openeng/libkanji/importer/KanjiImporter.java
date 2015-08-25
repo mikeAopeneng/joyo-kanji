@@ -20,9 +20,9 @@ import android.content.res.Resources;
 import android.database.Cursor;
 
 import com.google.gson.stream.JsonReader;
-import website.openeng.anki.KanjiDatabaseManager;
-import website.openeng.anki.BackupManager;
-import website.openeng.anki.R;
+import website.openeng.kandroidpkg.KanjiDatabaseManager;
+import website.openeng.kandroidpkg.BackupManager;
+import website.openeng.kandroidpkg.R;
 import website.openeng.async.DeckTask;
 import website.openeng.libkanji.Collection;
 import website.openeng.libkanji.Media;

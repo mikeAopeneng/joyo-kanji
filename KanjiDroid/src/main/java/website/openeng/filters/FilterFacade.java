@@ -4,7 +4,7 @@ package website.openeng.filters;
 import android.content.Context;
 import android.util.Pair;
 
-import website.openeng.anki.KanjiDroidApp;
+import website.openeng.kandroidpkg.KanjiDroidApp;
 
 import java.util.ArrayList;
 import java.util.List;

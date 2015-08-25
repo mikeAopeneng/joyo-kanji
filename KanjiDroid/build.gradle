@@ -5,10 +5,10 @@ android {
     buildToolsVersion "22.0.1"
 
     defaultConfig {
-        applicationId "website.openeng.anki"
+        applicationId "website.openeng.kandroidpkg"
         minSdkVersion 8
         targetSdkVersion 22
-        testApplicationId "website.openeng.anki.tests"
+        testApplicationId "website.openeng.kandroidpkg.tests"
     }
     signingConfigs {
       release {

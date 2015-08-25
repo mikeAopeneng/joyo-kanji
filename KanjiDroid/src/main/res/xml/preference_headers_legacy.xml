@@ -17,22 +17,22 @@
 
 <!--  General Preferences -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://arbitrary.app.namespace/website.openeng.anki" >
+    xmlns:app="http://arbitrary.app.namespace/website.openeng.kandroidpkg" >
     <PreferenceScreen android:title="@string/pref_cat_general"
         android:summary="@string/pref_cat_general_summ">
           <intent 
-            android:targetPackage="website.openeng.anki"
-            android:targetClass="website.openeng.anki.Preferences"
-            android:action="website.openeng.anki.prefs.general" />
+            android:targetPackage="website.openeng.kandroidpkg"
+            android:targetClass="website.openeng.kandroidpkg.Preferences"
+            android:action="website.openeng.kandroidpkg.prefs.general" />
     </PreferenceScreen>
 
     <!-- Reviewing Preferences -->
     <PreferenceScreen android:title="@string/pref_cat_reviewing"
         android:summary="@string/pref_cat_reviewing_summ" >
           <intent 
-            android:targetPackage="website.openeng.anki"
-            android:targetClass="website.openeng.anki.Preferences"
-            android:action="website.openeng.anki.prefs.reviewing" />        
+            android:targetPackage="website.openeng.kandroidpkg"
+            android:targetClass="website.openeng.kandroidpkg.Preferences"
+            android:action="website.openeng.kandroidpkg.prefs.reviewing" />        
     </PreferenceScreen>
 
     <!-- Fonts & Style Prefrences -->
@@ -40,18 +40,18 @@
         android:key="font_preference_group"
         android:summary="@string/pref_cat_fonts_summ">
           <intent 
-            android:targetPackage="website.openeng.anki"
-            android:targetClass="website.openeng.anki.Preferences"
-            android:action="website.openeng.anki.prefs.fonts" />        
+            android:targetPackage="website.openeng.kandroidpkg"
+            android:targetClass="website.openeng.kandroidpkg.Preferences"
+            android:action="website.openeng.kandroidpkg.prefs.fonts" />        
     </PreferenceScreen>
 
     <!-- Navigation Prefrences -->
     <PreferenceScreen android:title="@string/pref_cat_gestures"
         android:summary="@string/pref_cat_gestures_summ" >
           <intent 
-            android:targetPackage="website.openeng.anki"
-            android:targetClass="website.openeng.anki.Preferences"
-            android:action="website.openeng.anki.prefs.gestures" />        
+            android:targetPackage="website.openeng.kandroidpkg"
+            android:targetClass="website.openeng.kandroidpkg.Preferences"
+            android:action="website.openeng.kandroidpkg.prefs.gestures" />        
     </PreferenceScreen>
 
     <!-- Advanced Preferences -->
@@ -59,8 +59,8 @@
         android:summary="@string/pref_cat_advanced_summ"
         android:key="pref_screen_advanced">
           <intent 
-            android:targetPackage="website.openeng.anki"
-            android:targetClass="website.openeng.anki.Preferences"
-            android:action="website.openeng.anki.prefs.advanced" />        
+            android:targetPackage="website.openeng.kandroidpkg"
+            android:targetClass="website.openeng.kandroidpkg.Preferences"
+            android:action="website.openeng.kandroidpkg.prefs.advanced" />        
     </PreferenceScreen>
 </PreferenceScreen>

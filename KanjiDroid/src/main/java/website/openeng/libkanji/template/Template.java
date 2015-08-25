@@ -18,7 +18,7 @@ package website.openeng.libkanji.template;
 
 import android.text.TextUtils;
 
-import website.openeng.anki.KanjiDroidApp;
+import website.openeng.kandroidpkg.KanjiDroidApp;
 import website.openeng.libkanji.Utils;
 import website.openeng.libkanji.hooks.Hooks;
 

@@ -32,11 +32,11 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
-import website.openeng.anki.KanjiDb;
-import website.openeng.anki.KanjiDroidApp;
-import website.openeng.anki.KanjiFont;
-import website.openeng.anki.CollectionHelper;
-import website.openeng.anki.R;
+import website.openeng.kandroidpkg.KanjiDb;
+import website.openeng.kandroidpkg.KanjiDroidApp;
+import website.openeng.kandroidpkg.KanjiFont;
+import website.openeng.kandroidpkg.CollectionHelper;
+import website.openeng.kandroidpkg.R;
 import website.openeng.utils.LanguageUtil;
 
 import org.json.JSONArray;

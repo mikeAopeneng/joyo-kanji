@@ -21,7 +21,7 @@ package website.openeng.libkanji;
 
 import android.content.ContentValues;
 
-import website.openeng.anki.exception.ConfirmModSchemaException;
+import website.openeng.kandroidpkg.exception.ConfirmModSchemaException;
 
 import org.json.JSONArray;
 import org.json.JSONException;

@@ -16,7 +16,7 @@
 -->
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://arbitrary.app.namespace/website.openeng.anki" >
+    xmlns:app="http://arbitrary.app.namespace/website.openeng.kandroidpkg" >
         <ListPreference
             android:key="deckConf"
             android:title="@string/deck_conf_group" />

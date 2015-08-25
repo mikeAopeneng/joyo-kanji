@@ -13,8 +13,8 @@ import android.text.Html;
 import android.util.TypedValue;
 import android.widget.RemoteViews;
 
-import website.openeng.anki.KanjiDroidApp;
-import website.openeng.anki.R;
+import website.openeng.kandroidpkg.KanjiDroidApp;
+import website.openeng.kandroidpkg.R;
 
 /** Implementation of {@link Compat} for SDK level 16 */
 @TargetApi(16)

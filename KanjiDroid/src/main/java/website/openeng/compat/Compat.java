@@ -22,9 +22,9 @@ import android.speech.tts.TextToSpeech;
 import android.view.View;
 import android.widget.RemoteViews;
 
-import website.openeng.anki.KanjiActivity;
-import website.openeng.anki.NavigationDrawerActivity;
-import website.openeng.anki.exception.APIVersionException;
+import website.openeng.kandroidpkg.KanjiActivity;
+import website.openeng.kandroidpkg.NavigationDrawerActivity;
+import website.openeng.kandroidpkg.exception.APIVersionException;
 
 /**
  * This interface defines a set of functions that are not available on all platforms.

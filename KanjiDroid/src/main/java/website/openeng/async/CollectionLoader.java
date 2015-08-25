@@ -3,9 +3,9 @@ package website.openeng.async;
 import android.content.Context;
 import android.support.v4.content.AsyncTaskLoader;
 
-import website.openeng.anki.KanjiActivity;
-import website.openeng.anki.KanjiDroidApp;
-import website.openeng.anki.CollectionHelper;
+import website.openeng.kandroidpkg.KanjiActivity;
+import website.openeng.kandroidpkg.KanjiDroidApp;
+import website.openeng.kandroidpkg.CollectionHelper;
 import website.openeng.libkanji.Collection;
 
 import timber.log.Timber;

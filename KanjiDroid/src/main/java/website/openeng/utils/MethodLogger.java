@@ -19,7 +19,7 @@ package website.openeng.utils;
 import android.text.TextUtils;
 
 
-import website.openeng.anki.KanjiDroidApp;
+import website.openeng.kandroidpkg.KanjiDroidApp;
 
 import timber.log.Timber;
 

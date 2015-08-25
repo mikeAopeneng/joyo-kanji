@@ -4,7 +4,7 @@
     android:layout_height="fill_parent"
     tools:context=".KanjiStatsActivity$ChartFragment">
 
-    <website.openeng.anki.stats.ChartView
+    <website.openeng.kandroidpkg.stats.ChartView
         android:layout_width="fill_parent"
         android:id="@+id/image_view_chart"
         android:layout_height="fill_parent"

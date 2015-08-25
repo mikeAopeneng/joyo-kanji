@@ -18,8 +18,8 @@ package website.openeng.libkanji.hooks;
 
 import android.content.res.Resources;
 
-import website.openeng.anki.KanjiDroidApp;
-import website.openeng.anki.R;
+import website.openeng.kandroidpkg.KanjiDroidApp;
+import website.openeng.kandroidpkg.R;
 
 public class HintFilter {
     public void install(Hooks h) {

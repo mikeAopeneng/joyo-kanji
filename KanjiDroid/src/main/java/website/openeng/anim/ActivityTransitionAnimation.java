@@ -4,7 +4,7 @@ package website.openeng.anim;
 import android.annotation.TargetApi;
 import android.app.Activity;
 
-import website.openeng.anki.R;
+import website.openeng.kandroidpkg.R;
 
 public class ActivityTransitionAnimation {
     public static int LEFT = 0;

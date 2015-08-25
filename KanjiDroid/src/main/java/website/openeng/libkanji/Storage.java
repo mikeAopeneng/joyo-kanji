@@ -19,9 +19,9 @@ package website.openeng.libkanji;
 import android.content.ContentValues;
 import android.database.SQLException;
 
-import website.openeng.anki.KanjiDatabaseManager;
-import website.openeng.anki.KanjiDb;
-import website.openeng.anki.exception.ConfirmModSchemaException;
+import website.openeng.kandroidpkg.KanjiDatabaseManager;
+import website.openeng.kandroidpkg.KanjiDb;
+import website.openeng.kandroidpkg.exception.ConfirmModSchemaException;
 
 import org.json.JSONArray;
 import org.json.JSONException;

@@ -22,7 +22,7 @@
 
 <!--  General Preferences -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://arbitrary.app.namespace/website.openeng.anki"
+    xmlns:app="http://arbitrary.app.namespace/website.openeng.kandroidpkg"
     android:title="@string/pref_cat_general"
     android:summary="@string/pref_cat_general_summ" >
     <EditTextPreference
@@ -36,8 +36,8 @@
         android:summary="@string/sync_account_summ_logged_out"
         android:title="@string/sync_account" >
         <intent
-            android:targetClass="website.openeng.anki.MyAccount"
-            android:targetPackage="website.openeng.anki" />
+            android:targetClass="website.openeng.kandroidpkg.MyAccount"
+            android:targetPackage="website.openeng.kandroidpkg" />
     </Preference>
     <CheckBoxPreference
         android:defaultValue="true"

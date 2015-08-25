@@ -20,8 +20,8 @@ package website.openeng.themes;
 import android.content.Context;
 import android.widget.Toast;
 
-import website.openeng.anki.KanjiDroidApp;
-import website.openeng.anki.R;
+import website.openeng.kandroidpkg.KanjiDroidApp;
+import website.openeng.kandroidpkg.R;
 
 public class Themes {
     public final static int ALPHA_ICON_ENABLED_LIGHT = 255; // 100%

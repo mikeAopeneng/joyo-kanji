@@ -16,9 +16,9 @@
 //
 //import org.json.JSONException;
 //
-//import website.openeng.anki.KanjiDroidApp;
-//import website.openeng.anki.DeckPicker;
-//import website.openeng.anki2.R;
+//import website.openeng.kandroidpkg.KanjiDroidApp;
+//import website.openeng.kandroidpkg.DeckPicker;
+//import website.openeng.kandroidpkg2.R;
 //import website.openeng.async.DeckTask;
 //import website.openeng.libkanji.Card;
 //import website.openeng.libkanji.Utils;

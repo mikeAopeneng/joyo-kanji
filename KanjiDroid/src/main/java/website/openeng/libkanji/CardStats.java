@@ -3,7 +3,7 @@ package website.openeng.libkanji;
 import android.content.Context;
 import android.content.res.Resources;
 
-import website.openeng.anki.R;
+import website.openeng.kandroidpkg.R;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

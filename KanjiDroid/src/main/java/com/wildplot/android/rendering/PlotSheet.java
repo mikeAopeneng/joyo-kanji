@@ -18,7 +18,7 @@ package com.wildplot.android.rendering;
 
 import android.graphics.Typeface;
 
-import website.openeng.anki.KanjiDroidApp;
+import website.openeng.kandroidpkg.KanjiDroidApp;
 import com.wildplot.android.rendering.graphics.wrapper.*;
 import com.wildplot.android.rendering.interfaces.Drawable;
 import com.wildplot.android.rendering.interfaces.Legendable;

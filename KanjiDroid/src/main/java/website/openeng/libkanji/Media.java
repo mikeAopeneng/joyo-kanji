@@ -24,9 +24,9 @@ import android.text.TextUtils;
 
 import android.util.Pair;
 
-import website.openeng.anki.KanjiDatabaseManager;
-import website.openeng.anki.KanjiDb;
-import website.openeng.anki.exception.APIVersionException;
+import website.openeng.kandroidpkg.KanjiDatabaseManager;
+import website.openeng.kandroidpkg.KanjiDb;
+import website.openeng.kandroidpkg.exception.APIVersionException;
 import website.openeng.compat.CompatHelper;
 import website.openeng.libkanji.template.Template;
 

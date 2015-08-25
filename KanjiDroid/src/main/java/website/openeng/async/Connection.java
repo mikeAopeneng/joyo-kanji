@@ -25,11 +25,11 @@ import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.AsyncTask;
 
-import website.openeng.anki.KanjiDroidApp;
-import website.openeng.anki.CollectionHelper;
-import website.openeng.anki.R;
-import website.openeng.anki.exception.UnknownHttpResponseException;
-import website.openeng.anki.exception.UnsupportedSyncException;
+import website.openeng.kandroidpkg.KanjiDroidApp;
+import website.openeng.kandroidpkg.CollectionHelper;
+import website.openeng.kandroidpkg.R;
+import website.openeng.kandroidpkg.exception.UnknownHttpResponseException;
+import website.openeng.kandroidpkg.exception.UnsupportedSyncException;
 import website.openeng.libkanji.Collection;
 import website.openeng.libkanji.Decks;
 import website.openeng.libkanji.sync.FullSyncer;
