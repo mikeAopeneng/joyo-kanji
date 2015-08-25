@@ -71,7 +71,7 @@
     <application
         android:name="website.openeng.kandroidpkg.KanjiDroidApp"
         android:allowBackup="true"
-        android:icon="@drawable/anki"
+        android:icon="@drawable/ic_launcher_kandroid"
         android:label="@string/app_name"
         android:theme="@style/Theme.AppCompat.Light"
         android:windowSoftInputMode="adjustResize"
@@ -338,10 +338,10 @@
             android:value="true" />
         <meta-data
             android:name="com.sec.minimode.icon.portrait.normal"
-            android:resource="@drawable/anki" />
+            android:resource="@drawable/ic_launcher_kandroid" />
         <meta-data
             android:name="com.sec.minimode.icon.landscape.normal"
-            android:resource="@drawable/anki" />
+            android:resource="@drawable/ic_launcher_kandroid" />
 
         <provider
             android:name=".provider.CardContentProvider"

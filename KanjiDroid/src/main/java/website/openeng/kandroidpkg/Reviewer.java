@@ -290,7 +290,7 @@ public class Reviewer extends AbstractFlashcardViewer {
     protected SharedPreferences restorePreferences() {
         super.restorePreferences();
         SharedPreferences preferences = KanjiDroidApp.getSharedPrefs(getBaseContext());
-        mBlackWhiteboard = preferences.getBoolean("blackWhiteboard", true);
+        mBlackWhiteboard = preferences.getBoolean("blackWhiteboard", false);
         return preferences;
     }
 

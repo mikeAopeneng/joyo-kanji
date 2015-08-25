@@ -82,7 +82,7 @@ public class Whiteboard extends View {
         mPaint.setStyle(Paint.Style.STROKE);
         mPaint.setStrokeJoin(Paint.Join.ROUND);
         mPaint.setStrokeCap(Paint.Cap.ROUND);
-        int wbStrokeWidth = KanjiDroidApp.getSharedPrefs(context).getInt("whiteBoardStrokeWidth", 6);
+        int wbStrokeWidth = KanjiDroidApp.getSharedPrefs(context).getInt("whiteBoardStrokeWidth", 15);
         mPaint.setStrokeWidth((float) wbStrokeWidth);
 
         createBitmap();
