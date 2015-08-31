@@ -205,6 +205,23 @@
                         android:orientation="vertical"
                         android:visibility="gone" >
 
+<!--
+                        <Button
+                            android:id="@+id/nextTime1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/ic_launcher_brain_empty" />
+
+                        <Button
+                            android:id="@+id/ease1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/ic_launcher_brain_half" />
+-->
+
+
                         <TextView
                                 android:id="@+id/nextTime1"
                                 style="@style/FooterButtonNextTime" />
@@ -213,6 +230,7 @@
                                 android:id="@+id/ease1"
                                 android:text="@string/ease_button_again"
                                 style="@style/FooterButtonEaseText"/>
+
                     </LinearLayout>
 
                     <LinearLayout

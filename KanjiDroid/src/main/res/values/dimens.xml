@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="touch_target">48dp</dimen>
+    <dimen name="touch_target">56dp</dimen>
     <dimen name="default_width">56dp</dimen>
     <dimen name="keyline_1">16dp</dimen>
 

@@ -31,6 +31,7 @@ import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import timber.log.Timber;
 import website.openeng.kandroidpkg.R;
 import website.openeng.libkanji.Collection;
 import website.openeng.libkanji.Sched;
@@ -83,6 +84,7 @@ public class DeckAdapter extends RecyclerView.Adapter<DeckAdapter.ViewHolder> {
 
         public ViewHolder(View v) {
             super(v);
+
             deckLayout = (RelativeLayout) v.findViewById(R.id.DeckPickerHoriz);
             deckExpander = (ImageButton) v.findViewById(R.id.deckpicker_expander);
             deckName = (TextView) v.findViewById(R.id.deckpicker_name);
@@ -161,6 +163,7 @@ public class DeckAdapter extends RecyclerView.Adapter<DeckAdapter.ViewHolder> {
         // Update views for this node
         Sched.DeckDueTreeNode node = mDeckList.get(position);
 
+
         // Create the right expander for this deck
         setDeckExpander(holder.deckExpander, node);
 
@@ -198,6 +201,7 @@ public class DeckAdapter extends RecyclerView.Adapter<DeckAdapter.ViewHolder> {
         // Set click listeners
         holder.deckLayout.setOnClickListener(mDeckClickListener);
         holder.deckLayout.setOnLongClickListener(mDeckLongClickListener);
+
     }
 
     @Override
