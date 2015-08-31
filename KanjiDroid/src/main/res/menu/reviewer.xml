@@ -34,6 +34,12 @@
         android:title="@string/menu_suspend_card">
     </item>
     <item
+        android:id="@+id/action_edit"
+        android:title="@string/cardeditor_title_edit_card"/>
+        <!--android:icon="@drawable/ic_mode_edit_white_24dp"-->
+        <!--kanjidroid:showAsAction="ifRoom"-->
+
+    <item
         android:id="@+id/action_search_dictionary"
         android:title="@string/menu_select"
         android:visible="false"/>
