@@ -51,38 +51,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.afollestad.materialdialogs.MaterialDialog;
-import website.openeng.anim.ActivityTransitionAnimation;
-import website.openeng.kandroidpkg.StudyOptionsFragment.StudyOptionsListener;
-import website.openeng.kandroidpkg.dialogs.AsyncDialogFragment;
-import website.openeng.kandroidpkg.dialogs.ConfirmationDialog;
-import website.openeng.kandroidpkg.dialogs.DatabaseErrorDialog;
-import website.openeng.kandroidpkg.dialogs.DeckPickerBackupNoSpaceLeftDialog;
-import website.openeng.kandroidpkg.dialogs.DeckPickerConfirmDeleteDeckDialog;
-import website.openeng.kandroidpkg.dialogs.DeckPickerContextMenu;
-import website.openeng.kandroidpkg.dialogs.DeckPickerExportCompleteDialog;
-import website.openeng.kandroidpkg.dialogs.DeckPickerNoSpaceLeftDialog;
-import website.openeng.kandroidpkg.dialogs.DialogHandler;
-import website.openeng.kandroidpkg.dialogs.ExportDialog;
-import website.openeng.kandroidpkg.dialogs.ImportDialog;
-import website.openeng.kandroidpkg.dialogs.MediaCheckDialog;
-import website.openeng.kandroidpkg.dialogs.SyncErrorDialog;
-import website.openeng.kandroidpkg.exception.ConfirmModSchemaException;
-import website.openeng.kandroidpkg.receiver.SdCardReceiver;
-import website.openeng.kandroidpkg.stats.KanjiStatsTaskHandler;
-import website.openeng.kandroidpkg.widgets.DeckAdapter;
-import website.openeng.async.Connection;
-import website.openeng.async.Connection.Payload;
-import website.openeng.async.DeckTask;
-import website.openeng.async.DeckTask.TaskData;
-import website.openeng.compat.CompatHelper;
-import website.openeng.libkanji.Collection;
-import website.openeng.libkanji.Sched;
-import website.openeng.libkanji.Utils;
-import website.openeng.themes.StyledProgressDialog;
-import website.openeng.themes.Themes;
-import website.openeng.ui.DividerItemDecoration;
-import website.openeng.utils.VersionUtils;
-import website.openeng.widget.WidgetStatus;
 
 import net.i2p.android.ext.floatingactionbutton.FloatingActionButton;
 import net.i2p.android.ext.floatingactionbutton.FloatingActionsMenu;
@@ -98,6 +66,37 @@ import java.util.Locale;
 import java.util.TreeMap;
 
 import timber.log.Timber;
+import website.openeng.anim.ActivityTransitionAnimation;
+import website.openeng.async.Connection;
+import website.openeng.async.Connection.Payload;
+import website.openeng.async.DeckTask;
+import website.openeng.async.DeckTask.TaskData;
+import website.openeng.compat.CompatHelper;
+import website.openeng.kandroidpkg.StudyOptionsFragment.StudyOptionsListener;
+import website.openeng.kandroidpkg.dialogs.AsyncDialogFragment;
+import website.openeng.kandroidpkg.dialogs.DatabaseErrorDialog;
+import website.openeng.kandroidpkg.dialogs.DeckPickerBackupNoSpaceLeftDialog;
+import website.openeng.kandroidpkg.dialogs.DeckPickerConfirmDeleteDeckDialog;
+import website.openeng.kandroidpkg.dialogs.DeckPickerContextMenu;
+import website.openeng.kandroidpkg.dialogs.DeckPickerExportCompleteDialog;
+import website.openeng.kandroidpkg.dialogs.DeckPickerNoSpaceLeftDialog;
+import website.openeng.kandroidpkg.dialogs.DialogHandler;
+import website.openeng.kandroidpkg.dialogs.ExportDialog;
+import website.openeng.kandroidpkg.dialogs.ImportDialog;
+import website.openeng.kandroidpkg.dialogs.MediaCheckDialog;
+import website.openeng.kandroidpkg.dialogs.SyncErrorDialog;
+import website.openeng.kandroidpkg.exception.ConfirmModSchemaException;
+import website.openeng.kandroidpkg.receiver.SdCardReceiver;
+import website.openeng.kandroidpkg.stats.KanjiStatsTaskHandler;
+import website.openeng.kandroidpkg.widgets.DeckAdapter;
+import website.openeng.libkanji.Collection;
+import website.openeng.libkanji.Sched;
+import website.openeng.libkanji.Utils;
+import website.openeng.themes.StyledProgressDialog;
+import website.openeng.themes.Themes;
+import website.openeng.ui.DividerItemDecoration;
+import website.openeng.utils.VersionUtils;
+import website.openeng.widget.WidgetStatus;
 
 public class DeckPicker extends NavigationDrawerActivity implements
         StudyOptionsListener, DatabaseErrorDialog.DatabaseErrorDialogListener,
@@ -1591,7 +1590,7 @@ public class DeckPicker extends NavigationDrawerActivity implements
 
 
     private void deckReview() {
-        long mVocabDid = 1439756107750L;
+        long mVocabDid = 1440990046672L;
         getCol().getDecks().select(mVocabDid);
         mFocusedDeck = mVocabDid;
         openStudyOptions(false);

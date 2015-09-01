@@ -17,27 +17,43 @@
 
             <include layout="@layout/toolbar" />
 
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/files"
-                android:scrollbars="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawSelectorOnTop="true"
-                android:fastScrollEnabled="true"
-                android:layout_below="@+id/toolbar"
-                android:layout_above="@+id/today_stats_text_view"
-                android:focusable="true"
-                android:paddingBottom="72dp"
-                android:clipToPadding="false"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/today_stats_text_view"
-                android:layout_alignParentBottom="true"
-                android:layout_centerInParent="true"
-                android:gravity="center"/>
+            <!-- Top bar -->
 
-            <include layout="@layout/floating_add_button"/>
+            <RelativeLayout
+                android:id="@+id/top_bar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="9dp"
+                android:paddingRight="10dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="3dp"
+                android:gravity="center_vertical"
+                android:background="?attr/topBarColor"
+                android:layout_below="@+id/toolbar">
+
+                <android.support.v7.widget.RecyclerView
+                        android:id="@+id/files"
+                        android:scrollbars="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawSelectorOnTop="true"
+                        android:fastScrollEnabled="true"
+                        android:layout_below="@+id/toolbar"
+                        android:layout_above="@+id/today_stats_text_view"
+                        android:focusable="true"
+                        android:paddingBottom="72dp"
+                        android:clipToPadding="false"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/today_stats_text_view"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"/>
+
+                    <include layout="@layout/floating_add_button"/>
+            </RelativeLayout>
+            <!-- Card and whiteboard -->
         </RelativeLayout>
     </android.support.design.widget.CoordinatorLayout>
 
