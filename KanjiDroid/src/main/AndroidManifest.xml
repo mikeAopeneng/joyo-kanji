@@ -71,7 +71,7 @@
     <application
         android:name="website.openeng.kandroidpkg.KanjiDroidApp"
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher_kandroid"
+        android:icon="@drawable/ic_launcher_redspot"
         android:label="@string/app_name"
         android:theme="@style/Theme.AppCompat.Light"
         android:windowSoftInputMode="adjustResize"
