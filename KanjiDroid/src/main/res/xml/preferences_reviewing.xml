@@ -22,7 +22,7 @@
 
 <!-- Reviewing Preferences -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://arbitrary.app.namespace/website.openeng.kandroidpkg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title="@string/pref_cat_reviewing"
     android:summary="@string/pref_cat_reviewing_summ" >
     <PreferenceCategory android:title="@string/pref_cat_reviewer_behaviour" >
@@ -123,6 +123,17 @@
             android:key="blackWhiteboard"
             android:summary="@string/whiteboard_black_summ"
             android:title="@string/whiteboard_black" />
+<!--
+        <yuku.ambilwarna.widget.AmbilWarnaPreference
+            android:key="pref1"
+            android:defaultValue="0xffff9900"
+            android:title="No alpha"/>
+-->
+        <yuku.ambilwarna.widget.AmbilWarnaPreference
+            android:key="WhiteBoardColor"
+            android:defaultValue="0xff0000ff"
+            android:title="Stroke Color"
+            app:supportsAlpha="true"/>
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/pref_cat_automatic_display" >
         <CheckBoxPreference

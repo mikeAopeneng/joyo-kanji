@@ -35,17 +35,16 @@ import android.view.View;
 import android.view.ViewConfiguration;
 import android.widget.FrameLayout;
 
-import website.openeng.async.DeckTask;
-import website.openeng.compat.CompatHelper;
-import website.openeng.libkanji.Collection;
-import website.openeng.themes.Themes;
-import website.openeng.widget.WidgetStatus;
-
 import org.json.JSONException;
 
 import java.lang.ref.WeakReference;
 
 import timber.log.Timber;
+import website.openeng.async.DeckTask;
+import website.openeng.compat.CompatHelper;
+import website.openeng.libkanji.Collection;
+import website.openeng.themes.Themes;
+import website.openeng.widget.WidgetStatus;
 
 public class Reviewer extends AbstractFlashcardViewer {
     private boolean mHasDrawerSwipeConflicts = false;
@@ -122,6 +121,10 @@ public class Reviewer extends AbstractFlashcardViewer {
                 Timber.i("Reviewer:: Replay audio button pressed (from menu)");
                 playSounds(true);
                 break;
+
+            case R.id.action_edit:
+                Timber.i("Reviewer:: Edit note button pressed");
+                return editCard();
 
             case R.id.action_suspend_card:
                 Timber.i("Reviewer:: Suspend card button pressed");

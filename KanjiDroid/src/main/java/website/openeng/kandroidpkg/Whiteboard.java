@@ -78,7 +78,8 @@ public class Whiteboard extends View {
         mPaint = new Paint();
         mPaint.setAntiAlias(true);
         mPaint.setDither(true);
-        mPaint.setColor(mForegroundColor);
+        int wbStrokeColor = KanjiDroidApp.getSharedPrefs(context).getInt("WhiteBoardColor", mForegroundColor);
+        mPaint.setColor(wbStrokeColor);
         mPaint.setStyle(Paint.Style.STROKE);
         mPaint.setStrokeJoin(Paint.Join.ROUND);
         mPaint.setStrokeCap(Paint.Cap.ROUND);
