@@ -81,12 +81,12 @@
         <website.openeng.ui.SeekBarPreference
             android:defaultValue="100"
             android:key="cardZoom"
-            android:max="150"
+            android:max="200"
             android:summary="@string/preference_summary_percentage"
             android:text=" %"
             android:title="@string/card_zoom"
-            app:interval="10"
-            app:min="10" />
+            app:interval="20"
+            app:min="20" />
         <website.openeng.ui.SeekBarPreference
             android:defaultValue="100"
             android:key="imageZoom"
