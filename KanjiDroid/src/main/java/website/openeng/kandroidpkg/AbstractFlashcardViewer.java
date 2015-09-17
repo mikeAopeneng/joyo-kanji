@@ -69,23 +69,6 @@ import android.widget.TextView;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.afollestad.materialdialogs.util.TypefaceHelper;
-import website.openeng.anim.ActivityTransitionAnimation;
-import website.openeng.anim.ViewAnimation;
-import website.openeng.kandroidpkg.exception.APIVersionException;
-import website.openeng.kandroidpkg.receiver.SdCardReceiver;
-import website.openeng.kandroidpkg.reviewer.ReviewerExtRegistry;
-import website.openeng.async.DeckTask;
-import website.openeng.compat.CompatHelper;
-import website.openeng.libkanji.Card;
-import website.openeng.libkanji.Collection;
-import website.openeng.libkanji.Consts;
-import website.openeng.libkanji.Sched;
-import website.openeng.libkanji.Sound;
-import website.openeng.libkanji.Utils;
-import website.openeng.themes.HtmlColors;
-import website.openeng.themes.StyledProgressDialog;
-import website.openeng.themes.Themes;
-import website.openeng.utils.DiffEngine;
 
 import org.amr.arabic.ArabicUtilities;
 import org.json.JSONArray;
@@ -102,6 +85,25 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import timber.log.Timber;
+import website.openeng.anim.ActivityTransitionAnimation;
+import website.openeng.anim.ViewAnimation;
+import website.openeng.async.DeckTask;
+import website.openeng.compat.CompatHelper;
+import website.openeng.kandroidpkg.exception.APIVersionException;
+import website.openeng.kandroidpkg.receiver.SdCardReceiver;
+import website.openeng.kandroidpkg.reviewer.ReviewerExtRegistry;
+import website.openeng.libkanji.Card;
+import website.openeng.libkanji.Collection;
+import website.openeng.libkanji.Consts;
+import website.openeng.libkanji.Note;
+import website.openeng.libkanji.Sched;
+import website.openeng.libkanji.Sound;
+import website.openeng.libkanji.Utils;
+import website.openeng.themes.HtmlColors;
+import website.openeng.themes.StyledProgressDialog;
+import website.openeng.themes.Themes;
+import website.openeng.utils.DiffEngine;
+import www.openeng.website.libkanjitree.ShowTree;
 
 public abstract class AbstractFlashcardViewer extends NavigationDrawerActivity {
 
@@ -1178,6 +1180,24 @@ public abstract class AbstractFlashcardViewer extends NavigationDrawerActivity {
             mCardTimer.start();
             mCurrentCard.resumeTimer();
         }
+    }
+
+
+    protected void showTree(Card current) {
+
+        Intent showTree = new Intent(AbstractFlashcardViewer.this, ShowTree.class);
+
+        String kanji = "絹";                     // default kanji if no Symbol found
+//        kanji = current.qSimple();             // text of question
+//        kanji = current.a();                   // text of answer
+//        kanji = current.toString();            // deck information ID #s, etc
+        Note note = current.note();              // gets current note
+        if (note.getitem("Symbol") != null) {
+            kanji =  note.getitem("Symbol");     // gets Symbol from current note
+        }
+        Timber.v("AbstractFlashcard:: kanji=" + kanji);
+        showTree.putExtra("KANJI", kanji);
+        startActivityWithAnimation(showTree, ActivityTransitionAnimation.LEFT);
     }
 
 

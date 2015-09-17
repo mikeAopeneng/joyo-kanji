@@ -40,4 +40,5 @@ dependencies {
     compile 'com.jakewharton.timber:timber:2.5.1'
     compile 'com.google.code.gson:gson:2.3'
     compile project(":library")
+    compile project(":libkanjitree")
 }

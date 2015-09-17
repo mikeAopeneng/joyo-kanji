@@ -1,2 +1,3 @@
 include ':KanjiDroid'
 include ':library'
+include ':libkanjitree'

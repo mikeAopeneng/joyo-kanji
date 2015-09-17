@@ -18,6 +18,9 @@
 # local documents
 docs/
 
+# proprietary library
+libkanjitree/
+
 # generated files
 bin/
 gen/

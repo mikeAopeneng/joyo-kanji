@@ -112,6 +112,11 @@ public class Reviewer extends AbstractFlashcardViewer {
                 undo();
                 break;
 
+            case R.id.action_tree:
+                Timber.i("Reviewer:: Tree button pressed");
+                showTree(mCurrentCard);
+                break;
+
             case R.id.action_mark_card:
                 Timber.i("Reviewer:: Mark button pressed");
                 DeckTask.launchDeckTask(DeckTask.TASK_TYPE_MARK_CARD, mMarkCardHandler, new DeckTask.TaskData(mCurrentCard, 0));

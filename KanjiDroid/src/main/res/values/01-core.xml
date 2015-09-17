@@ -82,6 +82,7 @@
     <string name="menu_select">Select text</string>
     <string name="menu_search">Lookup in %1$s</string>
     <string name="menu_mark_note">Mark note</string>
+    <string name="menu_show_tree">Show Tree</string>
     <string name="menu_unmark_note">Unmark note</string>
     <string name="new_deck">Create deck</string>
     <string name="menu_deck_review">Review</string>
