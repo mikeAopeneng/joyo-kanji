@@ -12,7 +12,7 @@ android {
     }
     signingConfigs {
       release {
-        storeFile file("${homePath}/Android/key")
+        storeFile file("/home/mike/Android/zzKeys")
         keyAlias "KandroidTemporaryKey"
         storePassword System.getenv("KSTOREPWD")
         keyPassword System.getenv("KEYPWD")

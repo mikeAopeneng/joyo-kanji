@@ -22,8 +22,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="website.openeng.kandroidpkg"
     android:installLocation="auto"
-    android:versionCode="20500151"
-    android:versionName="2.5alpha51">
+    android:versionCode="00500001"
+    android:versionName="0.5alpha1">
     <uses-sdk android:minSdkVersion="7"  android:targetSdkVersion="18" />
 
     <!--
